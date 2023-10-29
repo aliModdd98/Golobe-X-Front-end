@@ -1,6 +1,6 @@
 import React from 'react'
 import './MainStyle.css'
-import LandingPage from './../pages/LandingPage'
+import LandingPage from './../../pages/LandingPage.jsx'
 function Main() {
   return (
     <div>
