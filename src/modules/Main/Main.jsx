@@ -1,10 +1,10 @@
 import React from 'react'
 import './MainStyle.css'
-import Footer from '../../components/Footer/Footer'
+import LandingPage from './../pages/LandingPage'
 function Main() {
   return (
     <div>
-      <Footer/>
+      <LandingPage/>
     </div>
   )
 }
