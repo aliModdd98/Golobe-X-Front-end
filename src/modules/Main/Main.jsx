@@ -1,8 +1,11 @@
 import React from 'react'
-import './.MainStyle.css'
+import './MainStyle.css'
+import Footer from '../../components/Footer/Footer'
 function Main() {
   return (
-    <div>Main</div>
+    <div>
+      <Footer/>
+    </div>
   )
 }
 
