@@ -4,7 +4,8 @@ import LandingPage from './../../pages/LandingPage.jsx'
 function Main() {
   return (
     <div>
-      <LandingPage/>
+      <h1>hey</h1>
+      <LandingPage />
     </div>
   )
 }
