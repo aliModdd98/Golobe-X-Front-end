@@ -12,7 +12,7 @@ function Reviews() {
 
     const cards = [
         {
-            id: 1,
+            id: 100,
             img: card1,
             title: '“A real sense of community, nurtured”',
             review: 'Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.',
@@ -21,7 +21,7 @@ function Reviews() {
             country: 'Weave Studios – Kai Tak'
         },
         {
-            id: 2,
+            id: 101,
             img: card2,
             title: '“The facilities are superb. Clean, slick, bright.”',
             review: '“A real sense of community, nurtured”Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle',
@@ -30,7 +30,7 @@ function Reviews() {
             country: 'Weave Studios – Olympic'
         },
         {
-            id: 3,
+            id: 102,
             img: card3,
             title: '“A real sense of community, nurtured”',
             review: 'Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.',
@@ -39,7 +39,7 @@ function Reviews() {
             country: 'Weave Studios – Kai Tak'
         },
         {
-            id: 4,
+            id: 103,
             img: card1,
             title: '“The facilities are superb. Clean, slick, bright.”',
             review: '“A real sense of community, nurtured”Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle',
@@ -48,7 +48,7 @@ function Reviews() {
             country: 'Syria – Homs'
         },
         {
-            id: 5,
+            id: 104,
             img: card2,
             title: '“The facilities are superb. Clean, slick, bright.”',
             review: '“A real sense of community, nurtured”Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle',
@@ -57,7 +57,7 @@ function Reviews() {
             country: 'USA -LA'
         },
         {
-            id: 6,
+            id: 105,
             img: card3,
             title: '“The facilities are superb. Clean, slick, bright.”',
             review: '“A real sense of community, nurtured”Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle',
@@ -66,7 +66,7 @@ function Reviews() {
             country: 'Lebanon – Beruit'
         },
         {
-            id: 7,
+            id: 106,
             img: card1,
             title: '“The facilities are superb. Clean, slick, bright.”',
             review: '“A real sense of community, nurtured”Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle',
@@ -114,31 +114,34 @@ function Reviews() {
                 <Container>
                     <div className='d-flex'>
                         {
-                            (clicked)?
-                            cards.slice().map((card) => {
-                                return (
-                                    <ReviewCard
-                                        img={card.img}
-                                        title={card.title}
-                                        review={card.review}
-                                        rate={card.rate}
-                                        userName={card.userName}
-                                        country={card.country}
-                                        key={card.id} />
-                                )
-                            }):
                             cards.slice(0,4).map((card) => {
                                 return (
                                     <ReviewCard
+                                        key={card.id}
                                         img={card.img}
                                         title={card.title}
                                         review={card.review}
                                         rate={card.rate}
                                         userName={card.userName}
-                                        country={card.country}
-                                        key={card.id} />
+                                        country={card.country} />
                                 )
                             })
+                        } 
+                        {
+                            (clicked)
+                            ? cards.slice(4).map((card) => {
+                                return (
+                                    <ReviewCard
+                                        key={card.id}
+                                        img={card.img}
+                                        title={card.title}
+                                        review={card.review}
+                                        rate={card.rate}
+                                        userName={card.userName}
+                                        country={card.country} />
+                                )
+                            })
+                            : null
                         }
                     </div>
                 </Container>

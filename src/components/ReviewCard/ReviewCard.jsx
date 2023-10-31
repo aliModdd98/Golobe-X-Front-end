@@ -29,9 +29,9 @@ function ReviewCard({ img, title, review, rate, userName, country }) {
                                 let starts = [];
                                 for (let index = 0; index < 5; index++) {
                                     if (index <= rate) {
-                                        starts.push(<AiFillStar />)
+                                        starts.push(<AiFillStar key={index} />)
                                     } else {
-                                        starts.push(<AiOutlineStar />)
+                                        starts.push(<AiOutlineStar key={index} />)
                                     }
                                 }
                                 return starts;

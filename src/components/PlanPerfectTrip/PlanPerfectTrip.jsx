@@ -116,18 +116,7 @@ function PlanPerfectTrip() {
                     setState={setClicked} />
                 <Row className='mt-5'>
                     {
-                        (clicked)?
-                        grids.slice().map((grid) => {
-                            return (
-                                <Col key={grid.id} lg={4}>
-                                    <TripCard
-                                        img={grid.img}
-                                        country={grid.country}
-                                        services={grid.services} />
-                                </Col>
-                            );
-                        }):
-                        grids.slice(0,9).map((grid) => {
+                        grids.slice(0, 9).map((grid) => {
                             return (
                                 <Col key={grid.id} lg={4}>
                                     <TripCard
@@ -137,6 +126,20 @@ function PlanPerfectTrip() {
                                 </Col>
                             );
                         })
+                    }
+                    {
+                        (clicked)
+                        ? grids.slice(9).map((grid) => {
+                            return (
+                                <Col key={grid.id} lg={4}>
+                                    <TripCard
+                                        img={grid.img}
+                                        country={grid.country}
+                                        services={grid.services} />
+                                </Col>
+                            );
+                        })
+                        : null
                     }
                 </Row>
             </Container>
