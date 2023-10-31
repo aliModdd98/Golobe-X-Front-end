@@ -1,0 +1,51 @@
+.maxWidthCard {
+    max-width: 425px;
+}
+
+.CustomShadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1),
+    24px 24px #8DD3BB66;
+}
+
+.lineClamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cardHeader h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.cardHeader p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+.cardHeader p:nth-child(3) {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.starts {
+    color: #FFC107;
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.userName p:nth-child(1) {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.userName p:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+}
