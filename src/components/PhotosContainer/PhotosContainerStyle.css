@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aj_photo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1232px;
+    height: 559px;
+    gap: 15px;
+    margin: 0 auto;
+    color: white;
+
+
+}
+
+.aj_first_photo,
+.aj_second_photo {
+    width: 604px;
+    height: 559px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+.aj_first_photo {
+    background-image: url(./../../assets/flights.png);
+}
+
+.aj_second_photo {
+    background-image: url(./../../assets/hotels.png)
+}
+
+.aj_text_container {
+    width: 389px;
+    height: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+
+
+}
+
+
+.aj_text_container button {
+    width: 144px;
+    height: 48px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #FF8500;
+    border: none;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1250px) {
+    .aj_photo_container {
+        flex-direction: column;
+        padding: 0 auto;
+    }
+
+}
