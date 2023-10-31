@@ -1,33 +1,32 @@
 import './ReviewCard.css'
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import google from './../../assets/google.svg';
+import { useState } from 'react';
 
 
 function ReviewCard({ img, title, review, rate, userName, country }) {
-    let starts = [];
-    for (let index = 0; index < 5; index++) {
-        if (index <= rate) {
-            starts.push(<AiFillStar />)
-        } else {
-            starts.push(<AiOutlineStar />)
-        }
-    }
+    const [clicked, setClicked] = useState(false);
     return (
         <div className='d-inline-block bg-white rounded-4 CustomShadow maxWidthCard p-3 me-5'>
             <div className='d-flex flex-column justify-content-between h-100'>
+
+                <div className='cardHeader'>
+                    <h2 className='mb-4'>{title}</h2>
+                    <p className={`${(clicked)? '' : 'lineClamp'} opacity-50 mb-2`}>
+                        {review}
+                    </p>
+                    <p className='text-end mb-0' onClick={() => setClicked(!clicked)}>
+                        {
+                            (clicked)? 'view less' : 'view more'
+                        }
+                    </p>
+                </div>
                 <div>
-                    <div className='cardHeader'>
-                        <h2 className='mb-4'>{title}</h2>
-                        <p className='lineClamp opacity-50 mb-2'>
-                            {review}
-                        </p>
-                        <p className='text-end mb-0'>view more</p>
-                    </div>
                     <div>
                         <div className='starts mb-4'>
                             {(() => {
                                 let starts = [];
-                                for (let index = 0; index < 5; index++) {
+                                for (let index = 1; index <= 5; index++) {
                                     if (index <= rate) {
                                         starts.push(<AiFillStar key={index} />)
                                     } else {
@@ -47,8 +46,8 @@ function ReviewCard({ img, title, review, rate, userName, country }) {
                             </div>
                         </div>
                     </div>
+                    <img src={img} alt="" className='' />
                 </div>
-                <img src={img} alt="" className='' />
             </div>
         </div>
     )

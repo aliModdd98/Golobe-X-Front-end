@@ -43,7 +43,7 @@ function Reviews() {
             img: card1,
             title: '“The facilities are superb. Clean, slick, bright.”',
             review: '“A real sense of community, nurtured”Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle',
-            rate: 5,
+            rate: 3,
             userName: 'Fadi',
             country: 'Syria – Homs'
         },
@@ -52,7 +52,7 @@ function Reviews() {
             img: card2,
             title: '“The facilities are superb. Clean, slick, bright.”',
             review: '“A real sense of community, nurtured”Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle',
-            rate: 5,
+            rate: 4,
             userName: 'Ali',
             country: 'USA -LA'
         },
@@ -70,7 +70,7 @@ function Reviews() {
             img: card1,
             title: '“The facilities are superb. Clean, slick, bright.”',
             review: '“A real sense of community, nurtured”Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.View moreOlgaWeave Studios – Kai TakGoogle',
-            rate: 5,
+            rate: 1,
             userName: 'Hasan',
             country: 'Syria – Damas'
         },
