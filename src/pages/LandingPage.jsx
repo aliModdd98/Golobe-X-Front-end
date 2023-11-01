@@ -4,8 +4,9 @@ import PhotosContainer from '../components/PhotosContainer/PhotosContainer'
 function LandingPage() {
   return (
     <>
-      <PhotosContainer></PhotosContainer>
-      <Footer /></>
+      <PhotosContainer />
+      <Footer />
+    </>
   )
 }
 
