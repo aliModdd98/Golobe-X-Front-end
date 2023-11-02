@@ -11,7 +11,7 @@ function PhotoCard({ img, title, description, button_text }) {
                 <div className="aj_text_container">
                     <h2>{title}</h2>
                     <p>{description}</p>
-                    <button> <BsFillSendFill />{button_text}</button>
+                    <button> <BsFillSendFill className='bs_fill' />{button_text}</button>
 
                 </div>
 
