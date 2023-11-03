@@ -20,17 +20,6 @@
 
 }
 
-
-
-/* .aj_first_photo {
-    background-image: url(./../../assets/flights.png);
-}
-
-.aj_second_photo {
-    background-image: url(./../../assets/hotels.png)
-} */
-
-
 @media screen and (max-width:1250px) {
     .aj_photo_container {
         flex-direction: column;

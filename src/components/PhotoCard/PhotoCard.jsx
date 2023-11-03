@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './PhotoCardStyle.css'
 import { BsFillSendFill } from './../../../node_modules/react-icons/bs'
+
 function PhotoCard({ img, title, description, button_text }) {
+
 
     return (
 
