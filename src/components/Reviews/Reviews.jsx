@@ -75,6 +75,7 @@ function Reviews() {
             country: 'Syria – Damas'
         },
     ];
+    
     const sliderR = useRef(null);
     let isDown = false;
     let startX, scrollLeftV;
