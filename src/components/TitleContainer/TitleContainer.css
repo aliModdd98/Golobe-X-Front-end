@@ -4,6 +4,7 @@
     height: 93px;
     justify-content: space-between;
     padding: 0px 80px;
+    gap: 16px;
 }
 
 .destination_section .title_container h2 {
@@ -21,7 +22,8 @@
 
 .destination_section .title_container button {
     width: 80px;
-    height: 40px;
+    height: max-content;
+    padding: 8px 16px 8px 16px;
     border-radius: 4px;
     border: 1px solid #FF8500;
     background-color: white;

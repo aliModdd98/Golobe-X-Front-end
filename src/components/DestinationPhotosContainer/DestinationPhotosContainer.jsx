@@ -81,7 +81,7 @@ function DestinationPhotosContainer() {
     const [clicked, setClicked] = useState(false);
     return (
         <div className='destination_section'>
-            <TitleContainer button={(clicked) ? 'see less' : 'see all'}
+            <TitleContainer button={(clicked) ? 'see less' : 'See All'}
                 stateValue={clicked}
                 setState={setClicked} />
 
