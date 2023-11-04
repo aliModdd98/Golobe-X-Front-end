@@ -3,7 +3,7 @@ import './TripCard.css'
 function TripCard({ img, country, services }) {
     return (
         <div className='d-flex align-items-center rounded-4 bg-white shadow-sm p-3 mb-4'>
-            <img src={img} alt={country} className='pe-3' />
+            <img src={img} alt={country} className='width-90px pe-3' />
             <div className='tripCard'>
                 <p className='mb-2'>{country}</p>
                 <div className='d-flex align-items-center gap-2'>
