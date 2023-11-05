@@ -1,0 +1,10 @@
+.bg-orange{
+    background-color: var(--primary-color) !important;
+}
+.fa_outline-none{
+    outline: none;
+}
+.fa_transition{
+    transition: .5s;
+    transition-delay: display .5s;
+}
