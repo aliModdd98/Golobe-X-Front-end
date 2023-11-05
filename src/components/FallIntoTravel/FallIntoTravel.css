@@ -1,0 +1,4 @@
+.ha-img{
+    aspect-ratio: 16/9;
+    border : 3px var(--primary-color) solid;
+}
