@@ -1,0 +1,18 @@
+.fa_nav-height {
+    height: 90px;
+}
+
+.fa_signup-button {
+    border: 0;
+    outline: 0;
+    padding: 12px 24px;
+}
+
+.fa_nav-font {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.active {
+    border-bottom: var(--primary-color) 1px solid;
+}

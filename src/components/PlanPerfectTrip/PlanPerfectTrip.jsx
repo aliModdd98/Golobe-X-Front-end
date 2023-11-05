@@ -107,7 +107,7 @@ function PlanPerfectTrip() {
     ]
     const [clicked, setClicked] = useState(false);
     return (
-        <section className='my-5'>
+        <section className='mb-5'>
             <Container>
                 <SectionTitle title='Plan your perfect trip'
                     subTitle='Search Flights & Places Hire to our most popular destinations'
