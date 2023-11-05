@@ -1,10 +1,12 @@
 import React from 'react'
 import './PhotoCard.css'
-import { BsFillSendFill } from './../../../node_modules/react-icons/bs'
+import { BsFillSendFill } from 'react-icons/bs'
 import { Col } from 'react-bootstrap'
-function PhotoCard({ img, title, description, button_text }) {
-    return (
 
+function PhotoCard({ img, title, description, button_text }) {
+    const [img, setimg] = useState(img)
+     style={{ backgroundImage: url({ img }) }}
+    return (
         <Col md={6}>
             <div className="aj_card_photo">
                 <img src={img} className='w-100 h-100' />
