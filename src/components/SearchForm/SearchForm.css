@@ -1,0 +1,25 @@
+.line {
+    height: 50px;
+    width: 1px;
+}
+
+.fa_serch-buttons button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.fa_border-none{
+    border: none;
+    border-bottom: 3px #fff solid;
+}
+.fa_active_serch-button {
+    border-bottom: var(--primary-color) 3px solid !important;
+}
+
+.fa_search-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.translate-20{
+    transform: translateY(-40%);
+}

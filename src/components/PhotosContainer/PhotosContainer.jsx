@@ -1,9 +1,8 @@
 import React from 'react'
-import "./PhotosContainerStyle.css"
-import { BsFillSendFill } from './../../../node_modules/react-icons/bs'
 import PhotoCard from '../PhotoCard/PhotoCard'
 import image1 from './../../assets/flights.png'
 import image2 from './../../assets/hotels.png'
+import { Container, Row } from 'react-bootstrap'
 function PhotosContainer() {
 
     const data = [
@@ -25,27 +24,25 @@ function PhotosContainer() {
 
 
     return (
-        <div className="aj_photo_container">
-            {
-                data.map((e) => {
-                    return (
-                        <PhotoCard
-                            img={e.img}
-                            title={e.title}
-                            description={e.description}
-                            button_text={e.button_text}
-                        />
+        <section>
+            <Container>
+                <Row>
+                        {
+                            data.map((e) => {
+                                return (
+                                    <PhotoCard
+                                        img={e.img}
+                                        title={e.title}
+                                        description={e.description}
+                                        button_text={e.button_text}
+                                    />
 
-                    );
-                })
-            }
-
-
-
-
-
-
-        </div>
+                                );
+                            })
+                        }
+                </Row>
+            </Container>
+        </section>
 
     )
 }
