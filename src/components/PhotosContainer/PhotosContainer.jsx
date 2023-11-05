@@ -28,9 +28,10 @@ function PhotosContainer() {
             <Container>
                 <Row>
                         {
-                            data.map((e) => {
+                            data.map((e,index) => {
                                 return (
                                     <PhotoCard
+                                    key={index}
                                         img={e.img}
                                         title={e.title}
                                         description={e.description}
