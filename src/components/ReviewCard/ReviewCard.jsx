@@ -46,7 +46,7 @@ function ReviewCard({ img, title, review, rate, userName, country }) {
                             </div>
                         </div>
                     </div>
-                    <img src={img} alt="" className='' />
+                    <img src={img} alt="photo" className='rounded-3 overflow-hidden' />
                 </div>
             </div>
         </div>

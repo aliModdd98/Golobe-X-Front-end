@@ -1,7 +1,7 @@
 import React from 'react'
 import "./TitleContainer.css"
 
-function TitleContainer({ button, stateValue, setState }) {
+function TitleContainer({ button, stateV, setState }) {
     return (
 
         <div className='title_container'>
@@ -12,7 +12,7 @@ function TitleContainer({ button, stateValue, setState }) {
                     , we've got the travel tools to get you to your destination</p>
             </div>
 
-            <button onClick={() => setState(!stateValue)}>{button}</button>
+            <button onClick={() => setState(!stateV)}>{button}</button>
 
         </div>
 

@@ -17,7 +17,7 @@ function DestinationPhotosContainer() {
             id: "1",
             img: image1,
             title: 'Melbourne',
-            description: 'An amaizing journey ',
+            description: 'An amazing journey ',
             price: '700$',
         },
 
@@ -49,30 +49,30 @@ function DestinationPhotosContainer() {
             id: "5",
             img: image5,
             title: 'New york',
-            description: ' awsome city',
+            description: ' Amazing city',
             price: '900 $',
         },
         {
             id: "6",
             img: image6,
-            title: 'berlin',
+            title: 'Berlin',
             description: ' Amazing old buildings',
             price: '700 $',
         },
         {
             id: "7",
             img: image7,
-            title: 'italy',
-            description: 'beautiful Rome',
+            title: 'Italy',
+            description: ' Beautiful Rome',
             price: '500 $',
         },
         {
             id: "8",
             img: image8,
-            title: 'switzerland',
-            description: ' awesome nature',
+            title: 'Switzerland',
+            description: ' Awesome nature',
             price: '650 $',
-        }
+        },
 
 
     ]
@@ -81,8 +81,8 @@ function DestinationPhotosContainer() {
     const [clicked, setClicked] = useState(false);
     return (
         <div className='destination_section'>
-            <TitleContainer button={(clicked) ? 'see less' : 'See All'}
-                stateValue={clicked}
+            <TitleContainer button={(clicked) ? 'See Less' : 'See All'}
+                stateV={clicked}
                 setState={setClicked} />
 
             <div className='photo_travel_container'>
@@ -116,7 +116,6 @@ function DestinationPhotosContainer() {
 
             </div>
         </div>
-
 
     )
 }

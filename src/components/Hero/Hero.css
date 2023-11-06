@@ -1,0 +1,26 @@
+.fn-BackgroundImg {
+    background: var(--gradient), var(--img-url);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fa_hero-title h1:nth-child(1) {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 57px;
+    color: white;
+}
+
+.fa_hero-title h1:nth-child(2) {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 101px;
+    color: white;
+}
+
+.fa_hero-title p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
