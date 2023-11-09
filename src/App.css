@@ -1,6 +1,12 @@
 .bg-orange{
     background-color: var(--primary-color) !important;
 }
+.border-orange{
+    border: 1px var(--primary-color) solid !important;
+}
+.text-orange{
+    color: var(--primary-color) !important;
+}
 .fa_outline-none{
     outline: none;
 }
@@ -9,7 +15,4 @@
 }
 .input_searchForm{
     width: 90%;
-}
-.border-orange{
-    border: 1px var(--primary-color) solid;
 }

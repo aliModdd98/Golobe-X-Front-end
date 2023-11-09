@@ -10,7 +10,7 @@ function SearchFormSmall({flight}) {
         <Container>
             <div className='pb-5'></div>
             <div className='pt-5 mt-5'>
-                <div className='px-3 py-4 bg-white rounded-3 shadow-sm d-flex'>
+                <form className='px-3 py-4 bg-white rounded-3 shadow-sm d-flex'>
                     <div className='flex-grow-1'>
                         <div className='d-flex'>
                             {
@@ -20,10 +20,10 @@ function SearchFormSmall({flight}) {
                             }
                         </div>
                     </div>
-                    <div className='d-flex justify-content-center align-items-center bg-orange p-3 ms-3 aspect_ratio-1'>
+                    <button className='d-flex border-0 justify-content-center align-items-center bg-orange p-3 ms-3 aspect_ratio-1'>
                         <AiOutlineSearch className='fs-3' />
-                    </div>
-                </div>
+                    </button>
+                </form>
             </div>
         </Container>
     )
