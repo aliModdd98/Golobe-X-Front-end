@@ -11,10 +11,10 @@ function Hero({ img, center, className, title, secTitleLine, subTitle, children 
         <div className={`fn-BackgroundImg ${className}`} style={Styles}>
             <div className='h-100 position-relative'>
                 {children}
-                <Container className={`fa_hero-title d-flex flex-column justify-content-center h-100 text-white ${center && 'text-center'}`}>
-                    <h1 className='mb-0'>{title}</h1>
-                    <h1 className='mb-3'>{secTitleLine}</h1>
-                    <p className='mb-0'>{subTitle}</p>
+                <Container className={`fa_hero-title d-flex flex-column justify-content-center h-100 ${(center) ? 'text-center' :'max_width-hero'}`}>
+                    <h1 className='mb-0  text-white'>{title}</h1>
+                    <h1 className='mb-3 text-white'>{secTitleLine}</h1>
+                    <p className='mb-0 text-white'>{subTitle}</p>
                 </Container>
             </div>
         </div>

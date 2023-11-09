@@ -6,5 +6,10 @@
 }
 .fa_transition{
     transition: .5s;
-    transition-delay: display .5s;
+}
+.input_searchForm{
+    width: 90%;
+}
+.border-orange{
+    border: 1px var(--primary-color) solid;
 }

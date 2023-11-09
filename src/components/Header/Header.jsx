@@ -12,7 +12,7 @@ function Header() {
                 <Hero 
                 className='rounded-5 h-100' 
                 img={image} 
-                center={true} 
+                center 
                 title='Helping Others' 
                 secTitleLine='Live & Travel' 
                 subTitle='Special offers to suit your plan'>
