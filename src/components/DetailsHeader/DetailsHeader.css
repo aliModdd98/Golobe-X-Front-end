@@ -1,0 +1,49 @@
+.fa_Tracker p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fa_description-left h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.fa_description-left p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fa_description-left .fa_reviews button {
+    width: 40px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fa_description-left .fa_reviews p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fa_description-left .fa_reviews p span {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.fa_price {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-green);
+}
+
+.fa_actions-button button:nth-child(1),
+.fa_actions-button button:nth-child(2) {
+    width: 48px;
+    height: 48px;
+    font-size: 19px;
+}
+
+.fa_actions-button button:nth-child(3) {
+    font-size: 14px;
+    font-weight: 600;
+}

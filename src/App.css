@@ -16,3 +16,6 @@
 .input_searchForm{
     width: 90%;
 }
+input[type='checkbox']{
+    accent-color: var(--primary-color);
+}
