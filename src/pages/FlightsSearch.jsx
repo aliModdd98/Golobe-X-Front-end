@@ -1,8 +1,10 @@
 import React from 'react'
-
+import FallIntoTravel from '../components/FallIntoTravel/FallIntoTravel'
 function FlightSearch() {
   return (
-    <div>FlightSearch</div>
+    <>
+    <FallIntoTravel />
+    </>
   )
 }
 
