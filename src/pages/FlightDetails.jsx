@@ -13,6 +13,7 @@ import image6 from './../assets/flightDetailes-6.jpg'
 import image7 from './../assets/flightDetailes-7.jpg'
 import FlightNotes from '../components/FlightNotes/FlightNotes'
 import FlightDetailsCards from '../components/FlightDetailsCards/FlightDetailsCards'
+import FlightTracker from '../components/FlightTracker/FlightTracker'
 
 function FlightDetails() {
   const imgs = [
@@ -57,6 +58,7 @@ function FlightDetails() {
   return (
     <>
       <NavBar />
+      <FlightTracker />
       <DetailsHeader />
       <FlightClass imgs={imgs} />
       <FlightNotes />

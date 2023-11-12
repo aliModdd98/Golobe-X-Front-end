@@ -6,9 +6,15 @@ import { IoFastFood } from 'react-icons/io5'
 import { MdOutlineAirlineSeatReclineExtra } from 'react-icons/md'
 import line from './../../assets/Line 5.svg'
 
-function FlightDetailsCard({date, flightDuration, leavingTime, landingTime, company}) {
+function FlightDetailsCard({ date, flightDuration, leavingTime, landingTime, company, price }) {
     return (
         <div className='bg-white rounded-4 mb-5 px-3 py-4 shadow-sm'>
+            {
+                price && <div className='d-flex align-items-center justify-content-between mb-3'>
+                    <h1 className='mb-0 fa_comapny_name-header'>Emirates A380 Airbus</h1>
+                    <p className='mb-0 fa_price'>204 $</p>
+                </div>
+            }
             <div className='d-flex align-items-center justify-content-between'>
                 <p className='mb-0 fa_flight-date'>{date}</p>
                 <p className='mb-0 fa_flight-time_launch opacity-75'>{flightDuration}</p>

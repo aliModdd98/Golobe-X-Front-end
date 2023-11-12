@@ -1,24 +1,16 @@
 import './DetailsHeader.css'
 import { Container } from 'react-bootstrap'
 import { AiOutlineHeart } from 'react-icons/ai'
-import { BiChevronRight } from 'react-icons/bi'
 import { BsFillShareFill } from 'react-icons/bs'
 import { FaLocationDot } from 'react-icons/fa6'
 
 function DetailsHeader() {
     return (
-        <section className='mt-5 mb-4 pt-5'>
+        <section className='mb-4'>
             <Container>
-                <div className='d-flex align-items-center gap-2 fa_Tracker my-4'>
-                    <p className='mb-0 text-orange'>Turkey</p>
-                    <BiChevronRight />
-                    <p className='mb-0 text-orange'>Istanbul</p>
-                    <BiChevronRight />
-                    <p className='mb-0 opacity-75'>CVK Park Bosphorus Hotel Istanbul</p>
-                </div>
                 <div className='d-flex justify-content-between'>
                     <div className='fa_description-left'>
-                        <h1 className='mb-3'>Emirates A380 Airbus</h1>
+                        <h1 className='mb-3 fa_comapny_name-header'>Emirates A380 Airbus</h1>
                         <div className='d-flex align-items-center gap-2 mb-2'>
                             <FaLocationDot />
                             <p className='mb-0 opacity-75'>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>

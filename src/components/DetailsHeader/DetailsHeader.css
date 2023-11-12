@@ -1,13 +1,3 @@
-.fa_Tracker p {
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.fa_description-left h1 {
-    font-size: 24px;
-    font-weight: 700;
-}
-
 .fa_description-left p {
     font-size: 14px;
     font-weight: 500;
@@ -28,12 +18,6 @@
 .fa_description-left .fa_reviews p span {
     font-size: 12px;
     font-weight: 700;
-}
-
-.fa_price {
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--color-green);
 }
 
 .fa_actions-button button:nth-child(1),

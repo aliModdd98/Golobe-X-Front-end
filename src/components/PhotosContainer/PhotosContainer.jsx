@@ -27,20 +27,20 @@ function PhotosContainer() {
         <section>
             <Container>
                 <Row>
-                        {
-                            data.map((e,index) => {
-                                return (
-                                    <PhotoCard
+                    {
+                        data.map((e, index) => {
+                            return (
+                                <PhotoCard
                                     key={index}
-                                        img={e.img}
-                                        title={e.title}
-                                        description={e.description}
-                                        button_text={e.button_text}
-                                    />
+                                    img={e.img}
+                                    title={e.title}
+                                    description={e.description}
+                                    button_text={e.button_text}
+                                />
 
-                                );
-                            })
-                        }
+                            );
+                        })
+                    }
                 </Row>
             </Container>
         </section>

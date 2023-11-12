@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar/NavBar'
 import SearchForm from '../components/SearchForm/SearchForm'
 import Footer from '../components/Footer/Footer'
 import FallIntoTravel from '../components/FallIntoTravel/FallIntoTravel'
+import PhotosContainer from '../components/PhotosContainer/PhotosContainer'
 
 function FlightSearch() {
   return (
