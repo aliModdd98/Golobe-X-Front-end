@@ -1,8 +1,7 @@
 import './App.css'
 import Main from './modules/Main/Main'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BookingDetails from './pages/BookingDetails';
-import FlightSearch from './pages/FlightsSearch';
+import FlightTicket from './pages/FlightTicket';
 
 
 
@@ -10,7 +9,7 @@ function App() {
   
   return (
     <>
-      <FlightSearch />
+      <FlightTicket />
     </>
   )
 }

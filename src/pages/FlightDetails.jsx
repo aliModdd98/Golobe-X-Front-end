@@ -59,7 +59,7 @@ function FlightDetails() {
     <>
       <NavBar />
       <FlightTracker />
-      <DetailsHeader />
+      <DetailsHeader company='Emirates A380 Airbus' rate={4.2} Favorit button='Book now' />
       <FlightClass imgs={imgs} />
       <FlightNotes />
       <FlightDetailsCards />

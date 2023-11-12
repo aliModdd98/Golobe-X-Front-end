@@ -20,14 +20,14 @@
     font-weight: 700;
 }
 
-.fa_actions-button button:nth-child(1),
-.fa_actions-button button:nth-child(2) {
+.fa_actions-button button.fa_favorite,
+.fa_actions-button button.fa_share {
     width: 48px;
     height: 48px;
     font-size: 19px;
 }
 
-.fa_actions-button button:nth-child(3) {
+.fa_actions-button button.fa_button-download {
     font-size: 14px;
     font-weight: 600;
 }
