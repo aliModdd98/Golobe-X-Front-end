@@ -5,6 +5,7 @@
     font-weight: 500;
     line-height: 17px;
     transition: .5s;
+    text-wrap: nowrap;
 }
 .orangeBotton:hover{
     background-color: var(--primary-color) !important;

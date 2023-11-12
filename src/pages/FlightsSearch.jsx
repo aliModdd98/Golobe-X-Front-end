@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar/NavBar'
 import SearchForm from '../components/SearchForm/SearchForm'
 import Footer from '../components/Footer/Footer'
 import FallIntoTravel from '../components/FallIntoTravel/FallIntoTravel'
-import PhotosContainer from '../components/PhotosContainer/PhotosContainer'
+import FlightMap from '../components/FlightMap/FlightMap'
 
 function FlightSearch() {
   return (
@@ -17,6 +17,7 @@ function FlightSearch() {
         title='Make your travel whishlist, we’ll do the rest'
         subTitle='Special offers to suit your plan' />
       <SearchForm />
+      <FlightMap />
       <FallIntoTravel />
       <Footer />
     </>
