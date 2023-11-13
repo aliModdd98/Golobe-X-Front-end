@@ -6,6 +6,8 @@ import SectionTitle from './components/SectionTitle/SectionTitle';
 import Main from './modules/Main/Main'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PaymentComponent from './components/PaymentComponent/PaymentComponent'
+import PriceDetails from './components/PriceDetails/PriceDetails';
+import AddingCard from './components/AddingCard/AddingCard';
 
 function App() {
   
@@ -14,7 +16,8 @@ function App() {
 
     
 
-   <PaymentComponent />
+<PriceDetails />
+<AddingCard />
     </>
   )
 }
