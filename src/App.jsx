@@ -16,7 +16,13 @@ function App() {
 
     
 
-<PriceDetails />
+
+
+
+
+
+
+
 <AddingCard />
     </>
   )
