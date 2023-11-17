@@ -1,7 +1,6 @@
 import React from 'react'
 import Hero from '../Hero/Hero'
 import image from './../../assets/landing.png'
-import './Header.css'
 import NavBar from '../NavBar/NavBar'
 import SearchForm from '../SearchForm/SearchForm'
 

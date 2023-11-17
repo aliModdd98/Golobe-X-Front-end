@@ -13,15 +13,15 @@ function FlightsListing() {
     },
     {
       id : 2,
-      listitem : 'Emirated'
+      listitem : 'Fly Dubai'
     },
     {
       id : 3,
-      listitem : 'Emirated'
+      listitem : 'Qatar'
     },
     {
       id : 4,
-      listitem : 'Emirated'
+      listitem : 'Etihad'
     }
   ]
   const ListTwo = [

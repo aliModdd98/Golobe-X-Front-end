@@ -2,11 +2,12 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import FlightDetailsCard from '../FlightDetailsCard/FlightDetailsCard'
 import LogInToBook from '../LogInToBook/LogInToBook'
+import Bill from '../Bill/Bill'
 
 function MainBookingDetails({ details }) {
     return (
         <Container>
-            <Row>
+            <Row className='mb-5'>
                 <Col lg={8}>
                     <FlightDetailsCard
                         date={details.date}
@@ -18,7 +19,7 @@ function MainBookingDetails({ details }) {
                         <LogInToBook />
                 </Col>
                 <Col lg={4}>
-                    hello
+                    <Bill />
                 </Col>
             </Row>
         </Container>

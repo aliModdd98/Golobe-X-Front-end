@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import FiltersAccordion from '../FiltersAccordion/FiltersAccordion'
 import './FilteringSection.css'
 import RangInput from '../RangInput/RangInput'
+import SearchResultsSection from '../SearchResultsSection/SearchResultsSection'
 
 function FilteringSection({ flight, listOne, ListTwo }) {
     const [activeButton, setActiveButton] = useState(-1)
@@ -93,8 +94,8 @@ function FilteringSection({ flight, listOne, ListTwo }) {
                             </div>
                         </div>
                     </Col>
-                    <Col>
-                        
+                    <Col lg={8}>
+                        <SearchResultsSection filters={filters} other />
                     </Col>
                 </Row>
             </Container>

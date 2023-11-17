@@ -1,0 +1,14 @@
+.fa_changeinput p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fa_changeinput input {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fa_changeinput-button {
+    font-size: 14px;
+    font-weight: 500;
+}

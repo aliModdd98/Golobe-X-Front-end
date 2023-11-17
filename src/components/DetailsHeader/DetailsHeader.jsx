@@ -1,5 +1,5 @@
 import './DetailsHeader.css'
-import { Button, Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { BsFillShareFill } from 'react-icons/bs'
 import { FaLocationDot } from 'react-icons/fa6'
