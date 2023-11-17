@@ -1,0 +1,40 @@
+.fa_booked-tickets {
+    width: 60px;
+    aspect-ratio: 1;
+}
+
+.fa_caveron-right {
+    width: 48px;
+    height: 48px;
+}
+
+.fa_booking_ticket-icons {
+    width: 32px;
+    aspect-ratio: 1;
+    background-color: #EBF6F2;
+}
+
+.fa_booking_ticket-icons-title {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 60%;
+}
+
+.fa_booking_ticket-icons-value {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.color-calender{
+    color: #8DD3BB;
+}
+
+.fa_from{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fa_from-val{
+    font-size: 20px;
+    font-weight: 600;
+}

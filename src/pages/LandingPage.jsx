@@ -17,9 +17,7 @@ function LandingPage() {
       <PhotosContainer />
       <Reviews />
       <FallIntoTravel />
-    <Footer />
-    
-      
+      <Footer />
     </>
   )
 }

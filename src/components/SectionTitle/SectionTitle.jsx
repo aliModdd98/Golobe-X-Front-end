@@ -7,7 +7,7 @@ function SectionTitle({ title, subTitle, button, stateV, setState }) {
                 <h1 className='mb-3'>{title}</h1>
                 <p className='mb-0 opacity-75'>{subTitle}</p>
             </div>
-            <button className='orangeBotton bg-transparent' onClick={() => setState(!stateV)}>
+            <button className='orangeBotton border-orange bg-transparent' onClick={() => setState(!stateV)}>
                 {button}
             </button>
         </div>

@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap"
-import { FaPlane } from 'react-icons/fa'
+import { FaPlane, FaSadCry } from 'react-icons/fa'
 import { IoBed } from 'react-icons/io5'
 import { BsFillSendFill } from './../../../node_modules/react-icons/bs'
 import './SearchForm.css'
@@ -7,7 +7,8 @@ import FlightFilter from "../FlightFilter/FlightFilter"
 import HotelFilter from "../HotelFilter/HotelFilter"
 import { useState } from "react"
 
-function SearchForm({both}) {
+function SearchForm({both, hotels}) {
+    (hotels)?setflight(false): null;
     const [Flight , setflight] = useState(true);
 
     const handleclick = (value) => {
@@ -21,20 +22,20 @@ function SearchForm({both}) {
                     {
                         both
                             ? <>
-                                <button className={`bg-transparent fa_border fa_border-none py-4 me-3 ${(Flight)?'fa_active_serch-button':''}`} onClick={() => {handleclick(false)}}>
+                                <button className={`bg-transparent fa_border fa_border-none py-4 me-3 mb-5 ${(Flight)?'fa_active_serch-button':''}`} onClick={() => {handleclick(false)}}>
                                     <FaPlane className='me-2 fs-4' />
                                     Flights
                                 </button>
                                 <div className="line bg-dark opacity-25"></div>
-                                <button className={`bg-transparent fa_border fa_border-none py-4 ms-3 ${(!Flight)?'fa_active_serch-button':''}`} onClick={() => {handleclick(true)}}>
+                                <button className={`bg-transparent fa_border fa_border-none py-4 ms-3 mb-5 ${(!Flight)?'fa_active_serch-button':''}`} onClick={() => {handleclick(true)}}>
                                     <IoBed className='me-2 fs-4' />
                                     Stays
                                 </button>
                             </>
-                            : <p className="py-4 fa_search-title">Where are you flying?</p>
+                            : <p className="py-4 fa_search-title mb-2">Where are you flying?</p>
                     }
                 </div>
-                <div className="my-5 d-flex">
+                <div className="mb-5 d-flex">
                     {
                         (Flight)
                         ? <FlightFilter />

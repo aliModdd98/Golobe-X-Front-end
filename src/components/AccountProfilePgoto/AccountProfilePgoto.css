@@ -1,0 +1,41 @@
+.fa_profile-cover_photo {
+    height: 350px;
+}
+
+.fa_change_cover_button {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fa_background-img {
+    background: var(--img-url);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fa_profile-img {
+    width: 160px;
+    height: 160px;
+    border: 4px var(--pink) solid;
+}
+
+.fa_background-pink{
+    width: 40px;
+    height: 40px;
+    background-color: var(--pink);
+}
+
+.fa_profile-detailes{
+    transform: translateY(-30%);
+}
+
+.fa_user_name{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.fa_user_email{
+    font-size: 16px;
+    font-weight: 400;
+}
