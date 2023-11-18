@@ -1,4 +1,11 @@
 import React from 'react'
+// <<<<<<< hasan-alhasan
+// import FallIntoTravel from '../components/FallIntoTravel/FallIntoTravel'
+// function FlightSearch() {
+//   return (
+//     <>
+//     <FallIntoTravel />
+
 import Hero from '../components/Hero/Hero'
 import background from './../assets/FlightSeach.jpg'
 import NavBar from '../components/NavBar/NavBar'
@@ -20,6 +27,7 @@ function FlightSearch() {
       <FlightMap />
       <FallIntoTravel />
       <Footer />
+
     </>
   )
 }
