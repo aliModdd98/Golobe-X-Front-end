@@ -10,16 +10,16 @@ function FlightFilter() {
     return (
         <>
             <div className='fa_fromTo-input px-2'>
-                <div className='position-relative d-flex border border-dark rounded-2 px-2 py-3'>
+                <div className='position-relative d-flex border border-secondary rounded-2 px-2 py-3'>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
                         From - To
                     </label>
-                    <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='Lahore - Karachi' />
+                    <input type="text" className='input_searchForm fa_outline-none border-0 flex-grow-1' placeholder='Lahore - Karachi' />
                     <span><GoArrowSwitch className='fs-4' /></span>
                 </div>
             </div>
             <div className='fa_Trip-input px-2'>
-                <div className='position-relative border border-dark rounded-2 px-2 py-3' onClick={() => setShow(!show)}>
+                <div className='position-relative border border-secondary rounded-2 px-2 py-3' onClick={() => setShow(!show)}>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
                         Trip
                     </label>
@@ -27,26 +27,26 @@ function FlightFilter() {
                         {dropValue}
                         <AiOutlineDown className='fs-4' />
                     </p>
-                    <div className={`rounded-3 shadow-sm position-absolute p-3 fa_transition top-100 w-100 start-50 translate-middle-x ${show ? 'd-block' : 'd-none'}`}>
+                    <div className={`rounded-3 shadow-sm bg-white position-absolute p-3 fa_transition top-100 w-100 start-50 translate-middle-x ${show ? 'd-block' : 'd-none'}`}>
                         <p className='mb-3' onClick={() => { setDropValue('Return') }}>Return</p>
                         <p className='mb-0' onClick={() => { setDropValue('Go') }}>Go</p>
                     </div>
                 </div>
             </div>
             <div className='fa_fromTo-input px-2'>
-                <div className='position-relative border border-dark rounded-2 px-2 py-3'>
+                <div className='position-relative border border-secondary rounded-2 px-2 py-3'>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
                         Depart- Return
                     </label>
-                    <input type="text" className='fa_outline-none border-0 w-100' placeholder='07 Nov 22 - 13 Nov 22' />
+                    <input type="text" className='input_searchForm fa_outline-none border-0 w-100' placeholder='07 Nov 22 - 13 Nov 22' />
                 </div>
             </div>
             <div className='fa_fromTo-input px-2'>
-                <div className='position-relative border border-dark rounded-2 px-2 py-3'>
+                <div className='position-relative border border-secondary rounded-2 px-2 py-3'>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
                         Passenger - Class
                     </label>
-                    <input type="text" className='fa_outline-none border-0 w-100' placeholder='1 Passenger, Economy' />
+                    <input type="text" className='input_searchForm fa_outline-none border-0 w-100' placeholder='1 Passenger, Economy' />
                 </div>
             </div>
         </>

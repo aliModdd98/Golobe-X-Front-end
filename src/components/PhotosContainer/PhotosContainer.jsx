@@ -25,6 +25,7 @@ function PhotosContainer() {
 
 
     return (
+
         <div className="aj_photo_container">
             {
                 data.map((e) => {
@@ -46,6 +47,28 @@ function PhotosContainer() {
 
 
         </div>
+// =======
+//         <section>
+//             <Container>
+//                 <Row>
+//                     {
+//                         data.map((e, index) => {
+//                             return (
+//                                 <PhotoCard
+//                                     key={index}
+//                                     img={e.img}
+//                                     title={e.title}
+//                                     description={e.description}
+//                                     button_text={e.button_text}
+//                                 />
+
+//                             );
+//                         })
+//                     }
+//                 </Row>
+//             </Container>
+//         </section>
+// >>>>>>> main
 
     )
 }

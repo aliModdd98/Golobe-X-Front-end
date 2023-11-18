@@ -8,7 +8,7 @@ import { Container } from 'react-bootstrap'
 function NavBar({ transpartent }) {
     let classes = (transpartent)
         ? 'position-absolute top-0 w-100 text-white fa_nav-height px-4'
-        : 'fixed-top bg-white text-black';
+        : 'fixed-top bg-white text-black shadow-sm';
     return (
         <div className={classes}>
             <Container

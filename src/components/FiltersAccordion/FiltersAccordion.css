@@ -1,0 +1,14 @@
+.fa_accordion-item {
+    font-size: 16px;
+    font-weight: 600;
+}
+.fa_active_accordion{
+    max-height: 0px;
+    overflow: auto;
+}
+.fa_active_accordion.open{
+    max-height: 1000px;
+}
+.fa_rotate{
+    rotate: -180deg;
+}

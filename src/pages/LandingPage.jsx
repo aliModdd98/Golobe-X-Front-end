@@ -22,7 +22,6 @@ function LandingPage() {
       <FallIntoTravel />
       <Footer />
 
-
     </>
   )
 }

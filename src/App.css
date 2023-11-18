@@ -1,10 +1,52 @@
-.bg-orange{
+
+
+
+
+
+.bg-orange {
     background-color: var(--primary-color) !important;
 }
-.fa_outline-none{
+
+.border-orange {
+    border: 1px var(--primary-color) solid !important;
+}
+
+.text-orange {
+    color: var(--primary-color) !important;
+}
+
+.fa_outline-none {
     outline: none;
 }
-.fa_transition{
+
+.fa_transition {
     transition: .5s;
-    transition-delay: display .5s;
+}
+
+.input_searchForm {
+    width: 90%;
+}
+
+input[type='checkbox'] {
+    accent-color: var(--primary-color);
+}
+
+.fa_price {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-green);
+}
+
+.fa_comapny_name-header {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none !important;
+}
+
+.fa_aspect_ratio-1 {
+    aspect-ratio: 1;
 }
