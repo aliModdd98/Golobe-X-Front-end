@@ -1,0 +1,76 @@
+.aj_travel_card {
+    margin-top: 40px;
+    width: 296px;
+    height: 420px;
+    border-radius: 12px;
+    background-color: brown;
+    position: relative;
+}
+
+.aj_travel_card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+
+}
+
+.aj_travel_card .aj_travel_card_text {
+    position: absolute;
+    width: 248px;
+    height: 46px;
+    left: 50%;
+    top: 74%;
+    transform: translate(-50%, -50%);
+}
+
+.aj_travel_card .aj_travel_card_text h3 {
+    font-size: 24px;
+    margin: 0px;
+    line-height: 29.26px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.aj_text_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.aj_travel_card .aj_travel_card_text p {
+    font-size: 14px;
+    margin: 0px;
+    line-height: 17.07px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+.aj_travel_card .aj_travel_card_text span {
+
+    font-size: 24px;
+    line-height: 29.26px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+
+
+}
+
+.aj_travel_card .aj_travel_card_text button {
+    width: 100%;
+    height: 48px;
+    margin-top: 4px;
+    padding: 8px 16px 8px 16px;
+    background-color: #FF8500;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+
+
+}
