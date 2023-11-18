@@ -2,7 +2,7 @@ import './PhotoCard.css'
 import { BsFillSendFill } from 'react-icons/bs'
 import { Col } from 'react-bootstrap'
 
-function PhotoCard({ img, title, description, button_text }) {
+function PhotoCard({img, title, description, button_text }) {
 
     return (
         <Col md={6}>

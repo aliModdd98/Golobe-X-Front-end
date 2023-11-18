@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Container, Row, Col } from 'react-bootstrap'
 import FlightDetailsCard from '../FlightDetailsCard/FlightDetailsCard'
 import LogInToBook from '../LogInToBook/LogInToBook'

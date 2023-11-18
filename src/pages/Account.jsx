@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import NavBar from '../components/NavBar/NavBar'
 import AccountProfilePgoto from '../components/AccountProfilePgoto/AccountProfilePgoto'
 import AccountDetailes from '../components/AccountDetailes/AccountDetailes'

@@ -8,7 +8,26 @@ import SearchResultsSection from '../SearchResultsSection/SearchResultsSection'
 function FilteringSection({ flight, listOne, ListTwo }) {
     const [activeButton, setActiveButton] = useState(-1)
 
-
+    const filters = [
+        {
+            id : 0,
+            category : 'Cheapest',
+            priceRange : 99,
+            timeRange : '2h 18m'
+        },
+        {
+            id : 1,
+            category : 'Best',
+            priceRange : 99,
+            timeRange : '2h 18m'
+        },
+        {
+            id : 2,
+            category : 'Quickest',
+            priceRange : 99,
+            timeRange : '2h 18m'
+        }
+    ]
     const ratings = [0, 1, 2, 3, 4];
 
     const [seeMore, setSeeMore] = useState(false);
@@ -66,7 +85,7 @@ function FilteringSection({ flight, listOne, ListTwo }) {
                                                     </div>
                                                 ))
                                             }
-                                        </FiltersAccordion>
+                                       </FiltersAccordion>
                                         : <FiltersAccordion title='Amenities'>
                                             {
                                                 ListTwo.slice(0, 4).map((item) => (

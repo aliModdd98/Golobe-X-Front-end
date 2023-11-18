@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Hero from '../components/Hero/Hero'
 import background from './../assets/FlightSeach.jpg'
 import NavBar from '../components/NavBar/NavBar'
@@ -18,6 +18,7 @@ function FlightSearch() {
         subTitle='Special offers to suit your plan' />
       <SearchForm />
       <FlightMap />
+     
       <FallIntoTravel />
       <Footer />
     </>

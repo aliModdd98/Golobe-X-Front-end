@@ -1,8 +1,8 @@
-import React from 'react'
+
 import Footer from '../components/Footer/Footer'
 import PlanPerfectTrip from '../components/PlanPerfectTrip/PlanPerfectTrip'
 import Reviews from '../components/Reviews/Reviews'
-import FallIntoTravel from '../components/FallIntoTravel/FallIntoTravel'
+
 import PhotosContainer from '../components/PhotosContainer/PhotosContainer'
 import Header from '../components/Header/Header'
 
@@ -16,8 +16,7 @@ function LandingPage() {
       <PlanPerfectTrip />
       <PhotosContainer />
       <Reviews />
-      <FallIntoTravel />
-      <Footer />
+     <Footer />
     </>
   )
 }

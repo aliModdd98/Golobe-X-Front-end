@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './FlightsStyle.css'
 function Flights() {
   return (

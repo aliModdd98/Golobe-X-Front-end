@@ -1,4 +1,4 @@
-import React from 'react'
+
 import PhotoCard from '../PhotoCard/PhotoCard'
 import image1 from './../../assets/flights.png'
 import image2 from './../../assets/hotels.png'
