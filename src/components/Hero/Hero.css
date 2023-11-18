@@ -22,3 +22,6 @@
     font-weight: 600;
     line-height: 24px;
 }
+.max_width-hero h1, .max_width-hero p{
+    max-width: 440px;
+}

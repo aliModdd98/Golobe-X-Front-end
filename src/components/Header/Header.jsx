@@ -1,7 +1,6 @@
 import React from 'react'
 import Hero from '../Hero/Hero'
 import image from './../../assets/landing.png'
-import './Header.css'
 import NavBar from '../NavBar/NavBar'
 import SearchForm from '../SearchForm/SearchForm'
 
@@ -12,7 +11,7 @@ function Header() {
                 <Hero 
                 className='rounded-5 h-100' 
                 img={image} 
-                center={true} 
+                center 
                 title='Helping Others' 
                 secTitleLine='Live & Travel' 
                 subTitle='Special offers to suit your plan'>

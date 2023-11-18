@@ -11,16 +11,16 @@ function HotelFilter() {
     return (
         <>
             <div className='fa_Destination-input px-2 '>
-                <div className='position-relative d-flex border border-dark rounded-2 px-2 py-3'>
+                <div className='position-relative d-flex border border-secondary rounded-2 px-2 py-3'>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
                         Enter Destination
                     </label>
                     <span><IoBed className='fs-4 me-2' /></span>
-                    <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='Istanbul, Turkey' />
+                    <input type="text" className='input_searchFormfa_outline-none border-0 flex-grow-1' placeholder='Istanbul, Turkey' />
                 </div>
             </div>
             <div className='fa_other-inputs px-2 '>
-                <div className='position-relative d-flex border border-dark rounded-2 px-2 py-3' onClick={() => {setShow(!show)}}>
+                <div className='position-relative d-flex border border-secondary rounded-2 px-2 py-3' onClick={() => {setShow(!show)}}>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
                         Check Out
                     </label>
@@ -36,20 +36,20 @@ function HotelFilter() {
                 </div>
             </div>
             <div className='fa_other-inputs px-2 '>
-                <div className='position-relative d-flex border border-dark rounded-2 px-2 py-3'>
+                <div className='position-relative d-flex border border-secondary rounded-2 px-2 py-3'>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
                         Check In
                     </label>
-                    <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='Fri 12/2' />
+                    <input type="text" className='input_searchForm fa_outline-none border-0 flex-grow-1' placeholder='Fri 12/2' />
                     <span><BsFillCalendarWeekFill className='fs-4 me-2' /></span>
                 </div>
             </div>
             <div className='fa_other-inputs px-2 '>
-                <div className='position-relative d-flex border border-dark rounded-2 px-2 py-3'>
+                <div className='position-relative d-flex border border-secondary rounded-2 px-2 py-3'>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
                         Check Out
                     </label>
-                    <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='Sun 12/4' />
+                    <input type="text" className='input_searchForm fa_outline-none border-0 flex-grow-1' placeholder='Sun 12/4' />
                     <span><BsFillCalendarWeekFill className='fs-4 me-2' /></span>
                 </div>
             </div>
