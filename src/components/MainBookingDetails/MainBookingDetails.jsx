@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import FlightDetailsCard from '../FlightDetailsCard/FlightDetailsCard'
 import LogInToBook from '../LogInToBook/LogInToBook'
 import Bill from '../Bill/Bill'
+import PriceDetails from '../PriceDetails/PriceDetails'
 
 function MainBookingDetails({ details }) {
     return (
@@ -16,6 +17,7 @@ function MainBookingDetails({ details }) {
                         leavingTime={details.leavingTime}
                         landingTime={details.landingTime}
                         price />
+                       
                         <LogInToBook />
                 </Col>
                 <Col lg={4}>

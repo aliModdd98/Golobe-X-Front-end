@@ -22,7 +22,7 @@ function BookingDetails() {
 
       <NavBar />
       <FlightTracker />
-    <PriceDetails />
+    {/* <PriceDetails /> */}
       <MainBookingDetails details={flightDetailes} />
       <Footer />
 

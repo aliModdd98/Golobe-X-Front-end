@@ -3,18 +3,19 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-import BookingDetails from './pages/BookingDetails';
+import AddPay from './components/AddPayment/AddPay';
 
 function App() {
   
   return (
-    <>
- <BookingDetails/>
+  <>
 
-    </>
+ <AddPay/>
+ 
+
+ </>
+    
   )
 }
 
