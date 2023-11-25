@@ -58,7 +58,7 @@ function FlightDetails() {
   return (
     <>
       <NavBar />
-      <FlightTracker />
+      <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
       <DetailsHeader company='Emirates A380 Airbus' rate={4.2} Favorit button='Book now' />
       <FlightClass imgs={imgs} />
       <FlightNotes />

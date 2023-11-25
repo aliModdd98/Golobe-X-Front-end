@@ -6,14 +6,14 @@ import './SearchForm.css'
 import FlightFilter from "../FlightFilter/FlightFilter"
 import HotelFilter from "../HotelFilter/HotelFilter"
 import { useState } from "react"
+import { HiBuildingOffice2 } from "react-icons/hi2";
 
-function SearchForm({both, hotels}) {
-    (hotels)?setflight(false): null;
-    const [Flight , setflight] = useState(true);
+function SearchForm({ both, hotels }) {
+    const [Flight, setflight] = useState(!hotels);
 
     const handleclick = (value) => {
-        (Flight == value)? setflight(!Flight): null;
-        console.log(Flight); 
+        (Flight == value) ? setflight(!Flight) : null;
+        console.log(Flight);
     }
     return (
         <Container>
@@ -22,12 +22,12 @@ function SearchForm({both, hotels}) {
                     {
                         both
                             ? <>
-                                <button className={`bg-transparent fa_border fa_border-none py-4 me-3 mb-5 ${(Flight)?'fa_active_serch-button':''}`} onClick={() => {handleclick(false)}}>
+                                <button className={`bg-transparent fa_border fa_border-none py-4 me-3 mb-5 ${(Flight) ? 'fa_active_serch-button' : ''}`} onClick={() => { handleclick(false) }}>
                                     <FaPlane className='me-2 fs-4' />
                                     Flights
                                 </button>
                                 <div className="line bg-dark opacity-25"></div>
-                                <button className={`bg-transparent fa_border fa_border-none py-4 ms-3 mb-5 ${(!Flight)?'fa_active_serch-button':''}`} onClick={() => {handleclick(true)}}>
+                                <button className={`bg-transparent fa_border fa_border-none py-4 ms-3 mb-5 ${(!Flight) ? 'fa_active_serch-button' : ''}`} onClick={() => { handleclick(true) }}>
                                     <IoBed className='me-2 fs-4' />
                                     Stays
                                 </button>
@@ -38,8 +38,8 @@ function SearchForm({both, hotels}) {
                 <div className="mb-5 d-flex">
                     {
                         (Flight)
-                        ? <FlightFilter />
-                        : <HotelFilter />
+                            ? <FlightFilter />
+                            : <HotelFilter />
                     }
                 </div>
                 <div className="d-flex justify-content-end align-items-center">
@@ -47,8 +47,13 @@ function SearchForm({both, hotels}) {
                         + Add Promo Code
                     </a>
                     <button className=" text-black bg-orange border-0 p-3 rounded-2">
-                        <BsFillSendFill className="me-2" />
-                        Show Flights
+                        {
+                            Flight
+                                ? <><BsFillSendFill className="me-2" />
+                                    Show Flights</>
+                                : <><HiBuildingOffice2 className="me-2" />
+                                    Show Places</>
+                        }
                     </button>
                 </div>
             </div>

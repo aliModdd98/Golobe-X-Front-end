@@ -3,6 +3,7 @@
 }
 
 .fa_bill-photo {
+    flex-shrink: 0 !important;
     width: 120px;
     aspect-ratio: 1;
 }

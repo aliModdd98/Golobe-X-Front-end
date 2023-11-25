@@ -2,7 +2,7 @@ import { Col, Row } from 'react-bootstrap'
 import './Tabs.css'
 import { IoReorderThreeOutline } from 'react-icons/io5'
 
-function Tabs({ filters, other, state, setState }) {
+function  Tabs({ filters, other, state, setState }) {
     return (
         <div className='px-2'>
             <Row className='bg-white rounded-3 shadow-sm'>
@@ -11,9 +11,9 @@ function Tabs({ filters, other, state, setState }) {
                         <Col key={filter.id} className='py-3 px-0 position-relative' onClick={() => setState(filter.id)}>
                             <div className={`px-3 ${(!other && filter.id == filters.length - 1) ? '' : 'border-end border-secondary-subtle'}`}>
                                 <p className='fa_search_results-filter-title mb-0'>{filter.category}</p>
-                                {
-                                    filter.priceRange && <p className='fa_search_results-filter-sub_title mb-0'>{filter.priceRange + ' . ' + filter.timeRange}</p>
-                                }
+                                
+                                    <p className='fa_search_results-filter-sub_title mb-0'>{filter.priceRange + (!filter.priceRange)? filter.timeRange: ' . ' + filter.timeRange}</p>
+                                
                             </div>
                             {
                                 (state == filter.id)

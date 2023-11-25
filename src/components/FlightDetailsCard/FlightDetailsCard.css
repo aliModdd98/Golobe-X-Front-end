@@ -8,6 +8,11 @@
     background: #D7E2EE;
 }
 
+.fa_company-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
 .fa_rotate {
     rotate: 180deg;
 }

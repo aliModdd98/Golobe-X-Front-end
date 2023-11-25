@@ -7,7 +7,7 @@
     overflow: auto;
 }
 .fa_active_accordion.open{
-    max-height: 1000px;
+    max-height: 2000px;
 }
 .fa_rotate{
     rotate: -180deg;

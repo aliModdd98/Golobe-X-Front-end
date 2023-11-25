@@ -43,6 +43,7 @@
     text-align: right;
     font-size: 14px;
     font-weight: 700;
+    max-width: 200px;
 }
 
 .fa_ticket-icons {
