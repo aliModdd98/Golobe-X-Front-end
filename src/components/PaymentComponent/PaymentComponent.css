@@ -22,7 +22,7 @@ h2{
 
 
 .ha-first{
-    padding: 16px;
+    padding: 5%;
     position: relative;
     margin-top: 16px;
     justify-content: space-between;
@@ -94,11 +94,20 @@ h2{
     position: relative;
 }
 
-.img{
+.img,.ha-pos{
     position: absolute;
-    left: 1210px;
-    top: 42px;
-    border:1px solid #121 ;
+    left: 90%;
+    top: 20%;
+   
     border-radius: 50% ;
 }
 
+
+.selected{
+    background-color:  var(--1, #FF8500);
+    border:1px solid #121 ;
+   
+}
+.notSelected{
+    background-color: white;
+}

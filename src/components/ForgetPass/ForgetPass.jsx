@@ -132,7 +132,7 @@ const handleConfirm=()=>{
             
             
             Forget==="reset" ? (  <>
-              <div className='fa_fromTo-input  px-4 my-4 '>
+              <div className='fa_fromTo-input w-100 px-4 my-4 '>
             <div className='d-flex flex-row w-100'>
               <div className='position-relative d-flex border border-secondary rounded-2 px-2 py-3 me-2  w-100'>
                 <label className='bg-white position-absolute top-0 translate-middle-y px-2'>

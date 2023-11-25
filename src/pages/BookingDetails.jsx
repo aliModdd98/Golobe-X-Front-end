@@ -1,8 +1,6 @@
 
-import PriceDetails from '../components/PriceDetails/PriceDetails';
 
 import NavBar from '../components/NavBar/NavBar'
-import FlightTracker from '../components/FlightTracker/FlightTracker'
 import Footer from '../components/Footer/Footer'
 import MainBookingDetails from '../components/MainBookingDetails/MainBookingDetails'
 
@@ -21,9 +19,11 @@ function BookingDetails() {
 
 
       <NavBar />
-      <FlightTracker />
-    {/* <PriceDetails /> */}
+    
+    
+    
       <MainBookingDetails details={flightDetailes} />
+     
       <Footer />
 
     </>

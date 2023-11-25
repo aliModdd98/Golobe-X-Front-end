@@ -19,23 +19,23 @@ function LogInToBook() {
             </div>
             <Row>
                 <Col lg={4}>
-                    <button className='w-100 border-orange py-2 bg-transparent rounded-2'>
+                    <button className='w-100 border-orange py-2 orangHover rounded-2'>
                         <img src={facebook} alt="facebook" />
                     </button>
                 </Col>
                 <Col lg={4}>
-                    <button className='w-100 border-orange py-2 bg-transparent rounded-2'>
+                    <button className='w-100 border-orange py-2 orangHover rounded-2'>
                         <img src={google} alt="google" />
                     </button>
                 </Col>
                 <Col lg={4}>
-                    <button className='w-100 border-orange py-2 bg-transparent rounded-2'>
+                    <button className='w-100 border-orange py-2 orangHover rounded-2'>
                         <img src={apple} alt="appple" />
                     </button>
                 </Col>
                 <Col lg={12}>
-                    <button className='w-100 border-orange py-2 bg-transparent rounded-2 mt-3 d-flex justify-content-center align-items-center'>
-                        <GrMail className='fs-4 me-3' />
+                    <button className='w-100 border-orange py-2 orangHover  rounded-2 mt-3 d-flex justify-content-center align-items-center'>
+                        <GrMail className=' me-3' />
                         Continue with email
                     </button>
                 </Col>

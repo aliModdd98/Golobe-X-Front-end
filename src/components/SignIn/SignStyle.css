@@ -60,7 +60,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color:#FF8500;
+  background-color: #FF8500;
   cursor: pointer;
  
 }
@@ -68,6 +68,7 @@
     width: 20px;
     height: 10px;
     border-radius: none;
+    background-color:#FF8500;
 
 }
 .logoSign{
@@ -115,4 +116,8 @@
 }
 .bg-white{
     background-color: white;
+}
+.active{
+    background-color: var(--primary-color);
+   
 }

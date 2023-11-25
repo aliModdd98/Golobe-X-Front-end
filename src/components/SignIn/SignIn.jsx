@@ -95,8 +95,8 @@ function SignIn() {
     <div className='form-check'>
       <input type='checkbox' id='forgetPass' className='form-check-input' />
       <label htmlFor='forgetPass' className='form-check-label forgetLine'>
-        Remember me <span className='forgetPass'>Forget Password ?</span>
-      </label>
+        Remember me 
+      </label><span className='forgetPass'>Forget Password ?</span>
     </div>
   </div>
 </div>
@@ -109,7 +109,7 @@ function SignIn() {
                 <div className='flex-grow-1 border border-secondary-subtle rounded-3'></div>
             </div>
             <Row>
-                <Col lg={4} className="hoverButton">
+                <Col lg={4} >
                     <button className='w-100 border-orange py-2 hoverButton rounded-2 hoverButton'>
                         <img src={facebook} alt="facebook" />
                     </button>
@@ -128,7 +128,7 @@ function SignIn() {
             </Row>
              </>
             ) : 
-            (<><div className='fa_fromTo-input  px-3 my-3'>
+            (<><div className='w-100  px-3 my-3'>
                 <div className='d-flex flex-row w-100'>
                   <div className='position-relative d-flex border border-secondary rounded-2 px-2 py-3 me-2  w-100'>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
@@ -144,7 +144,7 @@ function SignIn() {
                   </div>
                 </div>
               </div>
-              <div className='fa_fromTo-input  px-3 my-3 '>
+              <div className='w-100  px-3 my-3 '>
                 <div className='d-flex flex-row w-100'>
                   <div className='position-relative d-flex border border-secondary rounded-2 px-2 py-3 me-2  w-100'>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
@@ -160,7 +160,7 @@ function SignIn() {
                   </div>
                 </div>
               </div>
-              <div className='fa_fromTo-input  px-3 my-3 '>
+              <div className='fa_fromTo-input w-100 px-3 my-3 '>
                 <div className='d-flex flex-row w-100'>
                   <div className='position-relative d-flex border border-secondary rounded-2 px-2 py-3 me-2  w-100'>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
@@ -172,7 +172,7 @@ function SignIn() {
                 
                 </div>
               </div>
-              <div className='fa_fromTo-input  px-3 my-3 '>
+              <div className='fa_fromTo-input w-100 px-3 my-3 '>
                 <div className='d-flex flex-row w-100'>
                   <div className='position-relative d-flex border border-secondary rounded-2 px-2 py-3 me-2  w-100'>
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>

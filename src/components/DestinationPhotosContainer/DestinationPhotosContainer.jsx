@@ -86,6 +86,7 @@ function DestinationPhotosContainer() {
                 setState={setClicked} />
 
             <div className='photo_travel_container'>
+             
                 {
                     data.slice(0, 4).map((e) => {
                         return (

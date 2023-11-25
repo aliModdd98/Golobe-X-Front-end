@@ -28,15 +28,15 @@ function FlightDetailsCard({ date, flightDuration, leavingTime, landingTime, com
                     </div>
                 </div>
                 <div className='d-flex align-items-center gap-3'>
-                    <FaPlane className='fs-4' />
+                    <FaPlane className='serv' />
                     <div className='fa_flightDetailes-card_line'></div>
-                    <AiOutlineWifi className='fs-4' />
+                    <AiOutlineWifi className='serv' />
                     <div className='fa_flightDetailes-card_line'></div>
-                    <AiFillClockCircle className='fs-4' />
+                    <AiFillClockCircle className='serv' />
                     <div className='fa_flightDetailes-card_line'></div>
-                    <IoFastFood className='fs-4' />
+                    <IoFastFood className='serv' />
                     <div className='fa_flightDetailes-card_line'></div>
-                    <MdOutlineAirlineSeatReclineExtra className='fs-4' />
+                    <MdOutlineAirlineSeatReclineExtra className='serv' />
                 </div>
             </div>
             <div className='d-flex justify-content-center align-items-center mt-5'>

@@ -2,9 +2,10 @@
     display: flex;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    top: 40%;
+    transform: translate(-50%,-60%);
     width: 640px;
+    height: 700px;
     padding: 50px;
     margin: 60px 0px;
     flex-direction: column;
@@ -12,7 +13,9 @@
     border-radius: 12px;
     background: var(--Neutrals, #FFF);
     }
-
+.hidden{
+    display: none;
+}
 
 
     .close{
@@ -21,6 +24,9 @@
         top: 20px;
     }
  
+    .close:hover{
+    cursor: pointer;
+    }
 
     .img{
         position: absolute;

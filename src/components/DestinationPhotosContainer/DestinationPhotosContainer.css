@@ -6,7 +6,7 @@
 
 
 .destination_section {
-    width: 100vw;
+    width: 100%;
     height: max-content;
     padding: 80px 0px;
 }
@@ -15,11 +15,12 @@
 
 
 .photo_travel_container {
-    width: 100vw;
+    width: 100%;
     height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 16px
+    gap: 16px;
+    overflow: hidden;
 }
