@@ -1,5 +1,4 @@
 import './App.css'
-<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './modules/Main/Main'
 import FlightTicket from './pages/FlightTicket';
@@ -14,6 +13,7 @@ import AccountData from './components/AccountData/AccountData';
 import BookingDetailsWithLoging from './pages/BookingDetailsWithLoging';
 import FlightSearch from './pages/FlightsSearch';
 import HotelListingDetailes from './pages/HotelListingDetailes';
+import Login from './pages/Login';
 
 
 
@@ -21,19 +21,9 @@ function App() {
   
   return (
     <>
-      <HotelSearch />
+      <Login />
     </>
   )
-=======
-
-import Login from './pages/Login'
-function App() {
-  
-  return (
-  <>
-< Login/> </>
-     )
->>>>>>> f5cfbfb389d135e8a185c76c4aafc28ae56c593e
 }
 
 export default App
