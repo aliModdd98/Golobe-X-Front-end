@@ -63,7 +63,7 @@ function SignIn() {
     setVisibleConfirmPassword(!visibleConfirmPassword);
   };
   return (
-    <div className="container">
+    <div className="container containerSign">
       <div className={signType==="Login"? "Login" :"Sign"}>
         <div className="leftSec">
             <div className="logoSign"><img src={logo} alt="logo" className='logoS' /></div>

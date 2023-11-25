@@ -1,4 +1,5 @@
 import './App.css'
+<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './modules/Main/Main'
 import FlightTicket from './pages/FlightTicket';
@@ -23,6 +24,16 @@ function App() {
       <HotelSearch />
     </>
   )
+=======
+
+import Login from './pages/Login'
+function App() {
+  
+  return (
+  <>
+< Login/> </>
+     )
+>>>>>>> f5cfbfb389d135e8a185c76c4aafc28ae56c593e
 }
 
 export default App
