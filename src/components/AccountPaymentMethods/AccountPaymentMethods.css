@@ -45,3 +45,13 @@
 .bin{
     cursor: pointer;
 }
+.dash_border{
+    border: 2px dashed var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dash_border:hover{
+  cursor: pointer;
+}

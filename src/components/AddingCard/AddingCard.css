@@ -1,17 +1,19 @@
 .BigCard{
     display: flex;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 40%;
     transform: translate(-50%,-60%);
-    width: 640px;
-    height: 700px;
+    width: 590px;
+    height: 640px;
     padding: 50px;
     margin: 60px 0px;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 12px;
     background: var(--Neutrals, #FFF);
+    z-index: 122222;
+    box-shadow: 7px 7px 5px #0b0b0b96;
     }
 .hidden{
     display: none;
@@ -66,9 +68,9 @@
     }
 
     .fs-4{
-        position: absolute;
+        /* position: absolute;
         right: 20px;
-        bottom: 40px;
+        bottom: 40px; */
     }
 
     .ha-box{

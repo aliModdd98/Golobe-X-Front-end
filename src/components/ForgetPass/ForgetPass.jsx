@@ -76,7 +76,7 @@ const handleConfirm=()=>{
 }
  
     return (
-        <div className="container">
+        <div className="container containerForget">
        <div className={Forget==="forget"? "forget" :Forget==='reset'?"reset":"verify"}>
        <div className="leftSec">
             <div className="logoSign"><img src={logo} alt="logo" className='logoS' /></div>

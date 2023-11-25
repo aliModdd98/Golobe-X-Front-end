@@ -39,7 +39,7 @@ function AddPay() {
    
     return (
    <>
-    <div className="container">
+    <div className="container containerPay">
       <div className="Sign">
         <div className="leftSec">
             <div className="logoSign"><img src={logo} alt="logo" className='logoS' /></div>
