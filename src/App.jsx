@@ -9,6 +9,10 @@ import Account from './pages/Account';
 import HotelSearch from './pages/HotelSearch';
 import HotelListing from './pages/HotelListing';
 import Favorites from './pages/Favorites';
+import AccountData from './components/AccountData/AccountData';
+import BookingDetailsWithLoging from './pages/BookingDetailsWithLoging';
+import FlightSearch from './pages/FlightsSearch';
+import HotelListingDetailes from './pages/HotelListingDetailes';
 
 
 
@@ -16,7 +20,7 @@ function App() {
   
   return (
     <>
-      <Favorites  />
+      <HotelSearch />
     </>
   )
 }

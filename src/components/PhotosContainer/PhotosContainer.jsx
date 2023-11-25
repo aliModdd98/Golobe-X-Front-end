@@ -1,8 +1,11 @@
-import React from 'react'
+
+
+import "./PhotosContainerStyle.css"
+// import { BsFillSendFill } from 'react-icons/bs'
+
 import PhotoCard from '../PhotoCard/PhotoCard'
 import image1 from './../../assets/flights.png'
 import image2 from './../../assets/hotels.png'
-import { Container, Row } from 'react-bootstrap'
 function PhotosContainer() {
 
     const data = [
@@ -24,26 +27,50 @@ function PhotosContainer() {
 
 
     return (
-        <section>
-            <Container>
-                <Row>
-                    {
-                        data.map((e, index) => {
-                            return (
-                                <PhotoCard
-                                    key={index}
-                                    img={e.img}
-                                    title={e.title}
-                                    description={e.description}
-                                    button_text={e.button_text}
-                                />
 
-                            );
-                        })
-                    }
-                </Row>
-            </Container>
-        </section>
+        <div className="aj_photo_container">
+            {
+                data.map((e) => {
+                    return (
+                <PhotoCard   key={e.id}
+                            img={e.img}
+                            title={e.title}
+                            description={e.description}
+                            button_text={e.button_text}
+                        />
+
+                    );
+                })
+            }
+
+
+
+
+
+
+        </div>
+// =======
+//         <section>
+//             <Container>
+//                 <Row>
+//                     {
+//                         data.map((e, index) => {
+//                             return (
+//                                 <PhotoCard
+//                                     key={index}
+//                                     img={e.img}
+//                                     title={e.title}
+//                                     description={e.description}
+//                                     button_text={e.button_text}
+//                                 />
+
+//                             );
+//                         })
+//                     }
+//                 </Row>
+//             </Container>
+//         </section>
+// >>>>>>> main
 
     )
 }

@@ -16,11 +16,11 @@ function NavBar({ transpartent }) {
                 className='h-100 d-flex align-items-center justify-content-between'>
                 <ul className='d-flex ps-0 mb-0'>
                     <li className='me-4 fa_nav-height d-flex align-items-center fa_nav-font'>
-                        <FaPlane className='me-1 fs-4' />
+                        <FaPlane className='me-1 serv' />
                         Find Flight
                     </li>
                     <li className='fa_nav-height d-flex align-items-center fa_nav-font'>
-                        <IoBed className='me-1 fs-4' />
+                        <IoBed className='me-1 serv' />
                         Find Stays
                     </li>
                 </ul>

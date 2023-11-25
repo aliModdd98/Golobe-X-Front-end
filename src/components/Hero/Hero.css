@@ -9,12 +9,14 @@
     font-size: 45px;
     font-weight: 700;
     line-height: 57px;
+    color: white;
 }
 
 .fa_hero-title h1:nth-child(2) {
     font-size: 80px;
     font-weight: 700;
     line-height: 101px;
+    color: white;
 }
 
 .fa_hero-title p {

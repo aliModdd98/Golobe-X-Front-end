@@ -7,3 +7,6 @@
     font-size: 14px;
     font-weight: 400;
 }
+.orangHover:hover{
+    background-color: var(--primary-color);
+}

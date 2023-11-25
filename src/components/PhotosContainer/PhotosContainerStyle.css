@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aj_photo_container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1232px;
+    height: max-content;
+    gap: 15px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+
+}
+
+@media screen and (max-width:1250px) {
+    .aj_photo_container {
+        flex-direction: column;
+        padding: 0 auto;
+    }
+
+}

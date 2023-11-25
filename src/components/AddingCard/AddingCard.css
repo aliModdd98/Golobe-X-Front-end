@@ -1,0 +1,72 @@
+.BigCard{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-60%);
+    width: 640px;
+    height: 700px;
+    padding: 50px;
+    margin: 60px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 12px;
+    background: var(--Neutrals, #FFF);
+    }
+.hidden{
+    display: none;
+}
+
+
+    .close{
+        position: absolute;
+        right:50px ;
+        top: 20px;
+    }
+ 
+    .close:hover{
+    cursor: pointer;
+    }
+
+    .img{
+        position: absolute;
+        left:487px;
+        top: 13px;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        border: 2px solid #FFF;
+    }
+
+.para{
+    width: 532px;
+    padding: 10px;
+    color: var(--Blackish-Green, #121);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.75;
+    }
+    h2{
+        margin-bottom: 40px;
+        color: #000;
+        font-family: TradeGothic LT Extended;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .btn{
+        border:1px solid #FFF;
+        background-color: #FF8500;
+    }
+
+    .ha-box{
+        gap: 20px;
+    }
+
+

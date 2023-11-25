@@ -1,8 +1,11 @@
-import React from 'react'
+
 import { Container, Row, Col } from 'react-bootstrap'
 import FlightDetailsCard from '../FlightDetailsCard/FlightDetailsCard'
 import LogInToBook from '../LogInToBook/LogInToBook'
 import Bill from '../Bill/Bill'
+import PriceDetails from '../PriceDetails/PriceDetails'
+import PaymentComponent from '../PaymentComponent/PaymentComponent'
+import FlightTracker from '../FlightTracker/FlightTracker'
 
 function MainBookingDetails({ flight, details, bill }) {
     return (
@@ -31,6 +34,7 @@ function MainBookingDetails({ flight, details, bill }) {
                                 location={details.location}
                                 flight={flight} />
                     }
+                    <PaymentComponent />
                     <LogInToBook />
                 </Col>
                 <Col lg={4}>

@@ -23,8 +23,8 @@ function FlightDetailsCards() {
         <section>
             <Container>
                 {
-                    flightCardDetailes.map(item => (
-                        <FlightDetailsCard date={item.date} company={item.company} flightDuration={item.flightDuration} leavingTime={item.leavingTime} landingTime={item.landingTime} />
+                    flightCardDetailes.map((item, index) => (
+                        <FlightDetailsCard key={index} date={item.date} company={item.company} flightDuration={item.flightDuration} leavingTime={item.leavingTime} landingTime={item.landingTime} />
                     ))
                 }
             </Container>

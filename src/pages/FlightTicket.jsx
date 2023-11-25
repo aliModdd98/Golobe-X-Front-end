@@ -1,4 +1,4 @@
-import React from 'react'
+
 import NavBar from '../components/NavBar/NavBar'
 import FlightTracker from '../components/FlightTracker/FlightTracker'
 import DetailsHeader from '../components/DetailsHeader/DetailsHeader'

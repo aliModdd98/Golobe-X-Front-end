@@ -1,10 +1,11 @@
-import React from 'react'
+
 import './MainStyle.css'
-import LandingPage from '../../pages/LandingPage'
+// import LandingPage from '../../pages/LandingPage'
+import BookingDetails from '../../pages/BookingDetails'
 function Main() {
   return (
     <div>
-      <LandingPage />
+      <BookingDetails />
     </div>
   )
 }

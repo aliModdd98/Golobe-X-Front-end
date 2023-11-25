@@ -14,8 +14,6 @@ function FilteringSection({ flight, listOne, ListTwo, filters }) {
     const handleClick = (id) => {
         setSelected(id);
     }
-
-
     const ratings = [0, 1, 2, 3, 4];
 
     const [seeMore, setSeeMore] = useState(false);

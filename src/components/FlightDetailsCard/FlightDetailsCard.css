@@ -4,7 +4,7 @@
 
 .fa_flightDetailes-card_line {
     width: 1px;
-    height: 48px;
+    height: 30px;
     background: #D7E2EE;
 }
 
@@ -36,4 +36,13 @@
 .fa_flight-time_launch {
     font-size: 20px;
     font-weight: 500;
+}
+.serv{
+    width: 30px;
+height: 30px;
+}
+.serv:hover{
+cursor: pointer;
+background-color: var(--primary-color);
+
 }

@@ -1,10 +1,9 @@
-import React from 'react'
 import NavBar from '../components/NavBar/NavBar'
-import FlightTracker from '../components/FlightTracker/FlightTracker'
 import Footer from '../components/Footer/Footer'
 import MainBookingDetails from '../components/MainBookingDetails/MainBookingDetails'
 import img1 from './../assets/flightDetailes-7.jpg'
 import img2 from './../assets/hotel-1.jfif'
+import FlightTracker from '../components/FlightTracker/FlightTracker'
 
 function BookingDetails({flight}) {
   const flightDetailes = {
