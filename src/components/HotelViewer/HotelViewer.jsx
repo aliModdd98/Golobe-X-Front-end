@@ -11,6 +11,8 @@ import img8 from './../../assets/Hotel8.avif'
 import img9 from './../../assets/Hotel9.avif'
 import { Col, Container, Row } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import FlightTracker from '../FlightTracker/FlightTracker'
+import DetailsHeader from '../DetailsHeader/DetailsHeader'
 function HotelViewer() {
     const [mainImage, setMainImage] = useState(img1);
     const [images, setImages] = useState([img2,img3,img4,img5,]);
@@ -31,6 +33,10 @@ const allimgs=[img6,img7,img8,img9];
 
     return (
       <div className='container'>
+        
+   <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
+   <DetailsHeader company='CVK Park Bosphorus Hotel Istanbul' rate={4.2} location="CVK Park Bosphorus Hotel Istanbul" Favorit button='Book now' />
+  
         <Row className='my-5'>
 <Col ><img src={mainImage} alt="Main Image" className="img-fluid w-100 h-100 mainImg" /></Col>
 <Col className='maingrid'> {!showAllImages && (

@@ -9,29 +9,50 @@ import PriceDetails from '../PriceDetails/PriceDetails'
 import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer/Footer'
 
-function BookingDetailsWithLogin(details) {
+function BookingDetailsWithLogin({flight, details, bill }) {
+  
   return (
-    <Container >
-      <NavBar/>
+    <Container>
     <Row className='mb-5'>
-    <FlightTracker />
         <Col lg={8}>
-            <FlightDetailsCard
-                date={details.date}
-                company={details.company}
-                flightDuration={details.flightDuration}
-                leavingTime={details.leavingTime}
-                landingTime={details.landingTime}
-                price />
-                <PaymentComponent/>
-                <PriceDetails />
-              
+            {
+                flight
+                    ? <FlightDetailsCard
+                        date={details.date}
+                        company={details.company}
+                        flightDuration={details.flightDuration}
+                        leavingTime={details.leavingTime}
+                        landingTime={details.landingTime}
+                        price={details.price}
+                        title={details.title}
+                        location={details.location}
+                        timeZone={details.timeZone}
+                        flight={flight} />
+                    : <FlightDetailsCard
+                        company={details.company}
+                        leavingTime={details.from}
+                        landingTime={details.to}
+                        price={details.price}
+                        title={details.title}
+                        location={details.location}
+                        flight={flight} />
+            }
+            <PaymentComponent />
+            <PriceDetails/>
         </Col>
         <Col lg={4}>
-            <Bill />
+            <Bill 
+            topTitle={bill.topTitle}
+            title={bill.title}
+            img={bill.img}
+            BaseFare={bill.BaseFare}
+            Discount={bill.Discount}
+            Taxes={bill.Taxes}
+            ServiceFee={bill.ServiceFee}
+            rate={bill.rate}
+            reviewsNumber={bill.reviewsNumber} />
         </Col>
     </Row>
-    <Footer/>
 </Container>
   )
 }
