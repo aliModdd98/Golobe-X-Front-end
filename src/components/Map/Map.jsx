@@ -15,7 +15,7 @@ function Map() {
       };
     return (
    
-   <div className="container">
+   <div className="container ">
 <div className="mapTitle"><span className='mapF'>Location/Map</span><button className='mapbtn'>View on google maps</button></div>
 
    <div className='mapView' style={{ height: '100vh', width: '100%' }}>
