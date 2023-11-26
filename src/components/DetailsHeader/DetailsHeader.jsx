@@ -4,7 +4,7 @@ import { AiOutlineHeart } from 'react-icons/ai'
 import { BsFillShareFill } from 'react-icons/bs'
 import { FaLocationDot } from 'react-icons/fa6'
 
-function DetailsHeader({ company, rate, Favorit, button }) {
+function DetailsHeader({ company, rate, Favorit, button, location, price }) {
     return (
         <section className='mb-5'>
             <Container>
@@ -13,7 +13,7 @@ function DetailsHeader({ company, rate, Favorit, button }) {
                         <h1 className='mb-3 fa_comapny_name-header'>{company}</h1>
                         <div className='d-flex align-items-center gap-2 mb-2'>
                             <FaLocationDot />
-                            <p className='mb-0 opacity-75'>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+                            <p className='mb-0 opacity-75'>{location}</p>
                         </div>
                         {
                             rate && <div className='d-flex align-items-center gap-2 fa_reviews'>
@@ -23,7 +23,7 @@ function DetailsHeader({ company, rate, Favorit, button }) {
                         }
                     </div>
                     <div className='d-flex flex-column justify-content-between align-items-end'>
-                        <p className='mb-0 fa_price'>204 $</p>
+                        <p className='mb-0 fa_price'>{price} $</p>
                         <div className='d-flex gap-3 fa_actions-button'>
                             {
                                 Favorit && <button className='fa_favorite border-orange bg-transparent rounded-2 d-flex justify-content-center align-items-center'>

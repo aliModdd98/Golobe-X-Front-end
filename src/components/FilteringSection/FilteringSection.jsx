@@ -1,33 +1,19 @@
 import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import FiltersAccordion from '../FiltersAccordion/FiltersAccordion'
+import { hotelRes, results } from './../SearchResultsSection/flightsData'
 import './FilteringSection.css'
 import RangInput from '../RangInput/RangInput'
-import SearchResultsSection from '../SearchResultsSection/SearchResultsSection'
+import Tabs from '../Tabs/Tabs'
+import ResultCard from '../ResultCard/ResultCard'
 
-function FilteringSection({ flight, listOne, ListTwo }) {
+function FilteringSection({ flight, listOne, ListTwo, filters }) {
     const [activeButton, setActiveButton] = useState(-1)
-
-    const filters = [
-        {
-            id : 0,
-            category : 'Cheapest',
-            priceRange : 99,
-            timeRange : '2h 18m'
-        },
-        {
-            id : 1,
-            category : 'Best',
-            priceRange : 99,
-            timeRange : '2h 18m'
-        },
-        {
-            id : 2,
-            category : 'Quickest',
-            priceRange : 99,
-            timeRange : '2h 18m'
-        }
-    ]
+    const [showMore, setShowMore] = useState(false);
+    const [selected, setSelected] = useState(0);
+    const handleClick = (id) => {
+        setSelected(id);
+    }
     const ratings = [0, 1, 2, 3, 4];
 
     const [seeMore, setSeeMore] = useState(false);
@@ -85,7 +71,7 @@ function FilteringSection({ flight, listOne, ListTwo }) {
                                                     </div>
                                                 ))
                                             }
-                                       </FiltersAccordion>
+                                        </FiltersAccordion>
                                         : <FiltersAccordion title='Amenities'>
                                             {
                                                 ListTwo.slice(0, 4).map((item) => (
@@ -114,7 +100,64 @@ function FilteringSection({ flight, listOne, ListTwo }) {
                         </div>
                     </Col>
                     <Col lg={8}>
-                        <SearchResultsSection filters={filters} other />
+                        <Tabs filters={filters} state={selected} setState={handleClick} />
+                        <p className='my-3 fa_cards-number'>
+                            Showing {showMore ? hotelRes.length : 4} of <span className='text-orange'>{hotelRes.length} places</span>
+                        </p>
+                        {
+                            flight
+                                ? (showMore)
+                                    ? results.map(res => (
+                                        <ResultCard
+                                            flight
+                                            key={res.id}
+                                            img={res.img}
+                                            favoriteActive={res.favorite}
+                                            rate={res.rate}
+                                            startingPrice={res.startingPrice}
+                                            firstTrip={res.firstTrip}
+                                            secondTrip={res.secondTrip} />
+                                    ))
+                                    : results.slice(0, 4).map(res => (
+                                        <ResultCard
+                                            flight
+                                            key={res.id}
+                                            img={res.img}
+                                            favoriteActive={res.favorite}
+                                            rate={res.rate}
+                                            startingPrice={res.startingPrice}
+                                            firstTrip={res.firstTrip}
+                                            secondTrip={res.secondTrip} />
+                                    ))
+                                : (showMore)
+                                    ? hotelRes.map(res => (
+                                        <ResultCard
+                                            key={res.id}
+                                            img={res.img}
+                                            title={res.title}
+                                            startingPrice={res.price}
+                                            rate={res.rate}
+                                            reviewsNumber={res.reviewsNumber}
+                                            location={res.location}
+                                            aminties={res.aminites}
+                                            favoriteActive={res.favorite} />
+                                    ))
+                                    : hotelRes.slice(0, 4).map(res => (
+                                        <ResultCard
+                                            key={res.id}
+                                            img={res.img}
+                                            title={res.title}
+                                            startingPrice={res.price}
+                                            rate={res.rate}
+                                            reviewsNumber={res.reviewsNumber}
+                                            location={res.location}
+                                            aminties={res.aminites}
+                                            favoriteActive={res.favorite} />
+                                    ))
+                        }
+                        <button className='w-100 py-2 bg-dark text-white border-0 fa_more_results-button' onClick={() => { setShowMore(!showMore) }}>
+                            Show {showMore ? 'less' : 'more'} results
+                        </button>
                     </Col>
                 </Row>
             </Container>
