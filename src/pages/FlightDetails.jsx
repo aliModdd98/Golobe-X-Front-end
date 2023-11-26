@@ -54,11 +54,19 @@ function FlightDetails() {
       img: image1
     }
   ]
-
+  const info =[{
+    country:"Turkey",
+    city:"Istanbul",
+   address:"CVK Park Bosphorus Hotel Istanbul"
+  }]
   return (
     <>
       <NavBar />
-      <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
+// <<<<<<< fadi_noumih
+//       <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
+// =======
+      <FlightTracker info={info} />
+
       <DetailsHeader company='Emirates A380 Airbus' rate={4.2} Favorit button='Book now' />
       <FlightClass imgs={imgs} />
       <FlightNotes />
