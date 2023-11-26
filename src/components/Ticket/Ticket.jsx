@@ -2,13 +2,15 @@ import './Ticket.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import threeLine from './../../assets/Vector 1.svg'
 import airplane from './../../assets/airplane.svg'
+import building from './../../assets/building.svg'
 import user from './../../assets/user.jpg'
 import FrameTicket from './../../assets/FrameTicket.png'
+import hotel from './../../assets/CVK.png'
 import { BsFillCalendarEventFill, BsFillDoorClosedFill } from 'react-icons/bs'
 import { AiFillClockCircle } from 'react-icons/ai'
 import { MdAirlineSeatReclineExtra } from 'react-icons/md'
 
-function Ticket({ from, to, timeZone, userName, boredPass, classType, date, FlightTime, Gate, Seat }) {
+function Ticket({ from, to, timeZone, userName, boredPass, classType, date, FlightTime, Gate, Seat, checkOut }) {
     return (
         <Container>
             <Row className='fa_ticket'>
@@ -23,7 +25,7 @@ function Ticket({ from, to, timeZone, userName, boredPass, classType, date, Flig
                             </p>
                             <div className='d-flex flex-column align-items-center gap-2 fa_fromto-svg my-3'>
                                 <img src={threeLine} alt="threeLine" />
-                                <img src={airplane} alt="airplane" />
+                                <img src={timeZone ? airplane : building} alt="airplane" />
                                 <img src={threeLine} alt="threeLine" />
                             </div>
                             <p className='mb-0 fa_fromTo-title'>{to}</p>
@@ -41,49 +43,69 @@ function Ticket({ from, to, timeZone, userName, boredPass, classType, date, Flig
                                     </div>
                                     <div>
                                         <p className='mb-0 fa_userName'>{userName}</p>
-                                        <p className='mb-0 fa_boredPass'>{boredPass}</p>
+                                        {
+                                            timeZone && <p className='mb-0 fa_boredPass'>{boredPass}</p>
+                                        }
                                     </div>
                                 </div>
                                 <p className='mb-0 fa_classType'>{classType}</p>
                             </div>
                             <div className='p-4'>
                                 <Row>
-                                    <Col className='d-flex align-items-center gap-2'>
-                                        <div className='bg-light_blue fa_ticket-icons text-orange d-flex justify-content-center align-items-center fa_aspect_ratio-1'>
-                                            <BsFillCalendarEventFill />
-                                        </div>
-                                        <div className='fa_ticket-detailes'>
-                                            <p>Date</p>
-                                            <p className='mb-0'>{date}</p>
-                                        </div>
-                                    </Col>
+                                    {
+                                        timeZone &&
+                                        <Col className='d-flex align-items-center gap-2'>
+                                            <div className='bg-light_blue fa_ticket-icons text-orange d-flex justify-content-center align-items-center fa_aspect_ratio-1'>
+                                                <BsFillCalendarEventFill />
+                                            </div>
+                                            <div className='fa_ticket-detailes'>
+                                                <p>Date</p>
+                                                <p className='mb-0'>{date}</p>
+                                            </div>
+                                        </Col>
+                                    }
                                     <Col className='d-flex align-items-center gap-2'>
                                         <div className='bg-light_blue fa_ticket-icons text-orange d-flex justify-content-center align-items-center fa_aspect_ratio-1'>
                                             <AiFillClockCircle />
                                         </div>
                                         <div className='fa_ticket-detailes'>
-                                            <p>Flight time</p>
+                                            <p>{timeZone ? 'Flight time' : 'Check-In time'}</p>
                                             <p className='mb-0'>{FlightTime}</p>
                                         </div>
                                     </Col>
+                                    {
+                                        !timeZone &&
+                                        <Col className='d-flex align-items-center gap-2'>
+                                            <div className='bg-light_blue fa_ticket-icons text-orange d-flex justify-content-center align-items-center fa_aspect_ratio-1'>
+                                                <AiFillClockCircle />
+                                            </div>
+                                            <div className='fa_ticket-detailes'>
+                                                <p>Check-Out time</p>
+                                                <p className='mb-0'>{checkOut}</p>
+                                            </div>
+                                        </Col>
+                                    }
                                     <Col className='d-flex align-items-center gap-2'>
                                         <div className='bg-light_blue fa_ticket-icons text-orange d-flex justify-content-center align-items-center fa_aspect_ratio-1'>
                                             <BsFillDoorClosedFill />
                                         </div>
                                         <div className='fa_ticket-detailes'>
-                                            <p>Gate</p>
+                                            <p>{timeZone ? 'Gate' : 'Room no.'}</p>
                                             <p className='mb-0'>{Gate}</p>
                                         </div>
                                     </Col>
-                                    <Col className='d-flex align-items-center gap-2'>
-                                        <div className='bg-light_blue fa_ticket-icons text-orange d-flex justify-content-center align-items-center fa_aspect_ratio-1'>
-                                            <MdAirlineSeatReclineExtra />
-                                        </div>
-                                        <div className='fa_ticket-detailes'>
-                                            <p>Seat</p>
-                                            <p className='mb-0'>{Seat}</p>
-                                        </div>
-                                    </Col>
+                                    {
+                                        timeZone &&
+                                        <Col className='d-flex align-items-center gap-2'>
+                                            <div className='bg-light_blue fa_ticket-icons text-orange d-flex justify-content-center align-items-center fa_aspect_ratio-1'>
+                                                <MdAirlineSeatReclineExtra />
+                                            </div>
+                                            <div className='fa_ticket-detailes'>
+                                                <p>Seat</p>
+                                                <p className='mb-0'>{Seat}</p>
+                                            </div>
+                                        </Col>
+                                    }
                                 </Row>
                             </div>
                             <div className='flex-grow-1 p-4 d-flex justify-content-between'>
@@ -96,8 +118,8 @@ function Ticket({ from, to, timeZone, userName, boredPass, classType, date, Flig
                         </Col>
                     </Row>
                 </Col>
-                <Col lg={3} className='bg-white rounded-4 shadow-sm d-flex align-items-center px-0'>
-                    <img src={FrameTicket} alt="FrameTicket" className='w-100' />
+                <Col lg={3} className='bg-white rounded-4 shadow-sm d-flex justify-content-center align-items-center px-0'>
+                    <img src={timeZone ? FrameTicket : hotel} alt="FrameTicket" className={timeZone ? 'w-100' : 'w-50'} />
                 </Col>
             </Row>
         </Container>
