@@ -16,3 +16,15 @@
 .active {
     border-bottom: var(--primary-color) 1px solid;
 }
+
+.text-white a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.text-black a {
+    color: black;
+    text-decoration: none;
+}

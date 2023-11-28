@@ -4,6 +4,10 @@ import { IoBed } from 'react-icons/io5'
 import logo from './../../assets/NavLogoTrans.svg'
 import logoB from './../../assets/NavLogo.svg'
 import { Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import FlightsSearch from '../../pages/FlightsSearch'
+import Login from '../../pages/Login'
+import HotelSearch from '../../pages/HotelSearch'
 
 function NavBar({ transpartent }) {
     let classes = (transpartent)
@@ -17,19 +21,25 @@ function NavBar({ transpartent }) {
                 <ul className='d-flex ps-0 mb-0'>
                     <li className='me-4 fa_nav-height d-flex align-items-center fa_nav-font'>
                         <FaPlane className='me-1 serv' />
-                        Find Flight
+                        <Link to="../FlightsSearch"> Find Flight</Link>
                     </li>
                     <li className='fa_nav-height d-flex align-items-center fa_nav-font'>
                         <IoBed className='me-1 serv' />
-                        Find Stays
+                        <Link to="../HotelSearch">Find Stays</Link>
                     </li>
                 </ul>
                 <img src={transpartent ? logo : logoB} alt="golobe logo" />
                 <div>
-                    <a href="#" className={`text-decoration-none fa_nav-font ${transpartent ? 'text-white' : 'text-black'}`}>Login</a>
-                    <button className={`ms-4 fa_signup-button rounded-2 fa_nav-font ${(transpartent) ? 'bg-white' : 'bg-black text-white'}`}>
-                        Sign up
-                    </button>
+                    <Link to="../Login" className={`text-decoration-none fa_nav-font ${transpartent ? 'text-white' : 'text-black'}`}>Login</Link>
+                    <Link to="../Login" className={` ${(transpartent) ? 'text-black' : 'text-white'}`}>
+
+                        <button className={`ms-4 fa_signup-button rounded-2 fa_nav-font ${(transpartent) ? 'bg-white text-black ' : 'bg-black text-white'}`}>
+                            Sign up
+                        </button>
+
+
+
+                    </Link>
                 </div>
             </Container>
         </div>

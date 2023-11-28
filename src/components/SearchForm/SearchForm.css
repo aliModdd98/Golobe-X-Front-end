@@ -8,10 +8,12 @@
     font-weight: 600;
     line-height: 20px;
 }
-.fa_border-none{
+
+.fa_border-none {
     border: none;
     border-bottom: 3px #fff solid;
 }
+
 .fa_active_serch-button {
     border-bottom: var(--primary-color) 3px solid !important;
 }
@@ -20,6 +22,12 @@
     font-size: 20px;
     font-weight: 600;
 }
-.translate-20{
+
+.translate-20 {
     transform: translateY(-40%);
+}
+
+.aj_link {
+    width: max-content;
+    height: max-content;
 }
