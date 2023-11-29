@@ -1,17 +1,20 @@
 import './App.css'
+
+import FlightDetails from './pages/FlightDetails'
+import HotelListing from './pages/HotelListing'
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Main from './modules/Main/Main'
-import FlightTicket from './pages/FlightTicket';
-import FlightsListing from './pages/FlightsListing';
-import FlightDetails from './pages/FlightDetails';
+
+import Login from './pages/Login';
+import BookingDetailsWithLoging from './pages/BookingDetailsWithLoging';
 import BookingDetails from './pages/BookingDetails';
 import Account from './pages/Account';
-import HotelSearch from './pages/HotelSearch';
-import HotelListing from './pages/HotelListing';
 import Favorites from './pages/Favorites';
-import AccountData from './components/AccountData/AccountData';
-import BookingDetailsWithLoging from './pages/BookingDetailsWithLoging';
+import FlightsListing from './pages/FlightsListing';
 import FlightSearch from './pages/FlightsSearch';
+import FlightTicket from './pages/FlightTicket';
+import ForgetPassWord from './pages/ForgetPassWord';
 import HotelListingDetailes from './pages/HotelListingDetailes';
 import Login from './pages/Login';
 import FlightFilter from './components/FlightFilter/FlightFilter';

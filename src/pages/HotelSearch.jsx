@@ -5,6 +5,7 @@ import background from './../assets/hotelHeaderCover.jfif'
 import SearchForm from '../components/SearchForm/SearchForm'
 import Footer from '../components/Footer/Footer'
 import FallIntoTravel from '../components/FallIntoTravel/FallIntoTravel'
+import DestinationPhotosContainer from '../components/DestinationPhotosContainer/DestinationPhotosContainer'
 
 function HotelSearch() {
     return (
@@ -16,6 +17,7 @@ function HotelSearch() {
                 title='Make your travel whishlist, we’ll do the rest'
                 subTitle='Special offers to suit your plan' />
             <SearchForm hotels />
+            <DestinationPhotosContainer />
             <FallIntoTravel />
             <Footer />
         </>

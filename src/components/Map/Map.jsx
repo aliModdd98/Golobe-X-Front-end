@@ -6,14 +6,18 @@ import { IoLocation } from "react-icons/io5";
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 function Map() {
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627
-    },
-    zoom: 11
-  };
-  return (
+    const defaultProps = {
+        center: {
+          lat: 10.99835602,
+          lng: 77.01502627
+        },
+        zoom: 11
+      };
+    return (
+   
+//    <div className="container ">
+// <div className="mapTitle"><span className='mapF'>Location/Map</span><button className='mapbtn'>View on google maps</button></div>
+
 
     <div className="container">
       <div className="mapTitle"><span className='mapF'>Location/Map</span><button className='mapbtn'>View on google maps</button></div>
