@@ -14,6 +14,7 @@ import BookingDetailsWithLoging from './pages/BookingDetailsWithLoging';
 import FlightSearch from './pages/FlightsSearch';
 import HotelListingDetailes from './pages/HotelListingDetailes';
 import Login from './pages/Login';
+import FlightFilter from './components/FlightFilter/FlightFilter';
 
 
 
@@ -21,7 +22,7 @@ function App() {
   
   return (
     <>
-      <Login />
+      <FlightSearch  />
     </>
   )
 }

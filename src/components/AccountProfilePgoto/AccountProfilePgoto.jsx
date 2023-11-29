@@ -21,14 +21,14 @@ function AccountProfilePgoto({name, email}) {
 
     return (
         <Container className='mt-5 pt-5'>
-            <div className='fa_profile-cover_photo fa_background-img d-flex justify-content-end align-items-end mt-4 rounded-3' style={{ '--img-url': `url(${cover})` }}>
+            <div className='fa_profile-cover_photo fa_background-img-Account d-flex justify-content-end align-items-end mt-4 rounded-3' style={{ '--img-url': `url(${cover})` }}>
                 <button className='border-0 bg-orange py-2 px-3 mb-4 me-4 rounded-2 fa_change_cover_button'>
                     <IoIosCloudUpload className='me-1' />
                     Upload new cover
                 </button>
             </div>
             <div className='fa_profile-detailes'>
-                <div className='mx-auto position-relative rounded-circle shadow-sm fa_background-img fa_profile-img' style={{ '--img-url': `url(${image ? image : profile})` }}>
+                <div className='mx-auto position-relative rounded-circle shadow-sm fa_background-img-Account fa_profile-img' style={{ '--img-url': `url(${image ? image : profile})` }}>
                     <input 
                     type="file" 
                     ref={imageUpload} 

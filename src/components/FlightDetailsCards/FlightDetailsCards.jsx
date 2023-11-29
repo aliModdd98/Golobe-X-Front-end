@@ -9,7 +9,8 @@ function FlightDetailsCards() {
             company : 'Emirates',
             flightDuration : '2h 28m',
             leavingTime : '12:00 pm',
-            landingTime : '2:28 am'
+            landingTime : '2:28 am',
+            time
         },
         {
             date : 'Return Wed, Dec 8',
@@ -24,7 +25,7 @@ function FlightDetailsCards() {
             <Container>
                 {
                     flightCardDetailes.map((item, index) => (
-                        <FlightDetailsCard key={index} date={item.date} company={item.company} flightDuration={item.flightDuration} leavingTime={item.leavingTime} landingTime={item.landingTime} />
+                        <FlightDetailsCard flight key={index} date={item.date} company={item.company} flightDuration={item.flightDuration} leavingTime={item.leavingTime} landingTime={item.landingTime} />
                     ))
                 }
             </Container>
