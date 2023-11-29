@@ -8,7 +8,8 @@ import HotelFilter from "../HotelFilter/HotelFilter"
 import { useState } from "react"
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import { Link } from 'react-router-dom'
-
+import HotelListing from "../../pages/HotelListing"
+import FlightsListing from "../../pages/FlightsListing"
 function SearchForm({ both, hotels }) {
     const [Flight, setflight] = useState(!hotels);
 
@@ -51,9 +52,9 @@ function SearchForm({ both, hotels }) {
                         {
                             Flight
                                 ? <>
-                                    <Link to="../FlightsSearch" className=" aj_link"> <button className=" text-black bg-orange border-0 p-3"> <BsFillSendFill className="me-2" />Show Flights</button></Link></>
+                                    <Link to="../FlightsListing" className=" aj_link"> <button className=" text-black bg-orange border-0 p-3"> <BsFillSendFill className="me-2" />Show Flights</button></Link></>
                                 : <>
-                                    <Link to="../FlightsSearch"> <button className=" text-black bg-orange border-0 p-3 rounded-2"> <HiBuildingOffice2 className="me-2" />Show Places </button></Link></>
+                                    <Link to="../HotelListing"> <button className=" text-black bg-orange border-0 p-3 rounded-2"> <HiBuildingOffice2 className="me-2" />Show Places </button></Link></>
                         }
                     </button>
                 </div>

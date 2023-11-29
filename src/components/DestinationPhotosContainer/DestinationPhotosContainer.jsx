@@ -11,7 +11,8 @@ import image7 from "./../../assets/place7.png"
 import image8 from "./../../assets/place8.png"
 import { useState } from 'react'
 import TitleContainer from '../TitleContainer/TitleContainer'
-function DestinationPhotosContainer() {
+function DestinationPhotosContainer({ hotels }) {
+
     const data = [
         {
             id: "1",
@@ -76,7 +77,7 @@ function DestinationPhotosContainer() {
 
 
     ]
-
+    const [Flight, setflight] = useState(!hotels);
 
     const [clicked, setClicked] = useState(false);
     return (
@@ -86,22 +87,38 @@ function DestinationPhotosContainer() {
                 setState={setClicked} />
 
             <div className='photo_travel_container'>
-             
-                {
-                    data.slice(0, 4).map((e) => {
-                        return (
-                            <DestinationPhotosCard
-                                img={e.img}
-                                title={e.title}
-                                description={e.description}
-                                price={e.price}
-                            />
 
-                        );
-                    })
+                {
+                    (Flight)
+                        ? data.slice(0, 4).map((e) => {
+                            return (
+
+                                <DestinationPhotosCard
+                                    img={e.img}
+                                    title={e.title}
+                                    description={e.description}
+                                    price={e.price}
+
+                                />
+
+                            );
+                        })
+                        : data.slice(0, 4).map((e) => {
+                            return (
+
+                                <DestinationPhotosCard
+                                    img={e.img}
+                                    title={e.title}
+                                    description={e.description}
+                                    price={e.price}
+                                    hotels
+                                />
+
+                            );
+                        })
                 }
                 {
-                    (clicked)
+                    (clicked) && (Flight)
                         ? data.slice(4).map((e) => {
                             return (
                                 <DestinationPhotosCard
@@ -109,6 +126,22 @@ function DestinationPhotosContainer() {
                                     title={e.title}
                                     description={e.description}
                                     price={e.price}
+
+                                />
+                            );
+                        })
+                        : null
+                }
+                {
+                    (clicked) && (!Flight)
+                        ? data.slice(4).map((e) => {
+                            return (
+                                <DestinationPhotosCard
+                                    img={e.img}
+                                    title={e.title}
+                                    description={e.description}
+                                    price={e.price}
+                                    hotels
                                 />
                             );
                         })

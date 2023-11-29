@@ -15,6 +15,7 @@ function PhotosContainer() {
             title: 'Flights',
             description: 'Search Flights & Places Hire to our most popular destinations',
             button_text: 'Show Flights',
+            hotels: false,
         },
         {
             id: "2",
@@ -22,6 +23,7 @@ function PhotosContainer() {
             title: 'Hotels',
             description: 'Search Hotels & Places Hire to our most popular destinations',
             button_text: 'Show Hotels',
+            hotels: true,
         }
     ]
 
@@ -37,6 +39,7 @@ function PhotosContainer() {
                             title={e.title}
                             description={e.description}
                             button_text={e.button_text}
+                            hotels={e.hotels}
                         />
 
                     );

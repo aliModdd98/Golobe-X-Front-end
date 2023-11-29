@@ -7,26 +7,45 @@ import './PhotoCardStyle.css'
 import { BsFillSendFill } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import FlightsSearch from '../../pages/FlightsSearch'
-function PhotoCard({ img, title, description, button_text }) {
+import HotelSearch from '../../pages/HotelSearch'
+function PhotoCard({ img, title, description, button_text, hotels }) {
 
 
 
     return (
 
         <>
-            <div className="aj_card_photo">
-                <img src={img} className='card_img' />
-                <div className="aj_text_container">
-                    <h2>{title}</h2>
-                    <p>{description}</p>
-                    <Link to="../FlightsSearch">
-                        <button> <BsFillSendFill className='bs_fill' />{button_text}</button>
-                    </Link>
+
+            {
+                hotels
+                    ? <div className="aj_card_photo">
+                        <img src={img} className='card_img' />
+                        <div className="aj_text_container">
+                            <h2>{title}</h2>
+                            <p>{description}</p>
+                            <Link to="../HotelSearch">
+                                <button> <BsFillSendFill className='bs_fill' />{button_text}</button>
+                            </Link>
 
 
-                </div>
+                        </div>
 
-            </div >
+                    </div >
+                    : <div className="aj_card_photo">
+                        <img src={img} className='card_img' />
+                        <div className="aj_text_container">
+                            <h2>{title}</h2>
+                            <p>{description}</p>
+                            <Link to="../FlightsSearch">
+                                <button> <BsFillSendFill className='bs_fill' />{button_text}</button>
+                            </Link>
+
+
+                        </div>
+
+                    </div >
+            }
+
         </>
     )
     // =======

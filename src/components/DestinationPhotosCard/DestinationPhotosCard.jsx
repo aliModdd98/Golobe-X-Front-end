@@ -1,7 +1,16 @@
 import React from 'react'
 import "./DestinationPhotosCard.css"
+import { Link } from 'react-router-dom'
+import FlightSListing from '../../pages/FlightsListing'
+import HotelListing from '../../pages/HotelListing'
+import { useState } from "react"
+function DestinationPhotosCard({ img, title, description, price, hotels }) {
+    const [Flight, setflight] = useState(!hotels);
+    const handleclick = (value) => {
+        (Flight == value) ? setflight(!Flight) : null;
+        console.log(Flight);
+    }
 
-function DestinationPhotosCard({ img, title, description, price }) {
     return (
         <div className='aj_travel_card'>
             <img src={img} alt="" />
@@ -15,7 +24,17 @@ function DestinationPhotosCard({ img, title, description, price }) {
                     <span>{price}</span>
                 </div>
 
-                <button> Book Flight </button>
+
+                {
+                    (Flight)
+
+                        ? <Link to="../FlightSListing">
+                            <button> Book Flight </button></Link>
+                        : <Link to="../HotelListing">
+                            <button> Book a Hotel</button></Link>
+                }
+
+
             </div>
 
         </div>

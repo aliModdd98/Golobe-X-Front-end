@@ -7,6 +7,12 @@
     font-size: 14px;
     font-weight: 400;
 }
-.orangHover:hover{
+
+.orangHover:hover {
     background-color: var(--primary-color);
+}
+
+.aj_continue_style {
+    text-decoration: none;
+    color: black;
 }
