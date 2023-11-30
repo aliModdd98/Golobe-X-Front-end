@@ -1,13 +1,10 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Route, Routes } from 'react-router-dom';
-
-
+import { Route, Routes, useLocation } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import FlightDetails from './pages/FlightDetails';
 import FlightsListing from './pages/FlightsListing';
 import FlightsSearch from './pages/FlightsSearch';
-import FlightTicket from './pages/FlightTicket';
 import HotelListing from './pages/HotelListing'
 import HotelListingDetailes from './pages/HotelListingDetailes';
 import HotelSearch from './pages/HotelSearch';
@@ -16,24 +13,22 @@ import BookingDetailsWithLoging from './pages/BookingDetailsWithLoging';
 import Account from './pages/Account';
 import Favorites from './pages/Favorites';
 import ForgetPassWord from './pages/ForgetPassWord';
-
-
+import BookingDetails from './pages/BookingDetails';
 import FlightTicket from './pages/FlightTicket';
-import HotelSearch from './pages/HotelSearch';
-import Favorites from './pages/Favorites';
 import AddPay from './components/AddPayment/AddPay';
 import Footer from './components/Footer/Footer';
-import FlightsListing from './pages/FlightsListing'
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
+  const location = useLocation();
 
   return (
-
     <>
+      {(location.pathname == '/' | location.pathname == '/Login') ? null : <NavBar logedIn />}
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/Account' element={<Account />} />
-        <Route path='/BookingDetails' element={<BookingDetails />} />
+        <Route path='/BookingDetails' element={<BookingDetails flight />} />
         <Route path='/BookingDetailsWithLoging' element={<BookingDetailsWithLoging />} />
         <Route path='/FlightDetails' element={<FlightDetails />} />
         <Route path='/FlightsListing' element={<FlightsListing />} />
@@ -47,6 +42,7 @@ function App() {
         <Route path='/Favorites' element={<Favorites />} />
         <Route path='/Login' element={<Login />} />
       </Routes>
+      {(location.pathname == '/Login') ? null : <Footer />}
     </>
   )
 }

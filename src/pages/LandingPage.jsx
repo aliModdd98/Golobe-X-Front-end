@@ -15,14 +15,9 @@ function LandingPage() {
   return (
     <>
       <Header />
-     
       <PlanPerfectTrip />
       <PhotosContainer />
       <Reviews />
-
-      {/* <FallIntoTravel /> */}
-      <Footer />
-
     </>
   )
 }

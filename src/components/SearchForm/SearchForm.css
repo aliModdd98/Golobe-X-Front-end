@@ -1,8 +1,10 @@
-.line {
+.line-fa {
     height: 50px;
     width: 1px;
 }
-
+.fa_serch-buttons{
+    margin-bottom: -150px;
+}
 .fa_serch-buttons button {
     font-size: 16px;
     font-weight: 600;

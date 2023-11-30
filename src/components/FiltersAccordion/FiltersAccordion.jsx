@@ -12,7 +12,7 @@ function FiltersAccordion({ children, title }) {
                 {title}
                 <BsChevronDown className={`text-black text-bold fa_transition ${(active) ? 'fa_rotate' : ''} `} />
             </button>
-            <div className={`overflow-hidden fa_active_accordion fa_transition ${(active) ? 'open' : ''}`}>
+            <div className={`overflow-hidden fa_active_accordion fa_transition ${(active) ? 'openAccordion' : ''}`}>
                 {children}
             </div>
         </div>

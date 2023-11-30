@@ -9,7 +9,7 @@
 }
 
 .fa_nav-font {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -27,4 +27,17 @@
 .text-black a {
     color: black;
     text-decoration: none;
+}
+
+.fa_devided-line {
+    width: 2px;
+    height: 10px;
+}
+
+.fa_background-user {
+    background: var(--img-url) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 45px;
+    height: 45px;
 }

@@ -9,7 +9,6 @@ import Footer from '../components/Footer/Footer'
 function FlightTicket({ flight }) {
     return (
         <>
-            <NavBar />
             <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
             <DetailsHeader
                 company='Emirates A380 Airbus'
@@ -39,7 +38,6 @@ function FlightTicket({ flight }) {
                         Gate='On arival' />
             }
             <TermsConditions />
-            <Footer />
         </>
     )
 }

@@ -1,11 +1,5 @@
-import React, { useState } from 'react'
-import NavBar from '../components/NavBar/NavBar'
 import SearchFormSmall from '../components/SearchFormSmall/SearchFormSmall'
 import FilteringSection from '../components/FilteringSection/FilteringSection'
-import Footer from '../components/Footer/Footer'
-import { results } from './../components/SearchResultsSection/flightsData'
-import Tabs from '../components/Tabs/Tabs'
-import ResultCard from '../components/ResultCard/ResultCard'
 
 function FlightsListing() {
 
@@ -66,19 +60,10 @@ function FlightsListing() {
     }
   ]
 
-
-  const [showMore, setShowMore] = useState(false);
-  const [selected, setSelected] = useState(0);
-  const handleClick = (id) => {
-    setSelected(id);
-  }
-
   return (
     <>
-      <NavBar />
       <SearchFormSmall flight />
       <FilteringSection flight filters={filters} listOne={listOne} ListTwo={ListTwo} />
-      <Footer />
     </>
   )
 }

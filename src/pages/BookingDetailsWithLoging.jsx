@@ -53,10 +53,8 @@ function BookingDetailsWithLoging({flight}) {
 
   return (
     <>
-   <NavBar />
    <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
    <BookingDetailsWithLogin flight={flight} details={flight ? flightDetailes : hotelDetailes} bill={flight ? flightBill : hotelBill}/>
-  <Footer/>
     </>
   )
 }

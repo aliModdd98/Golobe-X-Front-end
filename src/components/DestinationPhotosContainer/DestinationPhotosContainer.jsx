@@ -10,7 +10,8 @@ import image6 from "./../../assets/place6.png"
 import image7 from "./../../assets/place7.png"
 import image8 from "./../../assets/place8.png"
 import { useState } from 'react'
-import TitleContainer from '../TitleContainer/TitleContainer'
+import SectionTitle from '../SectionTitle/SectionTitle'
+import { Container } from 'react-bootstrap'
 function DestinationPhotosContainer({ hotels }) {
 
     const data = [
@@ -82,12 +83,15 @@ function DestinationPhotosContainer({ hotels }) {
     const [clicked, setClicked] = useState(false);
     return (
         <div className='destination_section'>
-            <TitleContainer button={(clicked) ? 'See Less' : 'See All'}
-                stateV={clicked}
-                setState={setClicked} />
-
+            <Container>
+                <SectionTitle
+                    title='Fall into travel'
+                    subTitle="SearGoing somewhere to celebrate this season? Whether you're going home or somewhere to roam , we've got the travel tools to get you to your destination"
+                    button={(clicked) ? 'see less' : 'see more'}
+                    stateV={clicked}
+                    setState={setClicked} />
+            </Container>
             <div className='photo_travel_container'>
-
                 {
                     (Flight)
                         ? data.slice(0, 4).map((e) => {

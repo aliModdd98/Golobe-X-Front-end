@@ -6,7 +6,7 @@
     max-height: 0px;
     overflow: auto;
 }
-.fa_active_accordion.open{
+.fa_active_accordion.openAccordion{
     max-height: 2000px;
 }
 .fa_rotate{
