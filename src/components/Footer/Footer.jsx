@@ -35,54 +35,54 @@ function Footer() {
       <div className="downFooter">
         <Container className="footerGrid">
           <Row>
-            <Col md={3} className="logo">
+            <Col md={2} className="logo col-md-2">
               <img src={logo} alt="logo" />
               <div className="socialsMedia">
-                <span><BsFacebook className='iconStyle' /></span>
+                <span ><BsFacebook className='iconStyle' /></span>
                 <span><BsTwitter className='iconStyle' /></span>
                 <span><BsYoutube className='iconStyle' /></span>
                 <span><AiFillInstagram className='iconStyle' /></span>
               </div>
             </Col>
-            <Col className="destinations">
+            <Col className="destinations col-md-2">
               <h3>Our Destinations</h3>
               <div className="destinationStyle">
-                <span>Canada</span>
-                <span>Alaksa</span>
-                <span>France</span>
-                <span>Iceland</span>
+                <span className='linkfooter'>Canada</span>
+                <span className='linkfooter'>Alaksa</span>
+                <span className='linkfooter'>France</span>
+                <span className='linkfooter'>Iceland</span>
 
               </div>
             </Col>
-            <Col className="activities">
+            <Col className="activities col-md-2">
               <h3>Our Activities</h3>
               <div className="destinationStyle">
-                <span>Northern Lights</span>
-                <span>Cruising & sailing</span>
-                <span>Multi-activities</span>
-                <span>Kayaing</span>
+                <span className='linkfooter'>Northern Lights</span>
+                <span className='linkfooter'>Cruising & sailing</span>
+                <span className='linkfooter'>Multi-activities</span>
+                <span className='linkfooter'>Kayaing</span>
               </div>
             </Col>
-            <Col className="travelBlogs">
+            <Col className="travelBlogs col-md-2">
               <h3>Travel Blogs</h3>
               <div className='destinationStyle'>
-                <span>Bali Travel Guide</span>
-                <span>Sri Lanks Travel Guide</span>
-                <span>Peru Travel Guide</span>
-                <span>Bali Travel Guide</span></div>
+                <span className='linkfooter'>Bali Travel Guide</span>
+                <span className='linkfooter'>Sri Lanks Travel Guide</span>
+                <span className='linkfooter'>Peru Travel Guide</span>
+                <span className='linkfooter'>Bali Travel Guide</span></div>
             </Col>
-            <Col className="about">
+            <Col className="about col-md-2">
               <h3>About Us</h3>
               <div className="destinationStyle">
-                <span>Our Story</span>
-                <span>Work with us</span>
+                <span className='linkfooter'>Our Story</span>
+                <span className='linkfooter'>Work with us</span>
               </div>
             </Col>
-            <Col className="contact">
+            <Col className="contact col-md-2">
               <h3>Contact Us</h3>
               <div className="destinationStyle">
-                <span>Our Story</span>
-                <span>Work with us</span>
+                <span className='linkfooter'>Our Story</span>
+                <span className='linkfooter'>Work with us</span>
               </div>
             </Col>
           </Row>
