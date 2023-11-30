@@ -2,6 +2,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 
+
 import LandingPage from './pages/LandingPage';
 import FlightDetails from './pages/FlightDetails';
 import FlightsListing from './pages/FlightsListing';
@@ -10,14 +11,19 @@ import FlightTicket from './pages/FlightTicket';
 import HotelListing from './pages/HotelListing'
 import HotelListingDetailes from './pages/HotelListingDetailes';
 import HotelSearch from './pages/HotelSearch';
-import Login from './pages/Login';
+import Login from './pages/Login'
 import BookingDetailsWithLoging from './pages/BookingDetailsWithLoging';
-import BookingDetails from './pages/BookingDetails';
 import Account from './pages/Account';
 import Favorites from './pages/Favorites';
 import ForgetPassWord from './pages/ForgetPassWord';
 
 
+import FlightTicket from './pages/FlightTicket';
+import HotelSearch from './pages/HotelSearch';
+import Favorites from './pages/Favorites';
+import AddPay from './components/AddPayment/AddPay';
+import Footer from './components/Footer/Footer';
+import FlightsListing from './pages/FlightsListing'
 
 function App() {
 
@@ -43,9 +49,6 @@ function App() {
       </Routes>
     </>
   )
-
-
-
 }
 
 export default App

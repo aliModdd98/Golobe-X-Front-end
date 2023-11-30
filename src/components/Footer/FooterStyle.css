@@ -98,7 +98,10 @@
 
 
 }
-
+.linkfooter{
+    font-size: 14px;
+    font-weight: 500;
+}
 .inner {
     width: 80%;
     height: 175px;
