@@ -6,6 +6,8 @@ import { useState } from 'react';
 import FlightCardDetails from '../FlightCardDetails/FlightCardDetails';
 import { FaLocationDot } from 'react-icons/fa6';
 import { RiCupFill } from "react-icons/ri";
+import { Link } from 'react-router-dom'
+import HotelListingDetailes from "../../pages/HotelListingDetailes"
 
 function ResultCard({ flight, img, favoriteActive, rate, reviewsNumber, startingPrice, firstTrip, secondTrip, title, location, aminties }) {
 
@@ -14,7 +16,7 @@ function ResultCard({ flight, img, favoriteActive, rate, reviewsNumber, starting
     return (
         <div className='bg-white rounded-3 mb-4 shadow-sm overflow-hidden'>
             <Row>
-                <Col lg={flight ? 3 : 4} className={`${flight? 'py-4 px-4' : ''}`}>
+                <Col lg={flight ? 3 : 4} className={`${flight ? 'py-4 px-4' : ''}`}>
                     <img src={img} alt="airline company logo" className={`w-100 ${flight ? '' : 'h-100 object-fit-cover'}`} />
                 </Col>
                 <Col lg={flight ? 9 : 8} className='py-3 pe-5'>
@@ -81,9 +83,15 @@ function ResultCard({ flight, img, favoriteActive, rate, reviewsNumber, starting
                                     : <AiOutlineHeart />
                             }
                         </button>
-                        <button className='flex-grow-1 bg-orange border-0 rounded-2 fa_more_results-button'>
-                            View Deals
-                        </button>
+
+                        {
+                            (flight)
+                                ?
+                                <Link to="../FlightDetails" className='flex-grow-1 bg-orange border-0 rounded-2 fa_more_results-button' >  View Deals</Link>
+                                :
+                                <Link to="../HotelListingDetailes" className='flex-grow-1 bg-orange border-0 rounded-2 fa_more_results-button' >  View Deals</Link>
+                        }
+
                     </div>
                 </Col>
             </Row>

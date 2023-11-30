@@ -17,6 +17,7 @@ import FlightMap from '../components/FlightMap/FlightMap'
 import DestinationPhotosContainer from '../components/DestinationPhotosContainer/DestinationPhotosContainer'
 
 function FlightSearch() {
+
   return (
     <>
       <NavBar />

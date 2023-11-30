@@ -15,13 +15,15 @@ function PhotosContainer() {
             title: 'Flights',
             description: 'Search Flights & Places Hire to our most popular destinations',
             button_text: 'Show Flights',
+            hotels: false,
         },
         {
             id: "2",
             img: image2,
             title: 'Hotels',
-            description: 'Search Flights & Places Hire to our most popular destinations',
+            description: 'Search Hotels & Places Hire to our most popular destinations',
             button_text: 'Show Hotels',
+            hotels: true,
         }
     ]
 
@@ -32,11 +34,12 @@ function PhotosContainer() {
             {
                 data.map((e) => {
                     return (
-                <PhotoCard   key={e.id}
+                        <PhotoCard key={e.id}
                             img={e.img}
                             title={e.title}
                             description={e.description}
                             button_text={e.button_text}
+                            hotels={e.hotels}
                         />
 
                     );
@@ -49,28 +52,28 @@ function PhotosContainer() {
 
 
         </div>
-// =======
-//         <section>
-//             <Container>
-//                 <Row>
-//                     {
-//                         data.map((e, index) => {
-//                             return (
-//                                 <PhotoCard
-//                                     key={index}
-//                                     img={e.img}
-//                                     title={e.title}
-//                                     description={e.description}
-//                                     button_text={e.button_text}
-//                                 />
+        // =======
+        //         <section>
+        //             <Container>
+        //                 <Row>
+        //                     {
+        //                         data.map((e, index) => {
+        //                             return (
+        //                                 <PhotoCard
+        //                                     key={index}
+        //                                     img={e.img}
+        //                                     title={e.title}
+        //                                     description={e.description}
+        //                                     button_text={e.button_text}
+        //                                 />
 
-//                             );
-//                         })
-//                     }
-//                 </Row>
-//             </Container>
-//         </section>
-// >>>>>>> main
+        //                             );
+        //                         })
+        //                     }
+        //                 </Row>
+        //             </Container>
+        //         </section>
+        // >>>>>>> main
 
     )
 }

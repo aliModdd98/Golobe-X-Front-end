@@ -7,7 +7,18 @@
     font-size: 14px;
     font-weight: 400;
 }
+<<<<<<< HEAD
 .orangHover:hover{
     transition: .2s;
     background-color: var(--primary-color) !important;
+=======
+
+.orangHover:hover {
+    background-color: var(--primary-color);
+}
+
+.aj_continue_style {
+    text-decoration: none;
+    color: black;
+>>>>>>> f26a8b24fc301571639a34a228ef00616c8dea56
 }
