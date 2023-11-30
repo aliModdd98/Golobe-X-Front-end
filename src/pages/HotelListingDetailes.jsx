@@ -8,15 +8,16 @@ import Footer from '../components/Footer/Footer'
 import ReviewHotel from '../components/ReviewsHotel/ReviewHotel'
 
 function HotelListingDetailes() {
+
     return (
         <>
-        <HotelViewer/>
-        <OverView />
-        <AvilableRoom/>
-        <Map />
-        <Amenities/>
-        <ReviewHotel />
-        <Footer/>
+            <HotelViewer />
+            <OverView />
+            <AvilableRoom />
+            <Map />
+            <Amenities />
+            <ReviewHotel />
+            <Footer />
         </>
     )
 }

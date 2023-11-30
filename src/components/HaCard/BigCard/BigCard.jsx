@@ -2,6 +2,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './BigCard.css'
+import { Link } from 'react-router-dom'
+import FlightSListing from '../../../pages/FlightsListing'
 
   ;
 function BigCard({ title, text, price, button }) {
@@ -18,7 +20,9 @@ function BigCard({ title, text, price, button }) {
           </div>
           <Card.Text className='cardText'>{text}</Card.Text>
         </div>
-        <Button className='ha_btn border-0'>{button}</Button>
+        <Link to="../FlightSListing">
+          <Button className='ha_btn border-0'>{button}</Button>
+        </Link>
       </Card.Body>
     </Card>
   );

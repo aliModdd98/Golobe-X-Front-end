@@ -3,6 +3,8 @@ import { Container } from 'react-bootstrap'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { BsFillShareFill } from 'react-icons/bs'
 import { FaLocationDot } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
+import BookingDetails from "../../pages/BookingDetails"
 
 function DetailsHeader({ company, rate, Favorit, button, location, price }) {
     return (
@@ -33,7 +35,11 @@ function DetailsHeader({ company, rate, Favorit, button, location, price }) {
                             <button className='fa_share border-orange bg-transparent rounded-2 d-flex justify-content-center align-items-center'>
                                 <BsFillShareFill />
                             </button>
-                            <button className='fa_button-download px-5 bg-orange rounded-2 border-0'>{button}</button>
+
+                            <Link to="../BookingDetails">
+                                <button className='fa_button-download px-5 bg-orange rounded-2 border-0'>{button}</button>
+                            </Link>
+
                         </div>
                     </div>
                 </div>

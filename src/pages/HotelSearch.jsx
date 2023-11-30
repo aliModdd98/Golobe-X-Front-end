@@ -17,7 +17,7 @@ function HotelSearch() {
                 title='Make your travel whishlist, we’ll do the rest'
                 subTitle='Special offers to suit your plan' />
             <SearchForm hotels />
-            <DestinationPhotosContainer />
+            <DestinationPhotosContainer hotels />
             <FallIntoTravel />
             <Footer />
         </>

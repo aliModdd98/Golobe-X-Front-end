@@ -49,6 +49,11 @@
 .fa_more_results-button {
     font-size: 14px;
     font-weight: 600;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fa_result_card-title {
@@ -61,7 +66,7 @@
     font-weight: 500;
 }
 
-.fa_hotal-rate{
+.fa_hotal-rate {
     font-size: 12px;
     font-weight: 500;
 }
