@@ -1,0 +1,9 @@
+#slider::-webkit-scrollbar{
+    display: none;
+}
+#slider{
+    cursor: grab;
+}
+#slider:active{
+    cursor: grabbing;
+}

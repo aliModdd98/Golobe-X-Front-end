@@ -1,0 +1,45 @@
+.fa_filters-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fa_rating-item {
+    width: 40px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fa_sticky-bottom {
+    position: sticky;
+    bottom: 0;
+}
+
+.fa_checkbox input {
+    width: 24px;
+    height: 24px;
+    background: none;
+}
+
+.fa_checkbox label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fa_text-pink {
+    color: #FF8682;
+}
+
+.fa_rating-item.selected {
+    background-color: var(--primary-color) !important;
+}
+
+.fa_cards-number{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fa_more_results-button{
+    font-size: 14px;
+    font-weight: 600;
+}

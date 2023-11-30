@@ -1,0 +1,16 @@
+.fa_terms-header {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.fa_terms-sub_header {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.fa_terms-disc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 90%;
+}

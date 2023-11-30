@@ -1,0 +1,72 @@
+.fa_review-text {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.fa_review-text span {
+    font-weight: 700;
+}
+
+.fa_resulte_card-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-green);
+    text-wrap: nowrap;
+}
+
+.fa_result_card-timing {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fa_result_card-company {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 40%;
+}
+
+.fa_result_card-trip_status {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 78%;
+}
+
+.opacity-78 {
+    opacity: 78%;
+}
+
+.fa_result_card-checkbox {
+    width: 18px;
+    height: 18px;
+}
+
+.fa_favorite-resutls {
+    width: 48px;
+    height: 48px;
+    font-size: 19px;
+}
+
+.fa_more_results-button {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa_result_card-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fa_hotel_location {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fa_hotal-rate {
+    font-size: 12px;
+    font-weight: 500;
+}

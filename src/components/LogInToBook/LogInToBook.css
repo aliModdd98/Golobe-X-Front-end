@@ -1,0 +1,18 @@
+.fa_LogInToBook-header {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fa_number_input-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.orangHover:hover {
+    background-color: var(--primary-color);
+}
+
+.aj_continue_style {
+    text-decoration: none;
+    color: black;
+}

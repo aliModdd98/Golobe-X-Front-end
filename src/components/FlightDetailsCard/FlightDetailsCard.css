@@ -1,0 +1,48 @@
+.fa_flightDetailes-card_img {
+    width: 64px;
+}
+
+.fa_flightDetailes-card_line {
+    width: 1px;
+    height: 30px;
+    background: #D7E2EE;
+}
+
+.fa_company-name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.fa_rotate {
+    rotate: 180deg;
+}
+
+.fa_flight-time {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.fa_flight-location {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 60%;
+}
+
+.fa_flight-date {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fa_flight-time_launch {
+    font-size: 20px;
+    font-weight: 500;
+}
+.serv{
+    width: 30px;
+height: 30px;
+}
+.serv:hover{
+cursor: pointer;
+background-color: var(--primary-color);
+
+}

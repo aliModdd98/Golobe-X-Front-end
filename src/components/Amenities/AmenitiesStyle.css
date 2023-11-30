@@ -1,0 +1,12 @@
+.itemAmen{
+    padding: 12px;
+}
+.showAmenities{
+    color:#71AA27;
+    font-size: 16px;
+    padding: 12px;
+    cursor: pointer;
+}
+.amenities{
+    margin-top: 5%;
+}

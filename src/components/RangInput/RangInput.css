@@ -1,0 +1,21 @@
+.fa_range{
+    height: 2px;
+}
+.fa_range input{
+    background: none;
+    pointer-events: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.fa_range input::-webkit-slider-thumb{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    pointer-events: auto;
+    -webkit-appearance: none;
+    cursor: grab;
+}
+.fa_range input::-webkit-slider-thumb:active{
+    cursor: grabbing;
+}

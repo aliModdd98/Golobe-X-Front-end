@@ -1,0 +1,43 @@
+.fa_sticky-bill{
+    top: 109px;
+}
+
+.fa_bill-photo {
+    flex-shrink: 0 !important;
+    width: 120px;
+    aspect-ratio: 1;
+}
+
+.fa_bill-flight_class {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fa_bill-company {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fa_bill-protector{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fa_bill-protector span{
+    font-weight: 800;
+}
+
+.fa_price_detailes-header{
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.fa_price-detail{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fa_bill-price{
+    font-size: 16px;
+    font-weight: 600;
+}

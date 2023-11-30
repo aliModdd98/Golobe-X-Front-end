@@ -1,0 +1,83 @@
+.fa_ticket .bg-light_blue {
+    background-color: #EBF6F2;
+}
+
+.fa_ticket .fa_fromTo .fa_fromTo-title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.fa_ticket .fa_fromTo .fa_sub-fromto {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 60%;
+}
+
+.fa_fromto-svg {
+    width: 36px;
+}
+
+.fa_fromto-svg img:nth-child(2) {
+    width: 24px;
+}
+
+.fa_fromto-svg img:nth-child(3) {
+    rotate: 180deg;
+}
+
+.fa_user_img {
+    width: 48px;
+}
+
+.fa_userName {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fa_boredPass {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fa_classType {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 700;
+    max-width: 200px;
+}
+
+.fa_ticket-icons {
+    width: 31px;
+    font-size: 15px;
+}
+
+.fa_ticket-detailes p:nth-child(1) {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 60%;
+    margin-bottom: -5px;
+}
+
+.fa_ticket-detailes p:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fa_ticket-unique p:nth-child(1) {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.fa_ticket-unique p:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 60%;
+}
+
+.fa_barCode {
+    width: 216px;
+    height: 49px;
+    background-image: url(./../../assets/barCode.svg);
+    background-position: left;
+    background-size: contain;
+}

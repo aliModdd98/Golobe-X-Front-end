@@ -1,0 +1,113 @@
+.ha-big{
+    display: flex;
+    padding: 16px;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: var(--Neutrals, #FFF);
+    box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+}
+
+h2{
+    font-family: TradeGothic LT Extended;
+    color: var(--Blackish-Green, #121);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+
+
+.ha-first{
+    padding: 5%;
+    position: relative;
+    margin-top: 16px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 12px;
+    background: var(--1, #FF8500);
+}
+
+.ha-para{
+    font-family: Montserrat;
+    color: var(--Blackish-Green, #121);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+
+.ha-parag{
+    font-family: Montserrat;
+    height: 5px;
+    align-self: stretch;
+    color: var(--Blackish-Green, #121);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+        }
+
+.ha-paragragh{
+    font-family: Montserrat;
+    align-self: stretch;
+    color: var(--Blackish-Green, #121);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.more-info{
+    color: var(--Blackish-Green, #121);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.ha-btn{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame-btn{
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ha-circle{
+    position: relative;
+}
+
+.img,.ha-pos{
+    position: absolute;
+    left: 90%;
+    top: 20%;
+   
+    border-radius: 50% ;
+}
+
+
+.selected{
+    background-color:  var(--1, #FF8500);
+    border:1px solid #121 ;
+   
+}
+.notSelected{
+    background-color: white;
+}

@@ -1,0 +1,130 @@
+.containerForget{
+    width: 100%;
+   height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.forget{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+   align-items: center;
+    height: 85%;
+      margin: 9% auto;
+}
+.reset{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    height: 90%;
+    margin: 9% auto;
+}
+.verify{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    height: 90%;
+    margin: 9% auto;
+   
+}
+
+.forget .leftSec ,.reset .leftSec,.verify .leftSec{
+    width: 54%;
+    height: 100%;
+    margin:  3% 5%;
+}
+.forget .rightSec,.reset .rightSec, .verify .rightSec{
+    width: 46%;
+    height: 100%;
+}
+ .rightSec .viewImg{
+   width: 100%;
+   height: 100%;
+   border-radius: 20px;
+
+}
+.rightSec{
+    position: relative;
+}
+.Slider{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20%;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+}
+.Slider .circle{
+  margin-right: 9px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color:white;
+  cursor: pointer;
+ 
+}
+.activeSpan{
+    width: 20px;
+    height: 10px;
+    border-radius: none;
+    background-color:#FF8500;
+}
+.logoSign{
+    width: 25%;
+    height: 12%;
+   
+}
+.logoSign .logoS{
+    width: 100%;
+    height: 100%;
+}
+.orangText{
+    color: var( --primary-color);
+}
+.btn-orange{
+    background-color: var(--primary-color);
+    color: white;
+    width: 90%;
+    margin-top: 3%;
+}
+
+.socialsIcon{
+    margin-top: 4%;
+}
+.backSize{
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 20%;
+}
+.back{
+    cursor: pointer;
+}
+.hoverButton{
+    background-color: white;
+}
+.hoverButton:hover{
+    background-color: var(--primary-color);
+}
+.forgetPass{
+    display: flex;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding-left: 5px;
+}
+.forgetLine{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.noback{
+    display: none;
+}

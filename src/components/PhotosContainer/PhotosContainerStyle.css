@@ -5,18 +5,32 @@
 }
 
 .aj_photo_container {
+/* <<<<<<< HEAD */
+/* =======
+
+>>>>>>> a2299b4463dc0a2ae2a6eff1efbec604cc8c8c56 */
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 1232px;
+/* <<<<<<< HEAD
     height: 559px;
     gap: 15px;
     margin: 0 auto;
     color: white;
+======= */
+    height: max-content;
+    gap: 15px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+/* >>>>>>> a2299b4463dc0a2ae2a6eff1efbec604cc8c8c56 */
 
 
 }
 
+/* <<<<<<< HEAD */
 .aj_first_photo,
 .aj_second_photo {
     width: 604px;
@@ -63,6 +77,8 @@
     cursor: pointer;
 }
 
+/* =======
+>>>>>>> a2299b4463dc0a2ae2a6eff1efbec604cc8c8c56 */
 @media screen and (max-width:1250px) {
     .aj_photo_container {
         flex-direction: column;
