@@ -16,7 +16,6 @@ import FlightSearch from './pages/FlightsSearch';
 import FlightTicket from './pages/FlightTicket';
 import ForgetPassWord from './pages/ForgetPassWord';
 import HotelListingDetailes from './pages/HotelListingDetailes';
-import Login from './pages/Login';
 import FlightFilter from './components/FlightFilter/FlightFilter';
 
 
@@ -25,7 +24,7 @@ function App() {
   
   return (
     <>
-      <FlightSearch  />
+      <BookingDetails flight  />
     </>
   )
 }
