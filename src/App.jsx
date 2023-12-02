@@ -27,19 +27,23 @@ function App() {
       {(location.pathname == '/' | location.pathname == '/Login') ? null : <NavBar logedIn />}
       <Routes>
         <Route path='/' element={<LandingPage />} />
-        <Route path='/Account' element={<Account />} />
-        <Route path='/BookingDetails' element={<BookingDetails flight />} />
-        <Route path='/BookingDetailsWithLoging' element={<BookingDetailsWithLoging />} />
-        <Route path='/FlightDetails' element={<FlightDetails />} />
-        <Route path='/FlightsListing' element={<FlightsListing />} />
         <Route path='/FlightsSearch' element={<FlightsSearch />} />
-        <Route path='/FlightTicket' element={<FlightTicket />} />
-        <Route path='/ForgetPassWord' element={<ForgetPassWord />} />
+        <Route path='/FlightsListing' element={<FlightsListing />} />
+        <Route path='/FlightDetails' element={<FlightDetails />} />
+        <Route path='/BookingDetails' element={<BookingDetails flight />} />
+        <Route path='/BookingDetailsWithLoging' element={<BookingDetailsWithLoging flight />} />
+        <Route path='/FlightTicket' element={<FlightTicket flight />} />
+
+        <Route path='/HotelSearch' element={<HotelSearch />} />
         <Route path='/HotelListing' element={<HotelListing />} />
         <Route path='/HotelListingDetailes' element={<HotelListingDetailes />} />
-        <Route path='/HotelSearch' element={<HotelSearch />} />
-        <Route path='/LandingPage' element={<LandingPage />} />
+        <Route path='/BookingDetailsHotel' element={<BookingDetails />} />
+        <Route path='/BookingDetailsWithLogingHotel' element={<BookingDetailsWithLoging />} />
+        <Route path='/HotelTicket' element={<FlightTicket />} />
+
+        <Route path='/Account' element={<Account />} />
         <Route path='/Favorites' element={<Favorites />} />
+        <Route path='/ForgetPassWord' element={<ForgetPassWord />} />
         <Route path='/Login' element={<Login />} />
       </Routes>
       {(location.pathname == '/Login') ? null : <Footer />}

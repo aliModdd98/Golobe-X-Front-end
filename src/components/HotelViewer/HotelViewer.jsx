@@ -14,53 +14,52 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FlightTracker from '../FlightTracker/FlightTracker'
 import DetailsHeader from '../DetailsHeader/DetailsHeader'
 function HotelViewer() {
-    const [mainImage, setMainImage] = useState(img1);
-    const [images, setImages] = useState([img2,img3,img4,img5,]);
-    const [showAllImages, setShowAllImages] = useState(false);
-const allimgs=[img6,img7,img8,img9];
-    const handleImageClick = (image) => {
-        const clickedImageIndex = images.indexOf(image);
-        const newImages = [...images];
-        newImages[clickedImageIndex] = mainImage;
-    
-        setMainImage(image);
-        setImages(newImages);
-      };
-      const handleShowAllImages = () => {
-        setShowAllImages(!showAllImages);
-      };
-      const visibleImages = showAllImages ? images : images.slice(0, 4);
+  const [mainImage, setMainImage] = useState(img1);
+  const [images, setImages] = useState([img2, img3, img4, img5,]);
+  const [showAllImages, setShowAllImages] = useState(false);
+  const allimgs = [img6, img7, img8, img9];
+  const handleImageClick = (image) => {
+    const clickedImageIndex = images.indexOf(image);
+    const newImages = [...images];
+    newImages[clickedImageIndex] = mainImage;
 
-    return (
-      <div className='container'>
-        
-   <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
-   <DetailsHeader company='CVK Park Bosphorus Hotel Istanbul' rate={4.2} location="CVK Park Bosphorus Hotel Istanbul" Favorit button='Book now' />
-  
-        <Row className='my-5'>
-<Col ><img src={mainImage} alt="Main Image" className="img-fluid w-100 h-100 mainImg" /></Col>
-<Col className='maingrid'> {!showAllImages && (
-    <>
-      {visibleImages.map((image, index) => (
-        <div className={`item ${index < 4 ? 'gap-right-bottom' : 'gap-top'}`} key={index}>
-          <div className="r w-100 h-100 imgItem ">
-            <img
-              src={image}
-              alt={`Hotel ${index + 1}`}
-              className="img-fluid w-100 h-100 item object-fit-cover"
-              onClick={() => handleImageClick(image)}
-            />
-          </div>
-        </div>
-      ))}
-      <div className="col-md-12 text-center">
-        <button className="showBtn" onClick={handleShowAllImages}>View All Photos</button>
-      </div>
-    </>
-  )}</Col>
-        </Row>
-       
-      </div>
+    setMainImage(image);
+    setImages(newImages);
+  };
+  const handleShowAllImages = () => {
+    setShowAllImages(!showAllImages);
+  };
+  const visibleImages = showAllImages ? images : images.slice(0, 4);
+
+  return (
+    <div className='container'>
+
+      <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
+      <DetailsHeader company='CVK Park Bosphorus Hotel Istanbul' rate={4.2} location="CVK Park Bosphorus Hotel Istanbul" Favorit button='Book now' />
+
+      <Row className='my-5'>
+        <Col ><img src={mainImage} alt="Main Image" className="img-fluid w-100 h-100 mainImg" /></Col>
+        <Col className='maingrid'> {!showAllImages && (
+          <>
+            {visibleImages.map((image, index) => (
+              <div className={`item ${index < 4 ? 'gap-right-bottom' : 'gap-top'}`} key={index}>
+                <div className="r w-100 h-100 imgItem ">
+                  <img
+                    src={image}
+                    alt={`Hotel ${index + 1}`}
+                    className="img-fluid w-100 h-100 item object-fit-cover"
+                    onClick={() => handleImageClick(image)}
+                  />
+                </div>
+              </div>
+            ))}
+            <div className="col-md-12 text-center">
+              <button className="showBtn" onClick={handleShowAllImages}>View All Photos</button>
+            </div>
+          </>
+        )}</Col>
+      </Row>
+    </div>
   )
 }
 
