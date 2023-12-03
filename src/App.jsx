@@ -16,14 +16,9 @@ import BookingDetailsWithLoging from './pages/BookingDetailsWithLoging';
 import Account from './pages/Account';
 import Favorites from './pages/Favorites';
 import ForgetPassWord from './pages/ForgetPassWord';
+import BookingDetails from './pages/BookingDetails';
 
 
-import FlightTicket from './pages/FlightTicket';
-import HotelSearch from './pages/HotelSearch';
-import Favorites from './pages/Favorites';
-import AddPay from './components/AddPayment/AddPay';
-import Footer from './components/Footer/Footer';
-import FlightsListing from './pages/FlightsListing'
 
 function App() {
 

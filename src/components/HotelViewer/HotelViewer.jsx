@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { IoStarSharp } from "react-icons/io5";
 import './HotelViewerStyle.css'
 import img1 from './../../assets/Hotel1.png'
 import img2 from './../../assets/Hotel2.avif'
@@ -35,7 +36,7 @@ const allimgs=[img6,img7,img8,img9];
       <div className='container'>
         
    <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
-   <DetailsHeader company='CVK Park Bosphorus Hotel Istanbul' rate={4.2} location="CVK Park Bosphorus Hotel Istanbul" Favorit button='Book now' />
+   <DetailsHeader company='Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437' rate={4.2} daily="/night" location="CVK Park Bosphorus Hotel Istanbul" price="450" Favorit button='Book now' />
   
         <Row className='my-5'>
 <Col ><img src={mainImage} alt="Main Image" className="img-fluid w-100 h-100 mainImg" /></Col>

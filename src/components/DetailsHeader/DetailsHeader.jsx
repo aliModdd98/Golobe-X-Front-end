@@ -6,13 +6,13 @@ import { FaLocationDot } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 import BookingDetails from "../../pages/BookingDetails"
 
-function DetailsHeader({ company, rate, Favorit, button, location, price }) {
+function DetailsHeader({ company, rate, Favorit, button, location, price ,daily}) {
     return (
         <section className='mb-5'>
             <Container>
                 <div className='d-flex align-items-center justify-content-between'>
                     <div className='fa_description-left'>
-                        <h1 className='mb-3 fa_comapny_name-header'>{company}</h1>
+                        <h1 className='mb-3 fa_comapny_name-header'>{company} {"    "}</h1>
                         <div className='d-flex align-items-center gap-2 mb-2'>
                             <FaLocationDot />
                             <p className='mb-0 opacity-75'>{location}</p>
@@ -25,7 +25,7 @@ function DetailsHeader({ company, rate, Favorit, button, location, price }) {
                         }
                     </div>
                     <div className='d-flex flex-column justify-content-between align-items-end'>
-                        <p className='mb-0 fa_price'>{price} $</p>
+                        <p className='mb-0 fa_price'>{price} $ <span className='daily'>{daily}</span></p>
                         <div className='d-flex gap-3 fa_actions-button'>
                             {
                                 Favorit && <button className='fa_favorite border-orange bg-transparent rounded-2 d-flex justify-content-center align-items-center'>
