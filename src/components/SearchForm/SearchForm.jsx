@@ -28,7 +28,7 @@ function SearchForm({ both, hotels }) {
                                     <FaPlane className='me-2 fs-4' />
                                     Flights
                                 </button>
-                                <div className="line bg-dark opacity-25"></div>
+                                <div className="line-fa bg-dark opacity-25 mb-5"></div>
                                 <button className={`bg-transparent fa_border fa_border-none py-4 ms-3 mb-5 ${(!Flight) ? 'fa_active_serch-button' : ''}`} onClick={() => { handleclick(true) }}>
                                     <IoBed className='me-2 fs-4' />
                                     Stays

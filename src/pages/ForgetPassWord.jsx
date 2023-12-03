@@ -4,7 +4,7 @@ import ForgetPass from '../components/ForgetPass/ForgetPass'
 function ForgetPassWord() {
   return (
     <>
-<ForgetPass/>
+      <ForgetPass/>
     </>
   )
 }

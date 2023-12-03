@@ -167,10 +167,8 @@ function HotelListing() {
 
     return (
         <>
-            <NavBar />
             <SearchFormSmall />
             <FilteringSection filters={filters} listOne={listOne} ListTwo={ListTwo} />
-            <Footer />
         </>
     )
     }

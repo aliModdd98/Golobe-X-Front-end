@@ -4,7 +4,7 @@ import Footer from '../components/Footer/Footer'
 import DetailsHeader from '../components/DetailsHeader/DetailsHeader'
 import FlightClass from '../components/FlightClass/FlightClass'
 
-import image1 from './../assets/flightDetailes-1.jpg'
+import image1 from '../assets/flightDetailes-1.jpg'
 import image2 from './../assets/flightDetailes-2.jpg'
 import image3 from './../assets/flightDetailes-3.jpg'
 import image4 from './../assets/flightDetailes-4.jpg'
@@ -54,21 +54,14 @@ function FlightDetails() {
       img: image1
     }
   ]
-  // const info =[{
-  //   country:"Turkey",
-  //   city:"Istanbul",
-  //  address:"CVK Park Bosphorus Hotel Istanbul"
-  // }]
+
   return (
     <>
-      <NavBar />
-{/* //       <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' /> */}
-<FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
-      <DetailsHeader company='Emirates A380 Airbus' rate={4.2}  Favorit button='Book now' />
+      <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
+      <DetailsHeader flight company='Emirates A380 Airbus' rate={4.2} Favorit button='Book now' price={204} location='Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437' />
       <FlightClass imgs={imgs} />
       <FlightNotes />
       <FlightDetailsCards />
-      <Footer />
     </>
   )
 }

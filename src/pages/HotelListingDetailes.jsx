@@ -19,7 +19,6 @@ function HotelListingDetailes() {
             <Map />
             <Amenities />
             <ReviewHotel />
-            <Footer />
         </>
     )
 }

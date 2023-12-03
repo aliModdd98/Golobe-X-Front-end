@@ -15,7 +15,7 @@ function FlightDetailsCard({ flight, date, flightDuration, leavingTime, landingT
                 price &&
                 <div className='d-flex align-items-center justify-content-between mb-3'>
                     <h1 className='mb-0 fa_comapny_name-header'>{title}</h1>
-                    <p className='mb-0 fa_price'>{price} $</p>
+                    <p className='mb-0 fa_price'>{price} $ {!flight && <span className='fs-5'>/night</span>}</p>
                 </div>
             }
             {

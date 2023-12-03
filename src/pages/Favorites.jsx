@@ -6,9 +6,7 @@ import FavoriteFilters from '../components/FavoriteFilters/FavoriteFilters'
 function Favorites() {
     return (
         <>
-            <NavBar />
             <FavoriteFilters />
-            <Footer />
         </>
     )
 }

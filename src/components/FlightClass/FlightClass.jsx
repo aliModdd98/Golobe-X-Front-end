@@ -8,7 +8,7 @@ function FlightClass({imgs}) {
     return (
         <section>
             <Container>
-                <div className='fa_big-sleected_img fa_transition fa_background-img mb-4 rounded-3' style={{'--slelecte-img': `url(${imgs[selected].img})`}}></div>
+                <div className='fa_big-sleected_img fa_transition fa_background-img mb-4 rounded-3' style={{'--selected-img': `url(${imgs[selected].img})`}}></div>
                 <div className='d-flex justify-content-between align-items-center mb-4'>
                     <h1 className='fa_class-title mb-0'>Basic Economy Features</h1>
                     <div className='d-flex align-items-center gap-3'>
@@ -32,7 +32,7 @@ function FlightClass({imgs}) {
                             <Col key={item.id}>
                                 <div 
                                 className='fa_background-img fa_select-img rounded-2' 
-                                style={{ '--slelecte-img': `url(${item.img})` }}
+                                style={{ '--selected-img': `url(${item.img})` }}
                                 onClick={() => setSelected(item.id)}>
                                 </div>
                             </Col>

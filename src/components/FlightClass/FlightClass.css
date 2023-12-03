@@ -3,7 +3,7 @@
 }
 
 .fa_background-img {
-    background: var(--slelecte-img) no-repeat;
+    background: var(--selected-img) no-repeat;
     background-position: center;
     background-size: cover;
 }
