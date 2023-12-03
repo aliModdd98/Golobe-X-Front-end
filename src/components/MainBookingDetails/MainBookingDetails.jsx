@@ -38,16 +38,16 @@ function MainBookingDetails({ flight, details, bill }) {
                     <LogInToBook />
                 </Col>
                 <Col lg={4}>
-                    <Bill 
-                    topTitle={bill.topTitle}
-                    title={bill.title}
-                    img={bill.img}
-                    BaseFare={bill.BaseFare}
-                    Discount={bill.Discount}
-                    Taxes={bill.Taxes}
-                    ServiceFee={bill.ServiceFee}
-                    rate={bill.rate}
-                    reviewsNumber={bill.reviewsNumber} />
+                    <Bill
+                        topTitle={bill.topTitle}
+                        title={bill.title}
+                        img={bill.img}
+                        BaseFare={bill.BaseFare}
+                        Discount={bill.Discount}
+                        Taxes={bill.Taxes}
+                        ServiceFee={bill.ServiceFee}
+                        rate={bill.rate}
+                        reviewsNumber={bill.reviewsNumber} />
                 </Col>
             </Row>
         </Container>

@@ -52,10 +52,8 @@ function Account() {
     const [userDataState, setUserDataState] = useState(userData)
     return (
         <>
-            <NavBar />
             <AccountProfilePgoto name={userDataState[0].value} email={userDataState[1].value} />
             <AccountDetailes data={userData} setData={setUserDataState} />
-            <Footer />
         </>
     )
 }

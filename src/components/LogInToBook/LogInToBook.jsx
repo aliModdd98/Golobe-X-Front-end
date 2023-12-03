@@ -10,7 +10,7 @@ import BookingDetailsWithLoging from "../../pages/BookingDetailsWithLoging"
 
 function LogInToBook() {
     return (
-        <div className='bg-white rounded-4 shadow-sm p-3'>
+        <div className='bg-white rounded-4 shadow-sm p-3 mt-5'>
             <h1 className='fa_LogInToBook-header mb-0'>Login or Sign up to book</h1>
             <input type="number" placeholder='Phone Number' className='px-3 py-2 my-3 fa_outline-none rounded-1 border border-secondary w-100' />
             <p className='fa_number_input-text'>We’ll call or text you to confirm your number. Standard message and data rates apply. Privacy Policy</p>
@@ -26,17 +26,17 @@ function LogInToBook() {
             </div>
             <Row>
                 <Col lg={4}>
-                    <button className='w-100 border-orange py-2 orangHover rounded-2'>
+                    <button className='w-100 border-orange py-2 orangHover rounded-2 bg-transparent'>
                         <img src={facebook} alt="facebook" />
                     </button>
                 </Col>
                 <Col lg={4}>
-                    <button className='w-100 border-orange py-2 orangHover rounded-2'>
+                    <button className='w-100 border-orange py-2 orangHover rounded-2 bg-transparent'>
                         <img src={google} alt="google" />
                     </button>
                 </Col>
                 <Col lg={4}>
-                    <button className='w-100 border-orange py-2 orangHover rounded-2'>
+                    <button className='w-100 border-orange py-2 orangHover rounded-2 bg-transparent'>
                         <img src={apple} alt="appple" />
                     </button>
                 </Col>

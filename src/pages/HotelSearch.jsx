@@ -10,7 +10,6 @@ import DestinationPhotosContainer from '../components/DestinationPhotosContainer
 function HotelSearch() {
     return (
         <>
-            <NavBar />
             <Hero
                 className='vh-100'
                 img={background}
@@ -19,7 +18,6 @@ function HotelSearch() {
             <SearchForm hotels />
             <DestinationPhotosContainer hotels />
             <FallIntoTravel />
-            <Footer />
         </>
     )
 }

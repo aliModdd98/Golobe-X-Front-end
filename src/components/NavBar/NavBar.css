@@ -9,7 +9,7 @@
 }
 
 .fa_nav-font {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -22,9 +22,60 @@
     text-decoration: none;
 }
 
-
-
 .text-black a {
     color: black;
     text-decoration: none;
+}
+
+.fa_devided-line {
+    width: 2px;
+    height: 10px;
+}
+
+.fa_background-user {
+    background: var(--img-url) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-left: 32px;
+}
+
+.fa_user_drop-icon {
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    opacity: 1;
+    background-color: #FF8682;
+    transform: translateX(-100%) translateY(-100%);
+}
+
+.fa_pop_up-tab {
+    width: 329px;
+    top: 120%;
+    left: -240px;
+}
+
+.fa_user_img-pop_up {
+    background: var(--img-url) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+}
+
+.fa_user_name-pop_up {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.fa_online {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.fa_pop_up-item {
+    font-size: 14px;
+    font-weight: 500;
 }

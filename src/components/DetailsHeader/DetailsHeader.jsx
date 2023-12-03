@@ -6,7 +6,7 @@ import { FaLocationDot } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 import BookingDetails from "../../pages/BookingDetails"
 
-function DetailsHeader({ company, rate, Favorit, button, location, price }) {
+function DetailsHeader({flight, company, rate, Favorit, button, location, price }) {
     return (
         <section className='mb-5'>
             <Container>
@@ -36,7 +36,7 @@ function DetailsHeader({ company, rate, Favorit, button, location, price }) {
                                 <BsFillShareFill />
                             </button>
 
-                            <Link to="../BookingDetails">
+                            <Link to={flight?'/BookingDetails': '/BookingDetailsHotel'}>
                                 <button className='fa_button-download px-5 bg-orange rounded-2 border-0'>{button}</button>
                             </Link>
 
