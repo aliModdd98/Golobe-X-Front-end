@@ -8,6 +8,7 @@ import { AiOutlineDown } from 'react-icons/ai'
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import FlightTicket from "../../pages/FlightTicket"
+import DropDownG from '../DropDown/DropDown';
 const AddingCard = ({ onCloseClick }) => {
   const [ShowCard, SetShowCard] = useState(true);
   return (
@@ -52,17 +53,27 @@ const AddingCard = ({ onCloseClick }) => {
               <Form.Label className='bg-white position-absolute top-0 translate-middle-y px-2'>Name on Card</Form.Label>
               <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='John Doe' />
             </Form.Group>
-            <Form.Group className=" mb-3 position-relative border border-dark rounded-2 px-2 py-3 my-4" controlId="formGridAddress2">
+           
+           
+            {/* <Form.Group className=" mb-3 position-relative border border-dark rounded-2 px-2 py-3 my-4" controlId="formGridAddress2">
               <Form.Label className='bg-white position-absolute top-0 translate-middle-y px-2'>Country or Region</Form.Label>
               <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='United States' />
             </Form.Group>
             <p className='mb-0 d-flex justify-content-between opacity-75 position-relative '>
 
               <AiOutlineDown className='fs-4' />
-            </p>
+            </p> */}
+  <div className='d-flex flex-row w-100 '>
+                 <div className='position-relative d-flex border border-secondary rounded-2 px-2 py-2  w-100'>
+                   <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
+                   Country or Region
+                   </label>
+                 <DropDownG/>
+                 </div>
+               
+               </div>
 
-
-            <div className='d-flex align-items-center'>
+            <div className='d-flex align-items-center py-3'>
               <input type="checkbox" id='agree' />
               <label htmlFor="agree" className='ms-2 fa_class-lable'> Securely save my information for 1-click checkout</label>
             </div>

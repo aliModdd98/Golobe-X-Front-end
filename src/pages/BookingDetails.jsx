@@ -1,5 +1,4 @@
-import NavBar from '../components/NavBar/NavBar'
-import Footer from '../components/Footer/Footer'
+
 import MainBookingDetails from '../components/MainBookingDetails/MainBookingDetails'
 import img1 from './../assets/flightDetailes-7.jpg'
 import img2 from './../assets/hotel-1.jfif'

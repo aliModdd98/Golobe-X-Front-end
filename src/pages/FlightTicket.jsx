@@ -1,10 +1,7 @@
-
-import NavBar from '../components/NavBar/NavBar'
 import FlightTracker from '../components/FlightTracker/FlightTracker'
 import DetailsHeader from '../components/DetailsHeader/DetailsHeader'
 import Ticket from '../components/Ticket/Ticket'
 import TermsConditions from '../components/TermsConditions/TermsConditions'
-import Footer from '../components/Footer/Footer'
 
 function FlightTicket({ flight }) {
     return (

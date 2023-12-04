@@ -15,7 +15,7 @@ const PaymentComponent = () => {
                 className={`ha-first ${selectedOption === 'payInFull' ? 'selected' : 'notSelected'}`}
                 onClick={() => handleOptionClick('payInFull')}
             >
-                <h2>Pay in full</h2>
+                <h1>Pay in full</h1>
                 <div className='ha-btn'>
                     <div className='frame-btn'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
@@ -30,7 +30,7 @@ const PaymentComponent = () => {
                 className={`ha-circle container ha-first ${selectedOption === 'payPartLater' ? 'selected' : 'notSelected'}`}
                 onClick={() => handleOptionClick('payPartLater')}
             >
-                <h2>Pay part now, part later</h2>
+                <h1>Pay part now, part later</h1>
                 <p className='ha-parag'>
                     Pay $207.43 now, and the rest ($207.43) will be automatically charged to the same</p>
                 <p className='ha-paragragh'>  payment method on Nov 14, 2022. No extra fees.</p>

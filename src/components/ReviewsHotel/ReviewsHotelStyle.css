@@ -36,3 +36,43 @@ font-weight: 600;
     margin: 0 auto;
     height: 60vh;
 }
+.card-overlay-rev{
+    height: 450px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    position: relative;
+}
+.card-overlay-rev .closeIcon{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+.commentOfReview{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    padding: 25px 10px;
+    margin: 0 auto;
+    margin-top: 4%;
+    height: 30px;
+    width: 80%;
+    border-radius: 12px;
+}
+.card-overlay-rev .commentReview{
+    background-color: var(--primary-color);
+    border: none;
+    width: 80%;
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 10px 25px;
+
+}
+.titleReview{
+    margin-top: 30px;
+}

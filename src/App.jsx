@@ -32,7 +32,7 @@ function App() {
         <Route path='/FlightsListing' element={<FlightsListing />} />
         <Route path='/FlightDetails' element={<FlightDetails />} />
         <Route path='/BookingDetails' element={<BookingDetails flight />} />
-        <Route path='/BookingDetailsWithLoging' element={<BookingDetailsWithLoging flight />} />
+        <Route path='/BookingDetailsWithLoging' element={<BookingDetailsWithLoging flight={true} />} />
         <Route path='/FlightTicket' element={<FlightTicket flight />} />
 
         <Route path='/HotelSearch' element={<HotelSearch />} />
@@ -40,7 +40,7 @@ function App() {
         <Route path='/HotelListingDetailes' element={<HotelListingDetailes />} />
         <Route path='/BookingDetailsHotel' element={<BookingDetails />} />
         <Route path='/BookingDetailsWithLogingHotel' element={<BookingDetailsWithLoging flight={false} />} />
-        <Route path='/HotelTicket' element={<FlightTicket />} />
+        <Route path='/HotelTicket' element={<FlightTicket flight={false} />} />
 
         <Route path='/Account' element={<Account />} />
         <Route path='/addpay' element={<AddPay />} />

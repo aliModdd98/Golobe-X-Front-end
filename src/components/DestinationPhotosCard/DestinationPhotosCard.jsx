@@ -1,8 +1,7 @@
 import React from 'react'
 import "./DestinationPhotosCard.css"
 import { Link } from 'react-router-dom'
-import FlightSListing from '../../pages/FlightsListing'
-import HotelListing from '../../pages/HotelListing'
+
 import { useState } from "react"
 function DestinationPhotosCard({ img, title, description, price, hotels }) {
     const [Flight, setflight] = useState(!hotels);
@@ -12,7 +11,7 @@ function DestinationPhotosCard({ img, title, description, price, hotels }) {
     }
 
     return (
-        <div className='aj_travel_card'>
+        <div className='aj_travel_card' key={1}>
             <img src={img} alt="" />
             <div className='aj_travel_card_text'>
                 <div className='aj_text_flex'>

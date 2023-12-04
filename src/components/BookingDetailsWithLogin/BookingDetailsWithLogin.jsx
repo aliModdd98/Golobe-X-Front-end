@@ -6,8 +6,6 @@ import PaymentComponent from '../PaymentComponent/PaymentComponent'
 import LogInToBook from '../LogInToBook/LogInToBook'
 import Bill from '../Bill/Bill'
 import PriceDetails from '../PriceDetails/PriceDetails'
-import NavBar from '../NavBar/NavBar'
-import Footer from '../Footer/Footer'
 
 function BookingDetailsWithLogin({flight, details, bill }) {
   

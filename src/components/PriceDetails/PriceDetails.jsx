@@ -66,14 +66,7 @@ const PriceDetails = () => {
         </div>
       ) : ""}
     
-   {/* { showCard ?
-   <> 
-    <div className={` ${showCard ? 'overlay' : ''}`} onClick={handleOverlayClick}>
-   <div className="card-overlay">
-    <AddingCard /></div>
-   </div>
-   </>
-  : " "} */}
+ 
     </Container>
 </section>
   )
