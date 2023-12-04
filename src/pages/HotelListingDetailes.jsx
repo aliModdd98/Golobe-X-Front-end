@@ -12,7 +12,7 @@ function HotelListingDetailes() {
 
     return (
         <>
-        <NavBar/>
+        
             <HotelViewer />
             <OverView />
             <AvilableRoom />

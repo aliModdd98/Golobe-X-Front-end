@@ -1,5 +1,5 @@
 .upFooter {
-    min-height: 305px;
+    height: 100%;
     width: 100%;
     background-color: #282828;
     display: flex;
@@ -16,6 +16,7 @@
     width: 45%;
     color: var(--white);
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 .inboxEmail h1{

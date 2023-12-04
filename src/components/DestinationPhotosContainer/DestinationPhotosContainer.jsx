@@ -98,6 +98,7 @@ function DestinationPhotosContainer({ hotels }) {
                             return (
 
                                 <DestinationPhotosCard
+                                key={e.id}
                                     img={e.img}
                                     title={e.title}
                                     description={e.description}
@@ -111,6 +112,7 @@ function DestinationPhotosContainer({ hotels }) {
                             return (
 
                                 <DestinationPhotosCard
+                                key={e.id}
                                     img={e.img}
                                     title={e.title}
                                     description={e.description}
@@ -126,6 +128,7 @@ function DestinationPhotosContainer({ hotels }) {
                         ? data.slice(4).map((e) => {
                             return (
                                 <DestinationPhotosCard
+                                key={e.id}
                                     img={e.img}
                                     title={e.title}
                                     description={e.description}
@@ -141,6 +144,7 @@ function DestinationPhotosContainer({ hotels }) {
                         ? data.slice(4).map((e) => {
                             return (
                                 <DestinationPhotosCard
+                                key={e.id}
                                     img={e.img}
                                     title={e.title}
                                     description={e.description}

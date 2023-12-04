@@ -6,7 +6,7 @@ import SearchForm from '../SearchForm/SearchForm'
 
 function Header() {
     return (
-        <header>
+        <header data-aos="fade-right">
             <div className='vh-100 p-4'>
                 <Hero 
                 className='rounded-5 h-100' 

@@ -11,6 +11,75 @@ import FlightTicket from "../../pages/FlightTicket"
 import DropDownG from '../DropDown/DropDown';
 const AddingCard = ({ onCloseClick }) => {
   const [ShowCard, SetShowCard] = useState(true);
+
+  const [name, setName] = useState('');
+  const [nameError, setNameError] = useState('');
+  const [expDate, setExpDate] = useState('');
+  const [expDateError, setExpDateError] = useState('');
+  const [cvc, setCvc] = useState('');
+  const [cvcError, setCvcError] = useState('');
+ const [inputValue, setInputValue] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (event) => {
+    const { value } = event.target;
+    const formattedValue = value.replace(/\s/g, '').replace(/(\d{4})/g, '$1 ').trim();
+
+    if (/^[0-9\s]+$/.test(value) || value === '') {
+      if (value.length <= 19) {
+        setInputValue(formattedValue);
+        setErrorMessage('');
+      } else {
+        setErrorMessage('Please enter only 16 numbers.');
+      }
+    } else {
+      setErrorMessage('Please enter only numbers.');
+    }
+  };
+  const handleNameChange = (event) => {
+    const { value } = event.target;
+    setName(value);
+    validateName(value);
+  };
+
+  const handleExpDateChange = (event) => {
+    const { value } = event.target;
+    setExpDate(value);
+    validateExpDate(value);
+  };
+
+  const handleCvcChange = (event) => {
+    const { value } = event.target;
+    setCvc(value);
+    validateCvc(value);
+  };
+
+  const validateName = (value) => {
+    if (!value.trim()) {
+      setNameError('Please enter a name.');
+    } else {
+      setNameError('');
+    }
+  };
+
+  const validateExpDate = (value) => {
+    if (!/^\d{2}\/\d{2}$/.test(value)) {
+      setExpDateError('Please enter a valid expiration date (MM/YY).');
+    } else {
+      setExpDateError('');
+    }
+  };
+
+  const validateCvc = (value) => {
+    if (!/^\d{3,4}$/.test(value)) {
+      setCvcError('Please enter a valid CVV/CVC.');
+    } else {
+      setCvcError('');
+    }
+  };
+
+
+
   return (
     <>
       <Container >
@@ -22,8 +91,9 @@ const AddingCard = ({ onCloseClick }) => {
           <Form>
             <div className=''>
               <Form.Group className=" mb-3 position-relative border border-dark rounded-2 px-3 py-3 my-4 " controlId="formGridAddress2">
-                <Form.Label className='bg-white position-absolute top-0 translate-middle-y px-2'>Card Number</Form.Label>
-                <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='4321 4321 4321 4321' />
+                <Form.Label className='bg-white position-absolute top-0 translate-middle-y px-2' >Card Number</Form.Label>
+                <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='4321 4321 4321 4321' value={inputValue}
+        onChange={handleInputChange}/> {errorMessage && <p className='errorMessage'>{errorMessage}</p>}
                 <svg className='img' xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                   <g clipPath="url(#clip0_965_3362)">
                     <path d="M0.96 4.70587C0.429912 4.70587 0 5.13566 0 5.66587V18.8179C0 19.3481 0.430128 19.7779 0.96 19.7779H23.04C23.5701 19.7779 24 19.3481 24 18.8179V5.66587C24 5.13569 23.5699 4.70587 23.04 4.70587H0.96ZM14.334 9.19762C14.9181 9.19762 15.3862 9.32664 15.6847 9.44662L15.4807 10.7299L15.3457 10.6616C15.0677 10.5416 14.7105 10.4262 14.2177 10.4344C13.6279 10.4344 13.3553 10.6975 13.3553 10.9436C13.3518 11.221 13.6739 11.4039 14.2005 11.6779C15.0697 12.1005 15.4714 12.613 15.4658 13.2866C15.4541 14.5158 14.426 15.3101 12.8423 15.3101C12.1666 15.3027 11.5156 15.1596 11.1637 14.9944L11.3753 13.6684L11.5695 13.7629C12.0643 13.984 12.3847 14.0734 12.9877 14.0734C13.4208 14.0734 13.8856 13.8921 13.8893 13.4951C13.8921 13.2359 13.695 13.0511 13.1085 12.7609C12.537 12.4776 11.7794 12.003 11.7878 11.1521C11.7967 10.0011 12.8453 9.19762 14.334 9.19762ZM2.12249 9.38587H4.55474C4.88227 9.39826 5.1467 9.50371 5.238 9.85913L5.76226 12.5651C5.76233 12.5654 5.76216 12.5664 5.76226 12.5666L5.91974 13.3774L7.39649 9.38587H8.994L6.61949 15.2284L5.02349 15.2299L3.753 10.5154C4.50895 10.9158 5.15254 11.3792 5.52526 12.0169C5.42916 11.8151 5.30254 11.5873 5.14051 11.3629C4.95182 11.1015 4.54433 10.764 4.374 10.6204C3.78048 10.12 2.97444 9.71594 2.10374 9.50213L2.12249 9.38587ZM9.62926 9.39262H11.1915L10.2142 15.2261H8.652L9.62926 9.39262ZM18.453 9.39262H19.6365L20.8755 15.2261H19.455C19.455 15.2261 19.3141 14.556 19.2683 14.3516C19.045 14.3516 17.4834 14.3494 17.3077 14.3494C17.2483 14.5073 16.9853 15.2261 16.9853 15.2261H15.378L17.6513 9.87713C17.8122 9.49702 18.0865 9.39262 18.453 9.39262ZM18.5693 10.9616C18.4924 11.1786 18.3585 11.529 18.3675 11.5136C18.3675 11.5136 17.8866 12.7962 17.7608 13.1291L19.0245 13.1284C18.9071 12.5721 18.7896 12.0159 18.672 11.4597L18.5693 10.9617V10.9616Z" fill="#1434CB" />
@@ -40,18 +110,21 @@ const AddingCard = ({ onCloseClick }) => {
             <Row className="ha-box  container my-4  mb-3">
               <Form.Group className=' mb-3 position-relative border border-dark rounded-2 px-2 py-3' as={Col} controlId="formGridEmail">
                 <Form.Label className='bg-white position-absolute top-0 translate-middle-y px-2'>Exp.Date</Form.Label>
-                <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='02/27' />
+                <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='02/27' value={expDate} onChange={handleExpDateChange}/>
+              {expDateError && <p className='errorMessage'>{expDateError}</p>}
               </Form.Group>
 
               <Form.Group className='mb-3 position-relative border border-dark rounded-2 px-2 py-3' as={Col} controlId="formGridPassword">
                 <Form.Label className='bg-white position-absolute top-0 translate-middle-y px-2'>CVC</Form.Label>
-                <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='123' />
+                <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='123' value={cvc} onChange={handleCvcChange} />
+                {cvcError && <p className='errorMessage'>{cvcError}</p>}
               </Form.Group>
             </Row>
 
             <Form.Group className=" mb-3 position-relative border border-dark rounded-2 px-2 py-3 my-4" controlId="formGridAddress2">
               <Form.Label className='bg-white position-absolute top-0 translate-middle-y px-2'>Name on Card</Form.Label>
-              <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='John Doe' />
+              <input type="text" className='fa_outline-none border-0 flex-grow-1' placeholder='John Doe' value={name} onChange={handleNameChange} />
+              {nameError && <p className='errorMessage'>{nameError}</p>}
             </Form.Group>
            
            
@@ -79,7 +152,7 @@ const AddingCard = ({ onCloseClick }) => {
             </div>
 
             <Link to="../FlightTicket">
-              <Button className='btn mt-5' type="submit">
+              <Button className='btn mt-3' type="submit">
                 Add Card
               </Button>
             </Link>

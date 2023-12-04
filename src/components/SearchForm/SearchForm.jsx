@@ -8,8 +8,9 @@ import HotelFilter from "../HotelFilter/HotelFilter"
 import { useState } from "react"
 import { HiBuildingOffice2 } from "react-icons/hi2";
 import { Link } from 'react-router-dom'
-import HotelListing from "../../pages/HotelListing"
-import FlightsListing from "../../pages/FlightsListing"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 function SearchForm({ both, hotels }) {
     const [Flight, setflight] = useState(!hotels);
 
@@ -18,8 +19,8 @@ function SearchForm({ both, hotels }) {
         console.log(Flight);
     }
     return (
-        <Container>
-            <div className="bg-white rounded-4 shadow-sm px-3 pb-4 fa_serch-buttons translate-20">
+        <Container  data-aos="fade-left">
+            <div className="bg-white rounded-4 shadow-sm px-3 pb-4 fa_serch-buttons translate-20 ">
                 <div className="d-flex align-items-center">
                     {
                         both

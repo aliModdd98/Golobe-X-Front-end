@@ -2,10 +2,21 @@ import FlightTracker from '../components/FlightTracker/FlightTracker'
 import DetailsHeader from '../components/DetailsHeader/DetailsHeader'
 import Ticket from '../components/Ticket/Ticket'
 import TermsConditions from '../components/TermsConditions/TermsConditions'
+import { useState } from 'react';
 
 function FlightTicket({ flight }) {
+    
+    const [showAlert, setShowAlert] = useState(true);
+
+    const handleClick = () => {
+      if (showAlert) {
+        alert("This action is not enabled");
+        setShowAlert(false);
+      }
+    };
     return (
         <>
+        <div className="alertMessage" onMouseDown={()=>handleClick()}>
             <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
             <DetailsHeader
                 company='Emirates A380 Airbus'
@@ -34,7 +45,7 @@ function FlightTicket({ flight }) {
                         checkOut='11:30pm'
                         Gate='On arival' />
             }
-            <TermsConditions />
+            <TermsConditions /></div>
         </>
     )
 }

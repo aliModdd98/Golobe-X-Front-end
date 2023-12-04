@@ -3,6 +3,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .fa_hero-title h1:nth-child(1) {

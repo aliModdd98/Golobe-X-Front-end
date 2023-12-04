@@ -1,8 +1,10 @@
 import './TripCard.css'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 function TripCard({ img, country, services }) {
     return (
-        <div className='d-flex align-items-center rounded-4 bg-white shadow-sm p-3 mb-4'>
+        <div data-aos="zoom-in" className='d-flex align-items-center rounded-4 bg-white shadow-sm p-3 mb-4' >
             <img src={img} alt={country} className='width-90px pe-3' />
             <div className='tripCard'>
                 <p className='mb-2'>{country}</p>

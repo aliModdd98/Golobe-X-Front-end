@@ -14,6 +14,8 @@ import { IoChevronForwardOutline, IoSettings, IoLogOutSharp } from "react-icons/
 import { MdOutlineSupport } from "react-icons/md";
 
 function NavBar({ transpartent, logedIn }) {
+ 
+const [activeButton,setActiveButton]=useState(true)
     const [open, setOpen] = useState(false);
     let classes = (transpartent)
         ? 'position-absolute top-0 w-100 text-white fa_nav-height px-4'
@@ -23,30 +25,47 @@ function NavBar({ transpartent, logedIn }) {
             <Container
                 fluid={transpartent}
                 className='h-100 d-flex align-items-center justify-content-between'>
-                <ul className='d-flex ps-0 mb-0'>
+               
 
-                   
+<ul className='d-flex ps-0 mb-0'>
+  <li
+    className={`me-4 fa_nav-height d-flex align-items-center fa_nav-font ${
+      activeButton === 'flights' ? 'activeLi' : ''
+    }`}
+  >
+    <FaPlane className='me-1' />
+    <Link to="../FlightsSearch" onClick={() => setActiveButton('flights')}>
+      Find Flight
+    </Link>
+  </li>
+  <li
+    className={`fa_nav-height d-flex align-items-center fa_nav-font ${
+      activeButton === 'hotels' ? 'activeLi' : ''
+    }`}
+  >
+    <IoBed className='me-1' />
+    <Link to="../HotelSearch" onClick={() => setActiveButton('hotels')}>
+      Find Stays
+    </Link>
+  </li>
+</ul>
 
-                    <li className='me-4 fa_nav-height d-flex align-items-center fa_nav-font'>
-                        <FaPlane className='me-1' />
-                        <Link to="../FlightsSearch"> Find Flight</Link>
-                    </li>
-                    <li className='fa_nav-height d-flex align-items-center fa_nav-font'>
-                        <IoBed className='me-1' />
-                        <Link to="../HotelSearch">Find Stays</Link>
 
-                    </li>
-                   
-
-                </ul>
                 <img src={transpartent ? logo : logoB} alt="golobe logo" />
                 {
                     logedIn
                         ? <div className='d-flex align-items-center'>
-                            <Link to='/Favorites' className='fa_nav-font me-3'>
+                       <ul className='d-flex ps-0 mb-0'>  
+                           <li
+    className={`fa_nav-height d-flex align-items-center fa_nav-font ${
+      activeButton === 'favorites' ? 'activeLi' : ''
+    }`}
+  >
+                            <Link to='/Favorites' className='fa_nav-font me-3' onClick={() => setActiveButton('favorites')} >
                                 <FaHeart className='fs-5 me-2' />
                                 Favorites
-                            </Link>
+                                
+                            </Link></li></ul>  
                             <div className='fa_devided-line bg-black'></div>
                             <div className='fa_background-user rounded-pill position-relative' style={{ '--img-url': `url(${background})` }}
                                 onClick={() => setOpen(!open)}>

@@ -42,7 +42,7 @@ function LogInToBook() {
                 </Col>
                 <Col lg={12}>
                     <Link to="../BookingDetailsWithLoging" className='aj_continue_style'>
-                        <button className='w-100 border-orange py-2 orangHover  rounded-2 mt-3 d-flex justify-content-center align-items-center '>
+                        <button className='w-100 border-orange py-2 orangHover  rounded-2 mt-3 d-flex justify-content-center align-items-center bg-transparent'>
                             <GrMail className=' me-3' />
                             Continue with email
                         </button>

@@ -2,13 +2,15 @@ import './ReviewCard.css'
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import google from './../../assets/google.svg';
 import { useState } from 'react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function ReviewCard({ img, title, review, rate, userName, country }) {
     const [clicked, setClicked] = useState(false);
     return (
-        <div className='d-inline-block bg-white rounded-4 CustomShadow maxWidthCard p-3 me-5'>
-            <div className='d-flex flex-column justify-content-between h-100'>
+        <div className='d-inline-block bg-white rounded-4 CustomShadow maxWidthCard p-3 me-5' data-aos="flip-right">
+            <div className='d-flex flex-column justify-content-between h-100' >
 
                 <div className='cardHeader'>
                     <h2 className='mb-4'>{title}</h2>

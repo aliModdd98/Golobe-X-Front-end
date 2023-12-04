@@ -3,9 +3,9 @@ import NavBar from '../components/NavBar/NavBar'
 import Hero from '../components/Hero/Hero'
 import background from './../assets/hotelHeaderCover.jfif'
 import SearchForm from '../components/SearchForm/SearchForm'
-import Footer from '../components/Footer/Footer'
 import FallIntoTravel from '../components/FallIntoTravel/FallIntoTravel'
 import DestinationPhotosContainer from '../components/DestinationPhotosContainer/DestinationPhotosContainer'
+import PlanPerfect from '../components/PlanPerfectTrip/PlanPerfect'
 
 function HotelSearch() {
     return (
@@ -16,6 +16,7 @@ function HotelSearch() {
                 title='Make your travel whishlist, we’ll do the rest'
                 subTitle='Special offers to suit your plan' />
             <SearchForm hotels />
+            <PlanPerfect/>
             <DestinationPhotosContainer hotels />
             <FallIntoTravel />
         </>

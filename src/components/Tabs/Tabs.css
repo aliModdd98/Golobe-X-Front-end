@@ -12,6 +12,7 @@
 .fa_activeLine {
     width: 90%;
     height: 3px;
+    transition: transform 0.3s ease;
     background-color: var(--primary-color);
 }
 

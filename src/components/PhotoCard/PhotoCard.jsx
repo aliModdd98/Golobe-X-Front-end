@@ -1,7 +1,9 @@
 
 
 // function PhotoCard({img, title, description, button_text }) {
-
+    import AOS from 'aos';
+    import 'aos/dist/aos.css';
+    AOS.init();
 
 import './PhotoCardStyle.css'
 import { BsFillSendFill } from 'react-icons/bs'
@@ -18,7 +20,7 @@ function PhotoCard({ img, title, description, button_text, hotels }) {
 
             {
                 hotels
-                    ? <div className="aj_card_photo">
+                    ? <div className="aj_card_photo" data-aos="zoom-in-right">
                         <img src={img} className='card_img' />
                         <div className="aj_text_container">
                             <h2>{title}</h2>
@@ -31,7 +33,7 @@ function PhotoCard({ img, title, description, button_text, hotels }) {
                         </div>
 
                     </div >
-                    : <div className="aj_card_photo">
+                    : <div className="aj_card_photo" data-aos="zoom-out">
                         <img src={img} className='card_img' />
                         <div className="aj_text_container">
                             <h2>{title}</h2>

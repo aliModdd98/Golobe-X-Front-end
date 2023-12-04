@@ -76,3 +76,7 @@ font-weight: 600;
 .titleReview{
     margin-top: 30px;
 }
+.input:focus{
+    border: none;
+    border: 2px solid var(--primary-color);
+}
