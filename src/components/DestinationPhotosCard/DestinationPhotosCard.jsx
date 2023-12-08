@@ -3,42 +3,27 @@ import "./DestinationPhotosCard.css"
 import { Link } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Col } from 'react-bootstrap';
 AOS.init();
-import { useState } from "react"
 function DestinationPhotosCard({ img, title, description, price, hotels }) {
-    const [Flight, setflight] = useState(!hotels);
-    // const handleclick = (value) => {
-    //     (Flight == value) ? setflight(!Flight) : null;
-    //     console.log(Flight);
-    // }
-
     return (
-        <div className='aj_travel_card' key={1} data-aos="fade-left" >
-            <img src={img} alt="" />
-            <div className='aj_travel_card_text'>
-                <div className='aj_text_flex'>
-                    <div>
-                        <h3>{title}</h3>
-                        <p>{description} </p>
+        <Col lg={3} className='aj_travel_card' key={1} data-aos="fade-left" >
+            <div className='overflow-hidden rounded-3 h-100 d-flex align-items-end position-relative'>
+                <img src={img} alt="img" className='w-100 h-100 object-fit-cover position-absolute z-0' />
+                <div className='position-relative z-1 w-100 p-4 fa_grandient-background'>
+                    <div className='aj_text_flex'>
+                        <div>
+                            <h3>{title}</h3>
+                            <p>{description} </p>
+                        </div>
+                        <span>{price}</span>
                     </div>
-
-                    <span>{price}</span>
+                    <Link to={!hotels?"../FlightSListing":"../HotelListing"} className='d-block w-100 bg-orange text-black py-2 rounded-1 text-center'>
+                        Book {!hotels?'Flight':'a Hotel'}
+                    </Link>
                 </div>
-
-
-                {
-                    (Flight)
-
-                        ? <Link to="../FlightSListing">
-                            <button> Book Flight </button></Link>
-                        : <Link to="../HotelListing">
-                            <button> Book a Hotel</button></Link>
-                }
-
-
             </div>
-
-        </div>
+        </Col>
     )
 }
 

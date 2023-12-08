@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom'
 import './Bill.css'
 
 
-function Bill({img, topTitle, title, rate, reviewsNumber, BaseFare, Discount, Taxes, ServiceFee}) {
+function Bill({flight, img, topTitle, title, rate, reviewsNumber, BaseFare, Discount, Taxes, ServiceFee}) {
     return (
         <div className='bg-white shadow-sm rounded-3 p-3 position-sticky fa_sticky-bill'>
             <div className='pb-3 border-bottom border-secondary-subtle d-flex gap-3'>
@@ -48,6 +49,11 @@ function Bill({img, topTitle, title, rate, reviewsNumber, BaseFare, Discount, Ta
                     <p className='mb-0 fa_price-detail'>Total</p>
                     <p className='mb-0 fa_bill-price'>{BaseFare+Taxes+ServiceFee-Discount} $</p>
                 </div>
+            </div>
+            <div>
+                <Link to={flight?'/FlightTicket':'/HotelTicket'} className='w-100 d-block border-0 bg-orange rounded-2 py-3 text-black text-center'>
+                    Book Now
+                </Link>
             </div>
         </div>
     )

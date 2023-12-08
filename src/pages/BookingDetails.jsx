@@ -50,6 +50,7 @@ function BookingDetails({flight}) {
   }
 
 
+
   return (
     <>
       <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />

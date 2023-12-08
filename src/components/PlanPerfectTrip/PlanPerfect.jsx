@@ -63,50 +63,52 @@ function PlanPerfect() {
             country: 'Tokyo, Japan',
             services: ['Flights', 'Hotels', 'Resorts']
         },
-        
+
     ]
     const [clicked, setClicked] = useState(false);
- 
+
     return (
-    <>
- <section className='mb-5'>
-            <Container>
-                <SectionTitle title='Your recent searches'
-                    button={(clicked)? 'see less places':'see more places'}
-                    stateV={clicked}
-                    setState={setClicked} />
-                <Row className='mt-5'>
-                    {
-                        grids.slice(0, 4).map((grid) => {
-                            return (
-                                <Col key={grid.id} lg={3}>
-                                    <TripCard  
-                                        img={grid.img}
-                                        country={grid.country}
-                                        services={grid.services} />
-                                </Col>
-                            );
-                        })
-                    }
-                    {
-                        (clicked)
-                        ? grids.slice(4,8).map((grid) => {
-                            return (
-                                <Col key={grid.id} lg={3}>
-                                    <TripCard
-                                        img={grid.img}
-                                        country={grid.country}
-                                        services={grid.services} />
-                                </Col>
-                            );
-                        })
-                        : null
-                    }
-                </Row>
-            </Container>
-        </section>
-    </>
-  )
+        <>
+            <section className='mt-5'>
+                <Container>
+                    <SectionTitle title='Your recent searches'
+                        button={(clicked) ? 'see less places' : 'see more places'}
+                        stateV={clicked}
+                        setState={setClicked} />
+                    <Row className='mt-4'>
+                        {
+                            grids.slice(0, 4).map((grid) => {
+                                return (
+                                    <Col key={grid.id} xl={3} lg={6}>
+                                        <TripCard
+                                            hotel
+                                            img={grid.img}
+                                            country={grid.country}
+                                            services={grid.services} />
+                                    </Col>
+                                );
+                            })
+                        }
+                        {
+                            (clicked)
+                                ? grids.slice(4, 8).map((grid) => {
+                                    return (
+                                        <Col key={grid.id} xl={3} lg={6}>
+                                            <TripCard
+                                                hotel
+                                                img={grid.img}
+                                                country={grid.country}
+                                                services={grid.services} />
+                                        </Col>
+                                    );
+                                })
+                                : null
+                        }
+                    </Row>
+                </Container>
+            </section>
+        </>
+    )
 }
 
 export default PlanPerfect

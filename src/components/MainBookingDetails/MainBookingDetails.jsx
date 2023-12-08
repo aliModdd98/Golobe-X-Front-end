@@ -4,8 +4,11 @@ import FlightDetailsCard from '../FlightDetailsCard/FlightDetailsCard'
 import LogInToBook from '../LogInToBook/LogInToBook'
 import Bill from '../Bill/Bill'
 import PaymentComponent from '../PaymentComponent/PaymentComponent'
+import { useState } from 'react'
+import PriceDetails from '../PriceDetails/PriceDetails'
 
 function MainBookingDetails({ flight, details, bill }) {
+    const [logIn, setLogIn] = useState(false)
     return (
         <Container>
             <Row className='mb-5'>
@@ -33,10 +36,15 @@ function MainBookingDetails({ flight, details, bill }) {
                                 flight={flight} />
                     }
                     <PaymentComponent />
-                    <LogInToBook />
+                    {
+                        logIn
+                        ? <PriceDetails />
+                        : <LogInToBook set={setLogIn} />
+                    }
                 </Col>
                 <Col lg={4}>
                     <Bill
+                        flight={flight}
                         topTitle={bill.topTitle}
                         title={bill.title}
                         img={bill.img}
