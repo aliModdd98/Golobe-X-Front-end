@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      {(location.pathname == '/' | location.pathname == '/Login' | location.pathname == '/addPay') ? null : <NavBar logedIn />}
+      {(location.pathname == '/' | location.pathname == '/Login' | location.pathname == '/addPay' | location.pathname == '/ForgetPassWord') ? null : <NavBar logedIn />}
       <Routes>
         <Route path='/' element={<LandingPage />} />
 
@@ -47,7 +47,7 @@ function App() {
         <Route path='/ForgetPassWord' element={<ForgetPassWord />} />
         <Route path='/Login' element={<Login />} />
       </Routes>
-      {(location.pathname == '/Login' | location.pathname == '/addPay') ? null : <Footer />}
+      {(location.pathname == '/Login' | location.pathname == '/addPay' | location.pathname == '/ForgetPassWord') ? null : <Footer />}
     </>
   )
 }

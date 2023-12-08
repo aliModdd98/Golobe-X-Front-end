@@ -7,9 +7,13 @@
     background-color: white;
 }
 
+.fa_custom-padding{
+    padding-block: 15px;
+}
+
 .Login {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 90%;
     align-items: center;
@@ -20,7 +24,7 @@
 
 .Sign {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
     justify-content: space-between;
     width: 90%;
     align-items: center;
