@@ -11,7 +11,7 @@ import image7 from "./../../assets/place7.png"
 import image8 from "./../../assets/place8.png"
 import { useState } from 'react'
 import SectionTitle from '../SectionTitle/SectionTitle'
-import { Container } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 function DestinationPhotosContainer({ hotels }) {
 
     const data = [
@@ -22,8 +22,6 @@ function DestinationPhotosContainer({ hotels }) {
             description: 'An amazing journey ',
             price: '700$',
         },
-
-
         {
             id: "2",
             img: image2,
@@ -32,8 +30,6 @@ function DestinationPhotosContainer({ hotels }) {
             price: '600 $',
         },
         {
-
-
             id: "3",
             img: image3,
             title: 'London',
@@ -75,14 +71,13 @@ function DestinationPhotosContainer({ hotels }) {
             description: ' Awesome nature',
             price: '650 $',
         },
-
-
     ]
-    const [Flight, setflight] = useState(!hotels);
 
+    const [Flight, setflight] = useState(!hotels);
     const [clicked, setClicked] = useState(false);
+
     return (
-        <div className='destination_section'>
+        <div className='mt-5'>
             <Container>
                 <SectionTitle
                     title='Fall into travel'
@@ -90,75 +85,37 @@ function DestinationPhotosContainer({ hotels }) {
                     button={(clicked) ? 'see less' : 'see more'}
                     stateV={clicked}
                     setState={setClicked} />
+                <Row>
+                    {
+                        !clicked
+                            ? data.slice(0, 4).map((e) => {
+                                return (
+                                    <DestinationPhotosCard
+                                        key={e.id}
+                                        img={e.img}
+                                        title={e.title}
+                                        description={e.description}
+                                        price={e.price}
+                                        hotels={hotels}
+                                    />
+                                );
+                            })
+                            : data.map((e) => {
+                                return (
+                                    <DestinationPhotosCard
+                                        key={e.id}
+                                        img={e.img}
+                                        title={e.title}
+                                        description={e.description}
+                                        price={e.price}
+                                        hotels={hotels}
+                                    />
+                                );
+                            })
+                    }
+                </Row>
             </Container>
-            <div className='photo_travel_container'>
-                {
-                    (Flight)
-                        ? data.slice(0, 4).map((e) => {
-                            return (
-
-                                <DestinationPhotosCard
-                                key={e.id}
-                                    img={e.img}
-                                    title={e.title}
-                                    description={e.description}
-                                    price={e.price}
-
-                                />
-
-                            );
-                        })
-                        : data.slice(0, 4).map((e) => {
-                            return (
-
-                                <DestinationPhotosCard
-                                key={e.id}
-                                    img={e.img}
-                                    title={e.title}
-                                    description={e.description}
-                                    price={e.price}
-                                    hotels
-                                />
-
-                            );
-                        })
-                }
-                {
-                    (clicked) && (Flight)
-                        ? data.slice(4).map((e) => {
-                            return (
-                                <DestinationPhotosCard
-                                key={e.id}
-                                    img={e.img}
-                                    title={e.title}
-                                    description={e.description}
-                                    price={e.price}
-
-                                />
-                            );
-                        })
-                        : null
-                }
-                {
-                    (clicked) && (!Flight)
-                        ? data.slice(4).map((e) => {
-                            return (
-                                <DestinationPhotosCard
-                                key={e.id}
-                                    img={e.img}
-                                    title={e.title}
-                                    description={e.description}
-                                    price={e.price}
-                                    hotels
-                                />
-                            );
-                        })
-                        : null
-                }
-
-            </div>
         </div>
-
     )
 }
 

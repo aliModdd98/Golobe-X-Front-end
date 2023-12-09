@@ -12,7 +12,6 @@ function HotelListingDetailes() {
 
     return (
         <>
-        
             <HotelViewer />
             <OverView />
             <AvilableRoom />
