@@ -23,6 +23,7 @@ const AddingCard = ({ onCloseClick, data, setData }) => {
       date: expDate
     }
     setData(current => [...current, newData]);
+    console.log(data);
     onCloseClick();
   }
 

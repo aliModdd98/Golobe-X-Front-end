@@ -10,7 +10,7 @@
 
 .fa_selected-method{
     width: 20px;
-    aspect-ratio: 1;
+    height: 20px;
     border-radius: 50%;
     border: 2px solid black;
 }
@@ -20,7 +20,7 @@
 }
 .fa_selected .fa_selected-method div{
     width: 10px;
-    aspect-ratio: 1;
+    height: 10px;
     border-radius: 50%;
     background-color: white;
 }
