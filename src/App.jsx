@@ -25,20 +25,22 @@ function App() {
 
   return (
     <>
-      {(location.pathname == '/' | location.pathname == '/Login' | location.pathname == '/addPay' | location.pathname == '/ForgetPassWord') ? null : <NavBar logedIn />}
+   {(location.pathname == '/' | location.pathname == '/Login' | location.pathname == '/addPay' | location.pathname == '/ForgetPassWord') ? null : <NavBar logedIn />}
+
       <Routes>
         <Route path='/' element={<LandingPage />} />
-
         <Route path='/FlightsSearch' element={<FlightsSearch />} />
         <Route path='/FlightsListing' element={<FlightsListing />} />
         <Route path='/FlightDetails' element={<FlightDetails />} />
         <Route path='/BookingDetails' element={<BookingDetails flight />} />
+        <Route path='/BookingDetailsWithLoging' element={<BookingDetailsWithLoging flight={true} />} />
         <Route path='/FlightTicket' element={<FlightTicket flight />} />
 
         <Route path='/HotelSearch' element={<HotelSearch />} />
         <Route path='/HotelListing' element={<HotelListing />} />
         <Route path='/HotelListingDetailes' element={<HotelListingDetailes />} />
         <Route path='/BookingDetailsHotel' element={<BookingDetails />} />
+        <Route path='/BookingDetailsWithLogingHotel' element={<BookingDetailsWithLoging flight={false} />} />
         <Route path='/HotelTicket' element={<FlightTicket flight={false} />} />
 
         <Route path='/Account' element={<Account />} />
@@ -48,6 +50,7 @@ function App() {
         <Route path='/Login' element={<Login />} />
       </Routes>
       {(location.pathname == '/Login' | location.pathname == '/addPay' | location.pathname == '/ForgetPassWord') ? null : <Footer />}
+
     </>
   )
 }
