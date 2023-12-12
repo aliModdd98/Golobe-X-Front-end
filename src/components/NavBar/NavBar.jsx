@@ -113,7 +113,7 @@ const [activeButton,setActiveButton]=useState(true)
                                             </p>
                                             <IoChevronForwardOutline className='fs-5' />
                                         </Link>
-                                        <Link to='/'>
+                                        <Link to='/Golobe-X-Front-end'>
                                             <p className='mb-0 d-flex align-items-center gap-2 fa_pop_up-item'>
                                                 <IoLogOutSharp className='fs-5' />
                                                 Logout

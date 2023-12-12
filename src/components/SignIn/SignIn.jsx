@@ -17,12 +17,11 @@ import ForgetPassWord from "../../pages/ForgetPassWord"
 function SignIn() {
   const [signType, setSignType] = useState('Login');
 
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [visiblePassword, setVisiblePassword] = useState(false);
   const [visibleConfirmPassword, setVisibleConfirmPassword] = useState(false);
 
   const handleSignUp = () => {
-    console.log("hhh")
     setSignType('Sign');
   };
   const handleSignIn = () => {
@@ -30,13 +29,7 @@ function SignIn() {
   }
   const getImageSource = () => {
     const imageSources = [img1, img2, img3];
-    const defaultImageSource = img1;
-
-    if (activeIndex >= 0 && activeIndex < imageSources.length) {
-      return imageSources[activeIndex];
-    } else {
-      return defaultImageSource;
-    }
+    return imageSources[activeIndex];
   };
   const handleSubmit = (event) => {
     event.preventDefault();

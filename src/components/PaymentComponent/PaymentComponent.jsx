@@ -2,7 +2,7 @@ import './PaymentComponent.css'
 import { useState } from 'react';
 
 const PaymentComponent = () => {
-    const [selected, setSelected] = useState(1);
+    const [selected, setSelected] = useState(0);
 
     return (
         <div className='bg-white rounded-4 shadow-sm p-3'>

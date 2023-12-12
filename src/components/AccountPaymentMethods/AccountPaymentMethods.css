@@ -1,7 +1,6 @@
 .PaymentCard{
     background-color: var(--primary-color);
     width: 100%;
-    height: 80%;
     border-radius: 16px;
 }
 .upCard{
@@ -21,7 +20,7 @@
 }
 .PaymentAdd{
     width: 100%;
-    height: 80%;
+    height: 100%;
     border-radius: 16px;
 }
 .cardDown{
