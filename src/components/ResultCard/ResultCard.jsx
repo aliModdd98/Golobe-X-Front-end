@@ -89,7 +89,7 @@ function ResultCard({ flight, img, favoriteActive, rate, reviewsNumber, starting
                                 ?
                                 <Link to="../FlightDetails" className='flex-grow-1 bg-orange border-0 rounded-2 fa_more_results-button' >  View Deals</Link>
                                 :
-                                <Link to="../HotelListingDetailes" className='flex-grow-1 bg-orange border-0 rounded-2 fa_more_results-button' >  View Deals</Link>
+                                <Link to="../HotelListingDetailes" className='flex-grow-1 bg-orange border-0 rounded-2 fa_more_results-button' >  View Place</Link>
                         }
 
                     </div>

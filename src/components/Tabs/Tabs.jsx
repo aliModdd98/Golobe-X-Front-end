@@ -5,7 +5,7 @@ import { IoReorderThreeOutline } from 'react-icons/io5'
 function  Tabs({ filters, other, state, setState }) {
     return (
         <div className='px-2'>
-            <Row className='bg-white rounded-3 shadow-sm'>
+            <Row className='bg-white rounded-3 shadow-sm  hoverPointer'>
                 {
                     filters.map(filter => (
                         <Col key={filter.id} className='py-3 px-0 position-relative' onClick={() => setState(filter.id)}>
