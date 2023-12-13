@@ -25,10 +25,20 @@ function App() {
 
   return (
     <>
-      {(location.pathname == '/Golobe-X-Front-end' | location.pathname == '/Login' | location.pathname == '/addPay' | location.pathname == '/ForgetPassWord') ? null : <NavBar logedIn />}
+      {(
+      location.pathname == '/Golobe-X-Front-end' | 
+      location.pathname == '/Golobe-X-Front-end/' | 
+      location.pathname == '/' | 
+      location.pathname == '/Login' | 
+      location.pathname == '/addPay' | 
+      location.pathname == '/ForgetPassWord') 
+      ? null : <NavBar logedIn />}
 
       <Routes>
         <Route path='/Golobe-X-Front-end' element={<LandingPage />} />
+        <Route path='/Golobe-X-Front-end/' element={<LandingPage />} />
+        <Route path='/' element={<LandingPage />} />
+
         <Route path='/FlightsSearch' element={<FlightsSearch />} />
         <Route path='/FlightsListing' element={<FlightsListing />} />
         <Route path='/FlightDetails' element={<FlightDetails />} />
