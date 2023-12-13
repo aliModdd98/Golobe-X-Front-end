@@ -25,7 +25,7 @@ function HotelFilter() {
                         Check Out
                     </label>
                     <span><BiSolidUser className='fs-4 me-2' /></span>
-                    <p className='mb-0 flex-grow-1 opacity-75'>
+                    <p className='mb-0 flex-grow-1 opacity-75 fa_return-value d-flex align-items-center'>
                         {dropValue}
                     </p>
                     <AiOutlineDown className='fs-4' />

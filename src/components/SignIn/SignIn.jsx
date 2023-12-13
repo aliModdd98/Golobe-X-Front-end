@@ -187,7 +187,7 @@ function SignIn() {
                     <input type="checkbox" id='agree' />
                     <label htmlFor="agree" className='ms-2 fa_class-lable'>I agree to all the <span className="orangText">Terms</span> and <span className="orangText">Privacy Policies</span></label>
                   </div>
-                  <button type="button" className="btn btn-block btn-orange">Create Account</button>
+                  <button type="button" className="btn btn-block btn-orange w-100">Create Account</button>
                   <div className="ToSign">Already have an account? <span className="forgetPass" onClick={handleSignIn}>Login
                   </span></div>
                   <div className='d-flex align-items-center my-3 gap-3'>

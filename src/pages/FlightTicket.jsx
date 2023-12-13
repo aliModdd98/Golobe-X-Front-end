@@ -29,7 +29,7 @@ function FlightTicket({ flight }) {
                             from='12:00 pm'
                             to='12:00 pm'
                             timeZone='Newark(EWR)'
-                            userName='James Doe'
+                            userName='Fadi Noumih'
                             boredPass='Boarding Pass N’123'
                             classType='Busniess Class'
                             date='Newark(EWR)'
@@ -39,7 +39,7 @@ function FlightTicket({ flight }) {
                         : <Ticket
                             from='Thur, Dec 8'
                             to='Fri, Dec 9'
-                            userName='James Doe'
+                            userName='Fadi Noumih'
                             classType='Superior room - 1 double bed or 2 twin beds'
                             FlightTime='12:00pm'
                             checkOut='11:30pm'

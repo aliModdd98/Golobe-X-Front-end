@@ -15,7 +15,7 @@ function ForgetPass() {
 
   const [Forget, setForget] = useState('forget');
 
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [visiblePassword, setVisiblePassword] = useState(false);
   const [password, setPassword] = useState('');
   const [rePassword, setRePassword] = useState('');
@@ -26,13 +26,7 @@ function ForgetPass() {
   }
   const getImageSource = () => {
     const imageSources = [img1, img2, img3];
-    const defaultImageSource = img1;
-
-    if (activeIndex >= 0 && activeIndex < imageSources.length) {
-      return imageSources[activeIndex];
-    } else {
-      return defaultImageSource;
-    }
+    return imageSources[activeIndex];
   };
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -55,7 +49,6 @@ function ForgetPass() {
   }
   const handleActive = (index) => {
     setActiveIndex(index);
-
   };
   useEffect(() => {
     const timer = setTimeout(() => {
