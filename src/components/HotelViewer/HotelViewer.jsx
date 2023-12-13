@@ -39,39 +39,39 @@ function HotelViewer() {
       <FlightTracker country='Turkey' city='Istanbul' place='CVK Park Bosphorus Hotel Istanbul' />
       <DetailsHeader company='Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437' rate={4.2} daily="/night" location="CVK Park Bosphorus Hotel Istanbul" price="450" Favorit button='Book now' />
 
-      <Row className='g-1 rounded-5 overflow-hidden'>
+      <Row className='g-2 px-0'>
         <Col xl={6}>
           <img src={main} alt="hotel" className='w-100 h-100 object-fit-cover' />
         </Col>
         <Col xl={6}>
-          <Container fluid className='position-relative'>
-            <Row className='g-3'>
+          <Container fluid className='position-relative px-0'>
+            <Row className='g-2 px-0'>
               {
                 right.map((item, index) => (
                   <Col xl={6} key={index} className='fa_hotelview' onClick={() => handleRightSwitch(index)}>
-                    <img src={item} alt="hotel" className='w-100 h-100 object-fit-cover'  />
+                    <img src={item} alt="hotel" className='w-100 h-100 object-fit-cover' />
                   </Col>
                 ))
               }
             </Row>
             <button className='position-absolute px-3 py-2 bg-orange border-0 fa_absolute-val' onClick={() => setShow(!show)}>
-              view {show?'less':'all'} photos
+              view {show ? 'less' : 'all'} photos
             </button>
           </Container>
         </Col>
+        {
+          show &&
+          <>
+            {
+              bottom.map((item, index) => (
+                <Col xl={3} key={index} className='fa_hotelview' onClick={() => handleBottomSwitch(index)}>
+                  <img src={item} alt="hotel" className='w-100 h-100 object-fit-cover' />
+                </Col>
+              ))
+            }
+          </>
+        }
       </Row>
-      {
-        show &&
-        <Row className='rounded-5 mt-1 g-3 overflow-hidden'>
-          {
-            bottom.map((item, index) => (
-              <Col xl={3} key={index} className='fa_hotelview' onClick={() => handleBottomSwitch(index)}>
-                <img src={item} alt="hotel" className='w-100 h-100 object-fit-cover' />
-              </Col>
-            ))
-          }
-        </Row>
-      }
     </Container>
 
   )

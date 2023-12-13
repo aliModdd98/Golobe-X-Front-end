@@ -23,11 +23,11 @@ function FlightFilter() {
                     <label className='bg-white position-absolute top-0 translate-middle-y px-2'>
                         Trip
                     </label>
-                    <p className='mb-0 d-flex justify-content-between opacity-75'>
+                    <p className='mb-0 d-flex align-items-center justify-content-between fa_return-value'>
                         {dropValue}
                         <AiOutlineDown className='fs-4' />
                     </p>
-                    <div className={`rounded-3 shadow-sm bg-white position-absolute p-3 fa_transition top-100 w-100 start-50 translate-middle-x ${show ? 'd-block' : 'd-none'}`}>
+                    <div className={`opacity-100 rounded-3 shadow-sm bg-white position-absolute p-3 fa_transition top-100 w-100 start-50 translate-middle-x ${show ? 'd-block' : 'd-none'}`}>
                         <p className='mb-3' onClick={() => { setDropValue('Return') }}>Return</p>
                         <p className='mb-0' onClick={() => { setDropValue('Go') }}>Go</p>
                     </div>
