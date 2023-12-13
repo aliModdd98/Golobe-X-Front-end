@@ -37,7 +37,6 @@ function SignIn() {
 
   const handleActive = (index) => {
     setActiveIndex(index);
-
   };
   useEffect(() => {
     const timer = setTimeout(() => {
