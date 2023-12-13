@@ -18,9 +18,9 @@ const PaymentComponent = () => {
                 </div>
             </div>
             <div
-                className={`d-flex justify-content-between align-items-center rounded-3 gap-5 p-3 ${(selected == 1) && 'fa_selected bg-orange'}`}
+                className={`d-flex justify-content-between align-items-center rounded-3 p-3 ${(selected == 1) && 'fa_selected bg-orange'}`}
                 onClick={() => setSelected(1)}>
-                <div>
+                <div className='fa_pay-partly'>
                     <p className='mb-2 fa_payment-method'>Pay part now, part later</p>
                     <p className='mb-3 fa_payment-method-disc'>Pay 207.43 $ now, and the rest (207.43 $) will be automatically charged to the same payment method on Nov 14, 2022. No extra fees.</p>
                     <p className='mb-0'>More info</p>
